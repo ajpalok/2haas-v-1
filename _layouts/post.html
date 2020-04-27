@@ -17,15 +17,10 @@ layout: default
                 <div class="postinfo">
 			<div class="postinfoitem"> 
 				<div class="post-categories">
-					{% if page %}
-					{% assign categories = page.categories %}
-					{% else %}
-					{% assign categories = post.categories %}
-					{% endif %}
-					{% for category in categories %}
-					<a href="{{site.baseurl}}/categories/#{{category|slugize|upcase}}">{{category|upcase}}</a>
-					{% unless forloop.last %}&nbsp;{% endunless %}
-					{% endfor %}
+					{% assign category = site.categories | where: 'short_name', page.category | first %}
+                                {% if category %}
+                                	<a href="{{ site.baseurl | prepend: site.url | replace: "//" , "/" }}{{ category.url }}">{{ category.name }}</a>
+                                {% endif %}
 				</div>
                         </div>
 			<div class="postinfoitem"> {{ page.date | date: '%B %d, %Y' }} </div>
