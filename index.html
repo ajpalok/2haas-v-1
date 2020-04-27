@@ -1,0 +1,76 @@
+---
+layout: home
+---
+
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
+
+	<article role="article" class="post-container">
+		<div class="post-header">
+			<h1><a href='{{ post.url | prepend: site.baseurl }}'>{{ post.title }}</a></h1>
+		</div>
+		<div class="post-image">
+			<a href='{{ post.url | prepend: site.baseurl }}'>
+			{% if post.image %}    
+			<img src="{{ post.image }}">
+			{% else %}
+			<img src="{{ "/assets/img/off.jpg" | prepend: site.baseurl }}">
+			{% endif %} 
+			</a>
+		</div>
+                <div class="postinfo">
+			<div class="postinfoitem"> 
+
+<div class="post-categories">
+  {% if post %}
+    {% assign categories = post.categories %}
+  {% else %}
+    {% assign categories = page.categories %}
+  {% endif %}
+  {% for category in categories %}
+  <a href="{{site.baseurl}}/categories/#{{category|slugize|upcase}}">{{category|upcase}}</a>
+  {% unless forloop.last %}&nbsp;{% endunless %}
+  {% endfor %}
+</div>
+
+                        </div>
+			<div class="postinfoitem"> {{ post.date | date: '%B %d, %Y' }} </div>
+		</div><br>
+			<div class="p-container">
+				<p>
+				{% assign author = site.authors | where: 'short_name', page.author | first %}
+                                {% if author %}
+                                	<a href="{{ site.baseurl | prepend: site.url | replace: "//" , "/" }}{{ author.url }}">{{ author.name }}</a>
+                                {% endif %}
+
+				{{ post.excerpt | strip_html | truncate: 250 }} <a class="more" href="{{ post.url | prepend: site.baseurl }}">more</a>
+				</p>
+			</div>
+	</article>
+{% endfor %}
+
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+  {% else %}
+    <span>&laquo; Prev</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <em>{{ page }}</em>
+    {% elsif page == 1 %}
+      <a href="{{ paginator.previous_page_path | relative_url }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+  {% else %}
+    <span>Next &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}

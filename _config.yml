@@ -1,0 +1,39 @@
+# site settings
+name: 2HAAS
+title: "2HAAS | Draw Your Imagination"
+logo: "https://2haas.ml/favicon.ico"
+
+# advance settings
+url: ""
+baseurl: "/Insta"
+markdown: kramdown
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+highlighter: rouge
+
+permalink: /:categories/:title/
+permalink: /:tags/:title/
+
+# pagination plugin
+plugins:
+  - jekyll-paginate
+paginate: 6
+paginate_path: /page-:num
+source: .
+destination: ./_site
+permalink: /:title/
+
+collections:
+  authors:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

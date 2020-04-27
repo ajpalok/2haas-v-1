@@ -1,0 +1,26 @@
+---
+layout: default
+title: Staff
+---
+
+<center> Staffs </center> 
+
+<table>
+			<tr>
+			{% for author in site.authors %}
+	              	   <tr>
+		<td rowspan="2">
+			<a href="..{{ author.url }}"><img class="proimg proimgbb" src="{{ author.profile_image }}"/></a>
+		</td>
+		<td>
+			<a href="..{{ author.url }}"><h1 class="proname">{{ author.name }}</h1></a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="..{{ author.url }}"><h2 class="proposition">{{ author.position }}</h2></a>
+		</td>
+	</tr>
+			{% endfor %}
+			</tr>
+		</table>
