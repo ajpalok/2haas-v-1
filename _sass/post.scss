@@ -1,0 +1,38 @@
+div.post-header{
+	width:100%;
+	display:block;
+        overflow: hidden;
+}
+
+div.post-header h1{
+	font-size:18px;
+	font-weight: 900;
+	font-family: 'Roboto', sans-serif;
+	margin: 13px;
+}
+
+div.post-image{
+	width: 100%;
+}
+
+div.postinfo{
+	width:100%;
+	background-color:#fff;
+	display:block;
+}
+div.postinfoitem{
+	width: 50%;
+        display:inline-block;
+        float: left;
+	font-size:12px;
+	font-weight: 900;
+        text-align:center;
+	font-family: 'Roboto', sans-serif;
+}
+
+div.p-container{
+	width: 96%;
+	display:block;
+	margin-left: 2%;
+	margin-right: 2%;
+}
