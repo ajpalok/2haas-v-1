@@ -24,9 +24,9 @@ permalink: /:title/
 collections:
   authors:
     output: true
-
+collections:
   categories:
-     output: true
+    output: true
 
 defaults:
   - scope:
@@ -34,10 +34,10 @@ defaults:
       type: "authors"
     values:
       layout: "author"
-- scope
-      path""
+  - scope
+      path: ""
       type: "categories"
-     values:
+    values:
        layout: "category"
   - scope:
       path: ""
