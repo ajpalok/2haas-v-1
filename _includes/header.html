@@ -1,0 +1,25 @@
+<!-- fixed top header -->
+<header>
+	{% if site.logo %}
+	<img class="pc-logo1" src="{{ site.logo }}" alt="{{ site.name }}'s Logo">
+	{% endif %}
+	<div class="center logo pc-logo2">
+		<a href="{{ site.baseurl }}">{{ site.name }}</a>
+	</div>
+	<div class="headbar">
+	<div class="hnblock">
+		<a href="{{ "/search" | prepend: site.baseurl }}"> 
+			<div class="navsearch">
+			<div class="center"><i class="fas fa-search"></i> Search</div>
+			</div>
+		</a>
+		<div class="headnav">
+			<div class="head-item"> <a href="{{ site.baseurl | prepand: site.url }}"> <i class="fas fa-home"></i> </a> </div>
+ 			<div class="head-item"> <a href="{{ site.baseurl | prepand: site.url }}/categories/"> <i class="fas fa-tags"></i> </a> </div>
+			<div class="head-item"> <a href="{{ site.baseurl | prepand: site.url }}/contact/"> <i class="fas fa-paper-plane"></i> </a> </div>
+			<div class="head-item"> <a href="{{ site.baseurl | prepand: site.url }}/staff/"> <i class="far fa-user"></i> </a> </div>		
+		</div>
+	</div>
+	</div>
+</header>
+
