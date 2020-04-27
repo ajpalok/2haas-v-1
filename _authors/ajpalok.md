@@ -5,4 +5,4 @@ name: Abrar Jahin
 position: Chief Editor
 ---
 
-Something of my bio will be here .
+Never give up. Try ourself to do the best. Non has the ability to do a work for you.. you have to do that by yourself.. YOU ARE THE BEST GUIDE OF YOURSELF.. 
