@@ -10,7 +10,6 @@ markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 highlighter: rouge
 
-permalink: /:categories/:title/
 permalink: /:tags/:title/
 
 # pagination plugin
