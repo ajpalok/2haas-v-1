@@ -34,7 +34,7 @@ defaults:
       type: "authors"
     values:
       layout: "author"
-  - scope
+  - scope:
       path: ""
       type: "categories"
     values:
