@@ -4,8 +4,8 @@ title: "2HAAS | Draw Your Imagination"
 logo: "https://2haas.ml/favicon.ico"
 
 # advance settings
-url: ""
-baseurl: "/Insta"
+url: "2haas.ml"
+baseurl: ""
 markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 highlighter: rouge
