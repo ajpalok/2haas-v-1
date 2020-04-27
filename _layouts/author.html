@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<table>
+	<tr>
+		<td rowspan="2">
+			<img class="proimg proimgbb" src="{{ page.profile_image }}"/>
+		</td>
+		<td>
+			<h1 class="proname">{{ page.name }}</h1>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<h2 class="proposition">{{ page.position }}</h2>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			{{ content }}
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			social links will be here
+		</td>
+	</tr>
+</table>
+
+<h2 class="propost">Posts</h2>
+<ul>
+  {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
+  {% for post in filtered_posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>

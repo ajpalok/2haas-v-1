@@ -1,0 +1,84 @@
+---
+layout: default
+---
+<section class="middle column1">
+
+       <article role="article" class="post-container">
+		<div class="post-header">
+			<h1>{{ page.title }}</h1>
+		</div><br>
+		<div class="post-image">
+			{% if page.image %}    
+			<img src="{{ page.image }}" alt="Featured Photo">
+			{% else %}
+			<img src="{{ "/assets/img/off.jpg" | prepend: site.baseurl }}" alt="No Featured Photo Available"> 
+			{% endif %} 
+		</div><br>
+                <div class="postinfo">
+			<div class="postinfoitem"> 
+				<div class="post-categories">
+					{% if page %}
+					{% assign categories = page.categories %}
+					{% else %}
+					{% assign categories = post.categories %}
+					{% endif %}
+					{% for category in categories %}
+					<a href="{{site.baseurl}}/categories/#{{category|slugize|upcase}}">{{category|upcase}}</a>
+					{% unless forloop.last %}&nbsp;{% endunless %}
+					{% endfor %}
+				</div>
+                        </div>
+			<div class="postinfoitem"> {{ page.date | date: '%B %d, %Y' }} </div>
+		</div><br>
+		<div class="p-container">
+			<p>
+			{% assign author = site.authors | where: 'short_name', page.author | first %}
+			{% if author %}
+			<a href="{{ site.baseurl | prepend: site.url | replace: "//" , "/" }}{{ author.url }}">{{ author.name }}</a>
+			{% endif %}
+			{{ content }}
+			</p>
+
+				{% if post %}
+				{% assign tags = post.tags %}
+				{% else %}
+				{% assign tags = page.tags %}
+				{% endif %}
+				{% for tag in tags %}
+					<a class="tags" href="{{site.baseurl}}/tags/#{{tag|slugize}}">#{{tag}}</a>
+				{% unless forloop.last %}&nbsp;{% endunless %}
+				{% endfor %}
+
+		</div>
+	</article>
+
+</section>
+
+<aside class="middle column2">
+
+	<section class="post-container">
+		<div class="post-header"><h1><center>Read Next:</center></h1></div>
+                      
+                        {% assign next_posts = site.posts | where_exp:"post","post.path != page.path" %}
+                        {% assign shuffled_array = next_posts | shuffle %}
+                        {% for post in shuffled_array limit:3 %}
+                            <div class="post-container">
+					<div class="post-header">
+                                            <a href="{{ post.url | prepend: site.baseurl }}">
+			                        <h1>{{ post.title }}</h1>
+                                            </a>
+					</div><br>
+		                  <div class="post-image">
+                                         <a href="{{ post.url | prepend: site.baseurl }}">
+			                 {% if post.image %}    
+			                 <img src="{{ post.image }}">
+			                 {% else %}
+			                 <img src="{{ "/assets/img/off.jpg" | prepend: site.baseurl }}">
+			                 {% endif %} 
+                                         </a>
+		            </div><br>
+
+
+                        {% endfor %}
+	</section>
+</aside>
