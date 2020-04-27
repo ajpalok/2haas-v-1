@@ -19,7 +19,7 @@ layout: default
 				<div class="post-categories">
 					{% assign category = site.categories | where: 'short_name', page.category | first %}
                                 {% if category %}
-                                	<a href="{{ site.baseurl | prepend: site.url | replace: "//" , "/" }}{{ category.url }}">{{ category.name }}</a>
+                                	<a href="{{ site.baseurl }}{{ category.url }}">{{ category.name }}</a>
                                 {% endif %}
 				</div>
                         </div>
@@ -29,7 +29,7 @@ layout: default
 			<p>
 			{% assign author = site.authors | where: 'short_name', page.author | first %}
 			{% if author %}
-			<a href="{{ site.baseurl | prepend: site.url | replace: "//" , "/" }}{{ author.url }}">{{ author.name }}</a>
+			<a href="{{ site.baseurl }}{{ author.url }}">{{ author.name }}</a>
 			{% endif %}
 			{{ content }}
 			</p>
