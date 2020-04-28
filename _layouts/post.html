@@ -56,7 +56,7 @@ layout: default
                         {% assign next_posts = site.posts | where_exp:"post","post.path != page.path" %}
                         {% assign shuffled_array = next_posts | shuffle %}
                         {% for post in shuffled_array limit:3 %}
-                            <div class="post-container">
+                            
 					<div class="post-header">
                                             <a href="{{ site.baseurl }}{{ post.url }}">
 			                        <h1>{{ post.title }}</h1>
@@ -70,7 +70,7 @@ layout: default
 			                 <img src="{{ "/assets/img/off.jpg" | prepend: site.baseurl }}">
 			                 {% endif %} 
                                          </a>
-		            </div><br>
+		            <br>
 
 
                         {% endfor %}
