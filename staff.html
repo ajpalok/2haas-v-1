@@ -7,8 +7,8 @@ title: Staff
 
 <table>
 			
-			{% for author in site.authors %}
-	              	   <tr>
+	{% for author in site.authors %}
+	<tr>
 		<td rowspan="2">
 			<a href="..{{ author.url }}"><img class="proimg proimgbb" src="{{ author.profile_image }}"/></a>
 		</td>
@@ -21,6 +21,6 @@ title: Staff
 			<a href="..{{ author.url }}"><h2 class="proposition">{{ author.position }}</h2></a>
 		</td>
 	</tr>
-			{% endfor %}
+	{% endfor %}
 			
-		</table>
+</table>
