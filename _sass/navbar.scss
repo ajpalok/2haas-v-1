@@ -13,12 +13,7 @@ div.navbar{
 	background-color: #fff;
 	border-top: 1px solid #bfbfbf ;
 }
-@media only screen and (max-width:500px){
 	div.nav-item{
-	width: 20%;
-}}
-@media only screen and (min-width:501px){
-div.nav-item{
 	width: 20%;
 }}
 div.nav-item{
@@ -39,4 +34,4 @@ div.nav-item a{
 
 @media only screen and (min-width:900px){
 div.navbar{ display: none; }
-
+}
