@@ -1,7 +1,5 @@
 /* bottom fixed navbar */
 @media only screen and (max-width:900px){
-div.sidebar{ display: none; }
-
 div.navbar{
 	width:100%;
 	height: 50px;
@@ -15,7 +13,8 @@ div.navbar{
 }
 	div.nav-item{
 	width: 20%;
-}}
+}
+
 div.nav-item{
 	color:#000;
 	font-size: 20px;
@@ -29,7 +28,6 @@ div.nav-item a{
 	text-decoration:none;
 }
 }
-
 
 
 @media only screen and (min-width:900px){
