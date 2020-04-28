@@ -43,9 +43,8 @@ layout: default
 					<a class="tags" href="{{site.baseurl}}/tags/#{{tag|slugize}}">#{{tag}}</a>
 				{% unless forloop.last %}&nbsp;{% endunless %}
 				{% endfor %}
-
+		{% include comments.html %}
 		</div>
-	{% include comments.html %}
 	</article>
 
 </section>
