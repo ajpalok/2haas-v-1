@@ -40,23 +40,3 @@ div.nav-item a{
 @media only screen and (min-width:900px){
 div.navbar{ display: none; }
 
-div.sidebar {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 50px;
-  left: 0;
-  background-color: #ffffff;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-div.sidebar a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 13px;
-  color: #000;
-  display: block;
-}
-}
