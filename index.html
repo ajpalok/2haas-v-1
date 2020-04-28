@@ -7,10 +7,10 @@ layout: home
 
 	<article role="article" class="post-container">
 		<div class="post-header">
-			<h1><a href='{{ site.baseurl }}'>{{ post.title }}</a></h1>
+			<h1><a href='{{ site.baseurl }}{{ post.url }}'>{{ post.title }}</a></h1>
 		</div>
 		<div class="post-image">
-			<a href='{{ post.url | prepend: site.baseurl }}'>
+			<a href='{{ site.baseurl }}{{ post.url }}'>
 			{% if post.image %}    
 			<img src="{{ post.image }}">
 			{% else %}
@@ -34,7 +34,7 @@ layout: home
                                 	<a href="{{ site.baseurl }}{{ author.url }}">{{ author.name }}</a>
                                 {% endif %}
 
-				{{ post.excerpt | strip_html | truncate: 250 }} <a class="more" href="{{ site.baseurl }}">more</a>
+				{{ post.excerpt | strip_html | truncate: 250 }} <a class="more" href="{{ site.baseurl }}{{ post.url }}">more</a>
 				</p>
 			</div>
 	</article>
