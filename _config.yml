@@ -24,7 +24,6 @@ permalink: /:title/
 collections:
   authors:
     output: true
-collections:
   categories:
     output: true
 
