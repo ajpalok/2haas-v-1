@@ -52,7 +52,6 @@ layout: default
 
 <aside class="middle column2">
 
-	<section class="post-container">
 		<div class="post-header"><h1><center>Read Next:</center></h1></div>
                       
                         {% assign next_posts = site.posts | where_exp:"post","post.path != page.path" %}
@@ -76,5 +75,4 @@ layout: default
 
 
                         {% endfor %}
-	</section>
 </aside>
