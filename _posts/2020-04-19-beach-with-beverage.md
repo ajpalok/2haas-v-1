@@ -10,7 +10,11 @@ Title: Beach With Beverage
   
 Art Work by: Abrar Jahin  
   
-This drawing is made with oil pastel Color. Watch the video.. Photo is taken from pixabay. Hope you will enjoy it. Due to corona just stay home.. You stay home for all.. As usual #StayHome and Draw #WithMe
+This drawing is made with oil pastel Color. Watch the video..  
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8MH68Znm_ro" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  Photo is taken from pixabay. Hope you will enjoy it. Due to corona just stay home.. You stay home for all.. As usual #StayHome and Draw #WithMe
 Like this video to inspire me and share to inspire others to inspire them..  
   
 Also available on:  
