@@ -4,7 +4,7 @@ title: Easy Drawing Of A Toy Car
 description: While I was thinking to do a Easy Drawing Of A Toy Car, found a frame to draw..
 image: https://res.cloudinary.com/thaas/image/upload/v1588706804/PicsArt_05-05-06.16.48_kugni9.jpg
 category: drawing
-tags: 2HAAS, 2haas, Drawing, Draw, drawing, draw, drawing car, how to draw a car, drawing tutorials, oil pastel drawing, oil pastel drawing for beginners, oil pastel drawing easy, drawing ideas, drawings easy, old car, car old, toy car, toy, car
+tags: [2HAAS, 2haas, Drawing, Draw, drawing, draw, drawing car, how to draw a car, drawing tutorials, oil pastel drawing, oil pastel drawing for beginners, oil pastel drawing easy, drawing ideas, drawings easy, old car, car old, toy car, toy, car]
 author: ajpalok
 ---
 While I was thinking to do an <b>Easy Drawing Of A Toy Car</b>, can't get any idea that time. When, started to find some drawing ideas for beginners.. Then found the frame. How I draw this? Watch:
