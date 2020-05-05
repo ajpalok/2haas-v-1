@@ -9,8 +9,25 @@ author: ajpalok
 ---
 While I was thinking to do an <b>Easy Drawing Of A Toy Car</b>, can't get any idea that time. When, started to find some drawing ideas for beginners.. Then found the frame. How I draw this? Watch:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/79Cv2Yi0xO0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 But I was wondering how to draw this? Should I just sketch or draw? Started to sketch but can't satisfied with that only.. Then I dare to do that :3
 
-Hey can you guess the name of the <b>Song</b> on the video? About 98% people failed to do that Comment below if you can! Correct answer will be awarded in our next video by showing your answer there..
+Hey can you guess the name of the <b>Song</b> on the video? About 98% people failed to do that Comment below if you can! Correct answer will be awarded in our next video by showing your answer there..  
+ 
+Also available on:
+  
+Facebook: [2HAAS](https://facebook.com/2haas)  
+Instagram: [2HAAS](https://instagram.com/2haas.ml)  
+Pinterest: [2HAAS](https://pinterest.com/2haas_ml)  
+   
+-------------------------------------------------------------------
+
+Watch also:
+
+[Beach With Beverage](https://youtu.be/8MH68Znm_ro)  
+
+[আমার আছে জল](https://youtu.be/aPH-It6tL0I)  
+
+------------------------------------------------------------------
+Thanks
