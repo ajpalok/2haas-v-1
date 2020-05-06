@@ -9,7 +9,7 @@ author: ajpalok
 ---
 While I was thinking to do an <b>Easy Drawing Of A Toy Car</b>, can't get any idea that time. When, started to find some drawing ideas for beginners.. Then found the frame. How I draw this? Watch:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/79Cv2Yi0xO0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ld11G90AA5Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 But I was wondering how to draw this? Should I just sketch or draw? Started to sketch but can't satisfied with that only.. Then I dare to do that :3
 
