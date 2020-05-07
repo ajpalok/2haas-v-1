@@ -1,21 +1,17 @@
 <!-- fixed top header -->
 <header>
-	<div class="center logo pc-logo2">
-		<a href="{{ site.baseurl }}">{{ site.name }}</a>
-	</div>
+	<a href="{{ site.baseurl }}">
+	<div class="center logo pc-logo2">{{ site.name }}</div>
+	</a>
 	<div class="headbar">
-	<div class="hnblock">
-			<div class="navsearch">
-			<script async src="https://cse.google.com/cse.js?cx=001763056047846418921:gcjyzfbyed0"></script>
-			<div class="gcse-search"></div>
-			</div>
-		<div class="headnav">
-			<div class="head-item"> <a href="{{ site.baseurl | prepand: site.url }}"> <i class="fas fa-home"></i> </a> </div>
- 			<div class="head-item"> <a href="{{ site.baseurl | prepand: site.url }}/categories/"> <i class="fas fa-tags"></i> </a> </div>
-			<div class="head-item"> <a href="{{ site.baseurl | prepand: site.url }}/contact/"> <i class="fas fa-paper-plane"></i> </a> </div>
-			<div class="head-item"> <a href="{{ site.baseurl | prepand: site.url }}/staff/"> <i class="fas fa-user"></i> </a> </div>		
-		</div>
-	</div>
-	</div>
-</header>
+		<a class="navsearch center" href="{{ site.baseurl }}/search">
+			 <i class="fas fa-search"></i> Search
+		</a>
+			<a class="head-item" href="{{ site.baseurl | prepand: site.url }}"> <i class="fas fa-home"></i> </a>
+ 			<a class="head-item" href="{{ site.baseurl | prepand: site.url }}/categories/"> <i class="fas fa-tags"></i> </a>
+			<a class="head-item" href="{{ site.baseurl | prepand: site.url }}/contact/"> <i class="fas fa-paper-plane"></i> </a>
+			<a class="head-item" href="{{ site.baseurl | prepand: site.url }}/staff/"> <i class="fas fa-user"></i> </a>		
 
+	</div>
+
+</header>
