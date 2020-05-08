@@ -4,9 +4,15 @@
 	<div class="center logo pc-logo2">{{ site.name }}</div>
 	</a>
 	<div class="headbar">
-		<a class="navsearch center" href="{{ site.baseurl }}/search">
-			 <i class="fas fa-search"></i> Search
-		</a>
+		<div class="srcdd">
+			<div class="navsearch center">
+				<i class="fas fa-search"></i> Search
+			</div>
+			<div class="srcddcon">
+				<script async src="https://cse.google.com/cse.js?cx=001763056047846418921:gcjyzfbyed0"></script>
+				<div class="gcse-search"></div> 
+			</div>
+		</div>
 			<a class="head-item" href="{{ site.baseurl | prepand: site.url }}"> <i class="fas fa-home"></i> </a>
  			<a class="head-item" href="{{ site.baseurl | prepand: site.url }}/categories/"> <i class="fas fa-tags"></i> </a>
 			<a class="head-item" href="{{ site.baseurl | prepand: site.url }}/contact/"> <i class="fas fa-paper-plane"></i> </a>
@@ -15,3 +21,4 @@
 	</div>
 
 </header>
+
