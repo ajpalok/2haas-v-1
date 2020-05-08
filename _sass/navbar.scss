@@ -1,6 +1,6 @@
 /* bottom fixed navbar */
 @media only screen and (max-width:900px){
-div.navbar{
+.navbar{
 	width:100%;
 	height: 50px;
 	bottom: 0;
@@ -15,7 +15,7 @@ div.navbar{
 	width: 20%;
 }
 
-div.nav-item{
+.nav-item{
 	color:#000;
 	font-size: 20px;
 	padding: 14.50px 0px;
@@ -23,7 +23,7 @@ div.nav-item{
 	text-align: center;
 	display:block;
 }
-div.nav-item a{
+.nav-item a{
 	color:#000;
 	text-decoration:none;
 }
@@ -31,5 +31,5 @@ div.nav-item a{
 
 
 @media only screen and (min-width:900px){
-div.navbar{ display: none; }
+.navbar{ display: none; }
 }
