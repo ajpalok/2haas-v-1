@@ -1,7 +1,19 @@
-<title> {{ page.title }} </title>
+    {% assign title = '' %}
+    {% if page.layout == 'author' %}
+        {% assign title = page.name %}
+    {% elsif page.title %}
+        {% assign title = page.title | append: " | " | append: site.name %}
+    {% else %}
+        {% assign title = site.title %}
+    {% endif %}
+
+<title>{{ title }}</title>
+
+
 {% if page.description %}
 <meta name="description" content="{{ page.description }}">
 {% endif %}
+
 {% if page.tags %}
 <meta name="keywords" content="{{ page.tags | join: ", " }}">
 {% endif %}
