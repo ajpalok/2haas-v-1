@@ -1,7 +1,7 @@
 ---
 date: 2020-06-24 10:55:40
 title: How I Draw The Daffodil
-description: 
+description: Starting to draw at medium level.. How I draw this daffodil flower.. Watch this video inside..
 image: https://res.cloudinary.com/thaas/image/upload/v1590519787/PicsArt_05-27-12.52.04_cv3bk7.jpg
 category: 'drawing'
 tags: [2haas,draw,drawing,Sketch,sketching,art,artworks,daffodil,daffodils,daffodil flower,daffodil bulbs,daffodils flowers,daffodils not blooming,how to draw daffodils,how to grow daffodils]
@@ -16,7 +16,7 @@ Drawing:
 
 Starting to draw at medium level.. How I draw this daffodil flower.. Watch this video.. 
 
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 I find this photo as "How to grow Daffodils" in someone's post. Started to draw but can't satisfied with the drawing..
   
