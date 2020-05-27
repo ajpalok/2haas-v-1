@@ -6,7 +6,7 @@ disqus_username: disqus_awXlUkG4f9
 email: 2haas2016@gmail.com
 
 # advance settings
-url: "2haas.ml"
+url: "https://2haas.ml"
 baseurl: ""
 markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
