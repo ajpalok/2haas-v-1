@@ -7,7 +7,7 @@ category: 'drawing'
 tags: [2haas,draw,drawing,Sketch,sketching,art,artworks,daffodil,daffodils,daffodil flower,daffodil bulbs,daffodils flowers,daffodils not blooming,how to draw daffodils,how to grow daffodils]
 author: ajpalok
 ---
-title: Daffodil
+title: How I Draw The Daffodil
 
 Art Work by: Abrar Jahin
 
@@ -16,7 +16,7 @@ Drawing:
 
 Starting to draw at medium level.. How I draw this daffodil flower.. Watch this video.. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NsSFVHE4Xqw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 I find this photo as "How to grow Daffodils" in someone's post. Started to draw but can't satisfied with the drawing..
   
