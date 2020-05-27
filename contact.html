@@ -3,22 +3,29 @@ layout: page
 title: Contact Us
 ---
 
-<h3>Contact Us</h3>
+<!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v7.0'
+          });
+        };
 
-  <form method="POST" action="https://formspree.io/{{ site.email }}">
-	<label for="fname">First Name</label> <br>
-	<input type="text" id="fname" name="firstname" placeholder="Enter Your First Name" required><br>
-	<label for="mname">Middle Name</label><br>
-	<input type="text" id="mname" name="middlename" placeholder="Enter Your Middle Name"><br>
-	<label for="lname">Last Name</label><br>
-	<input type="text" id="lname" name="lastname" placeholder="Enter Your Last Name" required><br>
-	<label for="email">Email</label><br>
-	<input type="text" id="email" name="Email" placeholder="Enter Your Email Name" required><br>
-	<label for="phnno">Phone Number</label><br>
-	<input type="text" id="phnno" name="phnno" placeholder="Enter Your Phone Number"><br>
-	<label for="msg">Message</label><br>
-	<textarea type="text" id="msg" name="msg" required>Enter Your Message...</textarea><br>
-<br>
-	<input type="submit" value="Submit">
-  </form>
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
 
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="192847997804847"
+  theme_color="#000000"
+  logged_in_greeting="Hi! How can we help you?"
+  logged_out_greeting="Hi! How can we help you?">
+      </div>
