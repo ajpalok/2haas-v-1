@@ -50,9 +50,19 @@ input[type=submit] {
 	<input type="text" id="phnno" name="entry.1647617613" placeholder="Enter Your Phone Number"><br>
 	<label>Message</label> <br>
 	<textarea type="text" id="msg" required name="entry.1366472684">Enter Your Message...</textarea>
+<br>
+<div class="g-recaptcha" data-sitekey="6LcdAd8UAAAAAN8I-bElew57dKsCLyrXXCspFVTd"></div>
+
 <br><br>
 	<input type="submit" value="Sent">
 </fieldset>
 </form>
 </center>
+
+
+<script type="text/javascript">var submitted=false;</script>
+     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='{{ site.baseurl }}/contact/message-sent/';}"></iframe>
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 
