@@ -3,6 +3,70 @@ layout: page
 title: Contact Us
 ---
 
+<style>
+
+.conbox{
+	margin-left: 25%;
+	width: 40%;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 5%;
+
+}
+input[type=text]{
+	width: 50%;
+	height: 20px;
+	padding: 0 20px;
+	border: 1px solid #333;
+	border-radius: 10px;
+}
+
+input[type=submit] {
+	background-color: #ff3333;
+	width: 60%;
+	height: 20px;
+	padding: 0 20px;
+	border: 1px solid #ff3333;
+	border-radius: 10px;
+}
+#msg{
+    width: 50%;
+	height: 50px;
+	padding: 0 20px;
+	border: 1px solid #333;
+	border-radius: 10px;
+	resize: none;
+}
+
+</style>
+
+<div class="conbox">
+
+<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdvTLauxbA-c0SfX_rqgSnstfWdTtCiayLXi0opewd-1fShNQ/formResponse" target="hidden_iframe"
+    onsubmit="submitted=true;">
+	<label>First Name</label> <br> 
+	<input type="text" id="fname" name="entry.101572816" placeholder="Enter Your First Name" required><br>
+	<label>Middle Name</label> <br>
+	<input type="text" id="mname" name="entry.300322282" placeholder="Enter Your Middle Name"><br>
+	<label>Last Name</label> <br>
+	<input type="text" id="lname" name="entry.1804055142" placeholder="Enter Your Last Name" required><br>
+	<label>Email</label> <br>
+	<input type="text" id="email" name="emailAddress" placeholder="Enter Your Email Name" required><br>
+	<label>Subject</label> <br>
+	<input type="text" id="subject" name="entry.1727332767" placeholder="Enter The Subject" required><br>
+	<label>Phone Number</label> <br>
+	<input type="text" id="phnno" name="entry.1647617613" placeholder="Enter Your Phone Number"><br>
+	<label>Message</label> <br>
+	<textarea type="text" id="msg" required name="entry.1366472684">Enter Your Message...</textarea>
+<br><br>
+	<input type="submit" value="Sent">
+  </form>
+</div>
+
+<br><br>
+<center><h3> or </h3></center>
+<br><br>
+
 <script>
       window.fbAsyncInit = function() {
         FB.init({
@@ -31,3 +95,4 @@ title: Contact Us
         <blockquote></blockquote>
       </div>
     </div>
+<br><br>
