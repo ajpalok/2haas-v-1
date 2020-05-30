@@ -27,7 +27,7 @@ That image:
 ______________________________________________
 Also available on:
 
-Website: [2haas](https://2haas.ml/)
+Website: https://2haas.ml/  
 Facebook: https://facebook.com/2haas  
 Twitter: https://twitter.com/2haas_ml  
 Instagram: https://instagram.com/2haas.ml  
