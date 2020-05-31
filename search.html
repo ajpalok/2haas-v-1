@@ -39,12 +39,7 @@ SimpleJekyllSearch({
   resultsContainer: document.getElementById('results-container'),
   json: '{{ site.baseurl }}/search.json',
   searchResultTemplate: '<tr>
-<td><dl><dt><a href="{url}"><h1>{title}</h1></a></dt><dd><span>{date}</span><br><br><p>    {% if page.description %}
-        {% assign description = page.description | strip_html | strip_newlines | truncate: 160 %}
-    {% else %}
-        {% assign description = site.description %}
-    {% endif %}
-</p></dd></dl></td>
+<td><dl><dt><a href="{url}"><h1>{title}</h1></a></dt><dd><span>{date}</span><br> </dd></dl></td>
 </tr>',
   noResultsText: "<li>No result found!</li>"
 })
