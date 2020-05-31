@@ -22,13 +22,11 @@ input[type=text]{
 <center><h3>Search</h3></center>
 
 <center>
-<div class="search-container">
-
 
 <input type="text" id="search-input" placeholder="Search...">
 
-<ul type="none" id="results-container"></ul>
-</div>
+<table id="results-container"></table>
+
 </center>
 
 <!-- Script pointing to search-script.js -->
@@ -40,7 +38,14 @@ SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
   json: '{{ site.baseurl }}/search.json',
-  searchResultTemplate: '<li><dl><dt><a href="{url}"><h1>{title}</h1></a></dt><dd><span>{date}</span></dd></dl></li>',
+  searchResultTemplate: '<tr>
+<td><dl><dt><a href="{url}"><h1>{title}</h1></a></dt><dd><span>{date}</span><br><br><p>    {% if page.description %}
+        {% assign description = page.description | strip_html | strip_newlines | truncate: 160 %}
+    {% else %}
+        {% assign description = site.description %}
+    {% endif %}
+</p></dd></dl></td>
+</tr>',
   noResultsText: "<li>No result found!</li>"
 })
 </script>
