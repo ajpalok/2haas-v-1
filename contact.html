@@ -35,35 +35,19 @@ input[type=submit] {
 <center>
 <fieldset>
     <legend>Contact</legend>
-<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdvTLauxbA-c0SfX_rqgSnstfWdTtCiayLXi0opewd-1fShNQ/formResponse" target="hidden_iframe"
-    onsubmit="submitted=true;">
-	<label>First Name</label> <br> 
-	<input type="text" id="fname" name="entry.101572816" placeholder="Enter Your First Name" required><br>
-	<label>Middle Name</label> <br>
-	<input type="text" id="mname" name="entry.300322282" placeholder="Enter Your Middle Name"><br>
-	<label>Last Name</label> <br>
-	<input type="text" id="lname" name="entry.1804055142" placeholder="Enter Your Last Name" required><br>
+<form action="{{ site.baseurl }}/contact/message-sent/" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true>
+	<label>Full Name</label> <br> 
+	<input type="text" name="name" placeholder="Enter Your Full Name" required><br>
 	<label>Email</label> <br>
-	<input type="text" id="email" name="emailAddress" placeholder="Enter Your Email Name" required><br>
-	<label>Subject</label> <br>
-	<input type="text" id="subject" name="entry.1727332767" placeholder="Enter The Subject" required><br>
-	<label>Phone Number</label> <br>
-	<input type="text" id="phnno" name="entry.1647617613" placeholder="Enter Your Phone Number"><br>
+	<input type="text" name="email" placeholder="Enter Your Email Name" required><br>
 	<label>Message</label> <br>
-	<textarea type="text" id="msg" required name="entry.1366472684">Enter Your Message...</textarea>
+	<textarea type="text" required name="message">Enter Your Message...</textarea>
 <br>
-<div class="g-recaptcha" data-sitekey="6LcdAd8UAAAAAN8I-bElew57dKsCLyrXXCspFVTd"></div>
+
 
 <br><br>
 	<input type="submit" value="Sent">
 </fieldset>
 </form>
 </center>
-
-
-<script type="text/javascript">var submitted=false;</script>
-     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='{{ site.baseurl }}/contact/message-sent/';}"></iframe>
-
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
 
