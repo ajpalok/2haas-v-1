@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   repo: 2hwd/m-ws
   branch: master
-  site_domain: 2haas.ml
+  site_domain: https://2haas.ml
 media_folder: "/images/upload"
 publish_mode: editorial_workflow
 display_url: https://2haas.ml
