@@ -17,3 +17,6 @@ collections:
 
 
 publish_mode: editorial_workflow
+display_url: https://your-site.com
+logo_url: https://2haas.ml/favicon.ico
+show_preview_links: true
