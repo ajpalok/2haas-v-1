@@ -8,6 +8,7 @@ media_library:
   config:
     cloud_name: thaas
     api_key: 966427422818518
+output_filename_only: true
 publish_mode: editorial_workflow
 display_url: https://2haas.ml
 logo_url: https://2haas.ml/favicon.ico
