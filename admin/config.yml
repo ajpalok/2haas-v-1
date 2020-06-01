@@ -152,12 +152,15 @@ collections:
       - label: "Facebook Username"
         name: "facebook_username"
         widget: "string"
+        hint: "Your Facebook ID's profile id code"
         required: false
       - label: "Twitter Username"
         name: "twitter_username"
         widget: "string"
+        hint: "Your Twitter ID's profile id code"
         required: false
       - label: "Instagram Username"
         name: "instagram_username"
         widget: "string"
+        hint: "Your Instagram ID only."
         required: false
