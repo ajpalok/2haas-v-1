@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: your-github-login/your-repo-name
   branch: master
   site_domain: something-random-40716.netlify.com
