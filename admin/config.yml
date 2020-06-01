@@ -3,7 +3,7 @@ backend:
   repo: 2hwd/m-ws
   branch: master
   site_domain: https://2haas.ml
-media_folder: "/images/upload/"
+media_folder: "/assets/img/upload/"
 publish_mode: editorial_workflow
 display_url: https://2haas.ml
 logo_url: https://2haas.ml/favicon.ico
