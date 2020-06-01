@@ -22,7 +22,7 @@ input[type=submit] {
 	border: 1px solid #ff3333;
 	border-radius: 10px;
 }
-#msg{
+msg{
     width: 50%;
 	height: 50px;
 	padding: 0 20px;
@@ -43,12 +43,12 @@ display: none;
 <div class="hidden">
     <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
 </div>
-	h<label>Full Name</label> <br>
+	<label>Full Name</label> <br>
 	<input type="text" name="name" placeholder="Enter Your Full Name" required><br>
 	<label>Email</label> <br> 
 	<input type="email" name="email" placeholder="Enter Your Email Name" required> <br>
 	<label>Message</label><br>
-	<textarea type="text" required name="message">Message: </textarea><br>
+	<textarea type="text" class="msg" required name="message">Message: </textarea><br>
 	<label>Files (If Necessary)<input type="file"/></label> 
 <br>
 
