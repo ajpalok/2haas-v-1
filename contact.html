@@ -31,15 +31,20 @@ input[type=submit] {
 	resize: none;
 }
 
+.hidden{display:none;}
+
 </style>
 <center>
 <fieldset>
     <legend>Contact</legend>
 <form action="{{ site.baseurl }}/contact/message-sent/" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true>
+<p class="hidden">
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+</p>
 	<label>Full Name</label> <br> 
 	<input type="text" name="name" placeholder="Enter Your Full Name" required><br>
 	<label>Email</label> <br>
-	<input type="text" name="email" placeholder="Enter Your Email Name" required><br>
+	<input type="email" name="email" placeholder="Enter Your Email Name" required><br>
 	<label>Message</label> <br>
 	<textarea type="text" required name="message">Enter Your Message...</textarea><br>
 	<label>Files (If Necessary)</label><br>
