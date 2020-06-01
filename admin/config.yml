@@ -3,7 +3,7 @@ backend:
   repo: 2hwd/m-ws
   branch: master
   site_domain: https://2haas.ml
-media_folder: "/assets/img/upload/"
+media_folder: "/assets/img/upload"
 public_folder: "/images/uploads"
 publish_mode: editorial_workflow
 display_url: https://2haas.ml
@@ -12,13 +12,13 @@ show_preview_links: true
 
 collections:
   - label: "Categories"
-    name: "category"
+    name: "categories"
     folder: "_categories"
     create: true
     editor:
       preview: false
     slug: "{{slug}}"
-    preview_path: "category/{{slug}}"
+    preview_path: "_categories/{{slug}}"
     extension: "md"
     fields:
       - label: "Layout"
@@ -68,9 +68,9 @@ collections:
         name: "category"
         widget: "relation"
         collection: "categories"
-        searchFields: ["title"]
-        valueField: "slug"
-        displayFields: ["title"]
+        searchFields: ["name"]
+        valueField: "short_name"
+        displayFields: ["name"]
       - label: "Tags"
         name: "tags"
         hint: "Separate with commas. These will also be used as keywords for search engines."
@@ -79,9 +79,9 @@ collections:
         name: "author"
         widget: "relation"
         collection: "authors"
-        displayFields: [display_name]
-        searchFields: [display_name]
-        valueField: "name"
+        displayFields: ["name"]
+        searchFields: ["name"]
+        valueField: "short_name"
       - label: "Body"
         name: "body"
         widget: "markdown"
