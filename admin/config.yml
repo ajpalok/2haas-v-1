@@ -1,9 +1,9 @@
 backend:
   name: git-gateway
-  repo: your-github-login/your-repo-name
+  repo: 2hwd/m-ws
   branch: master
-  site_domain: something-random-40716.netlify.com
-media_folder: "images/uploads"
+  site_domain: 2haas.ml
+media_folder: "/images/upload"
 collections:
   - name: "post" # Used in routes, e.g. /admin/collections/blog
     label: "Post" # Used in the UI
