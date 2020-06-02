@@ -10,3 +10,40 @@ display_url: https://2haas.ml
 logo_url: https://2haas.ml/favicon.ico
 show_preview_links: true
 
+collections:
+  - label: "Posts"
+    name: "posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "{{title}}"
+    extension: "md"
+    fields:
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD HH:mm:ss"
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "post"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Description"
+        name: "description"
+        hint: "This will be used across the pages and for search engines."
+        widget: "string"
+      - label: "Featured Image"
+        name: "image"
+        widget: "image"
+        allow_multiple: false
+        required: false
+      - label: "Tags"
+        name: "tags"
+        hint: "Separate with commas. These will also be used as keywords for search engines."
+        widget: "list"
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+  
