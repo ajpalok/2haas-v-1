@@ -27,16 +27,16 @@ layout: home
                         </div>
 			<div class="postinfoitem"> {{ post.date | date: '%B %d, %Y' }} </div>
 		</div><br>
-			<div class="p-container">
-				<p>
+			<p class="p-container">
+				
 				{% assign author = site.authors | where: 'short_name', page.author | first %}
                                 {% if author %}
-                                	<a href="{{ site.baseurl }}{{ author.url }}">{{ author.name }}</a>
+                                	<a hrhef="{{ site.baseurl }}{{ author.url }}">{{ author.name }}</a>
                                 {% endif %}
 
 				{{ post.excerpt | strip_html | truncate: 250 }} <a class="more" href="{{ site.baseurl }}{{ post.url }}">more</a>
-				</p>
-			</div>
+				
+			</p>
 	</article>
 {% endfor %}
 
