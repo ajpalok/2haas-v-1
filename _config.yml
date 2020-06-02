@@ -17,7 +17,6 @@ permalink: /:tags/:title/
 # pagination plugin
 plugins:
   - jekyll-paginate
-  - jekyll-sitemap
 paginate: 6
 paginate_path: /page-:num
 source: .
