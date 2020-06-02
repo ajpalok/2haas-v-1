@@ -6,9 +6,9 @@ layout: home
 {% for post in paginator.posts %}
 
 	<article role="article" class="post-container">
-		<div class="post-header">
-			<h1><a href='{{ site.baseurl }}{{ post.url }}'>{{ post.title }}</a></h1>
-		</div>
+		<h1 class="post-header">
+			<a href='{{ site.baseurl }}{{ post.url }}'>{{ post.title }}</a>
+		</h1>
 		<div class="post-image">
 			<a href='{{ site.baseurl }}{{ post.url }}'>
 			{% if post.image %}    
