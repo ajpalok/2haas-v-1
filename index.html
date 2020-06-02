@@ -9,15 +9,15 @@ layout: home
 		<h1 class="post-header">
 			<a href='{{ site.baseurl }}{{ post.url }}'>{{ post.title }}</a>
 		</h1>
-		<div class="post-image">
-			<a href='{{ site.baseurl }}{{ post.url }}'>
+		
+			<a class="post-image" href='{{ site.baseurl }}{{ post.url }}'>
 			{% if post.image %}    
 			<img src="{{ post.image }}">
 			{% else %}
 			<img src="{{ "/assets/img/off.jpg" | prepend: site.baseurl }}">
 			{% endif %} 
 			</a>
-		</div>
+		
                 <div class="postinfo">
 			<div class="postinfoitem"> 
 				{% assign category = site.categories | where: 'short_name', page.category | first %}
