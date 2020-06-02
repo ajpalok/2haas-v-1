@@ -4,9 +4,9 @@ layout: default
 <article class="middle column1">
 
        <div role="article" class="post-container">
-		<div class="post-header">
-			<h1>{{ page.title }}</h1>
-		</div><br>
+		<h1 class="post-header">
+			{{ page.title }}
+		</h1><br>
 		<div class="post-image">
 			{% if page.image %}    
 			<img src="{{ page.image }}" alt="Featured Photo">
@@ -52,19 +52,19 @@ layout: default
 
 <aside class="middle column2">
 
-		<div class="post-header"><h1><center>Read Next:</center></h1></div>
+		<h2 class="post-header"><center>Read Next:</center></h2>
                       
                         {% assign next_posts = site.posts | where_exp:"post","post.path != page.path" %}
                         {% assign shuffled_array = next_posts | shuffle %}
                         {% for post in shuffled_array limit:3 %}
                             
-					<div class="post-header">
-                                            <a href="{{ site.baseurl }}{{ post.url }}">
+					
+                                            <a class="post-header" href="{{ site.baseurl }}{{ post.url }}">
 			                        <h1>{{ post.title }}</h1>
                                             </a>
-					</div><br>
-		                  <div class="post-image">
-                                         <a href="{{ site.baseurl }}{{ post.url }}">
+					<br>
+		                  
+                                         <a class="post-image" href="{{ site.baseurl | prepend: post.url }}">
 			                 {% if post.image %}    
 			                 <img src="{{ post.image }}">
 			                 {% else %}
