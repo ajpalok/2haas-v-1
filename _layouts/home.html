@@ -11,6 +11,7 @@ layout: default
 <aside class="middle column2">
 
 	<table>
+	<tr><td>
 		{% for author in site.authors %}
 	<tr>
 		<td rowspan="2">
@@ -26,6 +27,7 @@ layout: default
 		</td>
 	</tr>
 			{% endfor %}
+	</td></tr>
 	<tr>
 	{% include links.html %}
 	</tr>
