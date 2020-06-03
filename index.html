@@ -5,9 +5,7 @@ layout: home
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
 
-	<article role="article" class="post-container">
 		<table>
-       
 		<tr>
 			<th colspan="2"><h1><a href='{{ site.baseurl }}{{ post.url }}'>{{ post.title }}</a><h1></th>
 		</tr>
@@ -44,7 +42,7 @@ layout: home
 			</td>
 		</tr>
 	</table>
-	</article>
+
 {% endfor %}
 
 <center>
