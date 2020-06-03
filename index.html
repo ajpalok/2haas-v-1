@@ -30,7 +30,7 @@ layout: home
 			<td> {{ post.date | date: '%B %d, %Y' }} </td>
 		</tr>
 		<tr>
-			<td>
+			<td colspan="2">
 				<p>
 				{% assign author = site.authors | where: 'short_name', page.author | first %}
                                 {% if author %}
