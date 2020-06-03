@@ -4,10 +4,11 @@ layout: default
 <article class="middle column1">
 <table>
        
-		<tr colspan="2">
-			<th><h1>{{ page.title }}</h1></th>
+		<tr>
+			<th colspan="2"><h1>{{ page.title }}</h1></th>
 		</tr>
-		<tr colspan="2"><td>
+		<tr>
+			<td colspan="2">
 			{% if page.image %}    
 			<img src="{{ page.image }}" alt="Featured Photo">
 			{% else %}
@@ -24,8 +25,8 @@ layout: default
             </td>
 			<td> {{ page.date | date: '%B %d, %Y' }} </td>
 		</tr>
-		<tr colspan="2">
-		<td>
+		<tr>
+		<td colspan="2">
 			<p>
 			{% assign author = site.authors | where: 'short_name', page.author | first %}
 			{% if author %}
