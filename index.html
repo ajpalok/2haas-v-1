@@ -6,18 +6,18 @@ layout: home
 {% for post in paginator.posts %}
 
 	<article role="article" class="post-container">
-		<h1 class="post-header">
-			<a href='{{ site.baseurl }}{{ post.url }}'>{{ post.title }}</a>
-		</h1>
-		
-			<a class="post-image" href='{{ site.baseurl }}{{ post.url }}'>
+		<div class="post-header">
+			<h1><a href='{{ site.baseurl }}{{ post.url }}'>{{ post.title }}</a><h1>
+		</div>
+		<div class="post-image">
+			<a href='{{ site.baseurl }}{{ post.url }}'>
 			{% if post.image %}    
 			<img src="{{ post.image }}">
 			{% else %}
 			<img src="{{ "/assets/img/off.jpg" | prepend: site.baseurl }}">
 			{% endif %} 
 			</a>
-		
+		</div>
                 <div class="postinfo">
 			<div class="postinfoitem"> 
 				{% assign category = site.categories | where: 'short_name', page.category | first %}
@@ -27,16 +27,16 @@ layout: home
                         </div>
 			<div class="postinfoitem"> {{ post.date | date: '%B %d, %Y' }} </div>
 		</div><br>
-			<p class="p-container">
-				
+			<div class="p-container">
+				<p>
 				{% assign author = site.authors | where: 'short_name', page.author | first %}
                                 {% if author %}
                                 	<a hrhef="{{ site.baseurl }}{{ author.url }}">{{ author.name }}</a>
                                 {% endif %}
 
 				{{ post.excerpt | strip_html | truncate: 250 }} <a class="more" href="{{ site.baseurl }}{{ post.url }}">more</a>
-				
-			</p>
+				</p>
+			</div>
 	</article>
 {% endfor %}
 
