@@ -10,11 +10,9 @@ layout: default
 
 <aside class="middle column2">
 
-	<div class="alhome">
-		<table>
-			<tr>
-			{% for author in site.authors %}
-	              	   <tr>
+	<table>
+		{% for author in site.authors %}
+	<tr>
 		<td rowspan="2">
 			<a href="..{{ author.url | prepend: site.baseurl }}"><img class="proimg proimgbb" src="{{ author.profile_image }}"/></a>
 		</td>
@@ -28,12 +26,10 @@ layout: default
 		</td>
 	</tr>
 			{% endfor %}
-	</tr>
 	<tr>
 	{% include links.html %}
 	</tr>
-		</table>
-	</div>
+	</table>
 
 </aside>
 
