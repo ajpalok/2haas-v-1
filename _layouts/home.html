@@ -11,7 +11,6 @@ layout: default
 <aside class="middle column2">
 
 	<table>
-	<tr><td>
 		{% for author in site.authors %}
 	<tr>
 		<td rowspan="2">
@@ -26,12 +25,10 @@ layout: default
 			<a href="..{{ author.url | prepend: site.baseurl }}"><h2 class="proposition">{{ author.position }}</h2></a>
 		</td>
 	</tr>
-			{% endfor %}
-	</td></tr>
-	<tr>
-	{% include links.html %}
-	</tr>
+		{% endfor %}
 	</table>
+	
+	{% include links.html %}
 
 </aside>
 
