@@ -2,30 +2,30 @@
 layout: default
 ---
 <article class="middle column1">
-
-       <div role="article" class="post-container">
-		<div class="post-header">
-			<h1>{{ page.title }}</h1>
-		</div><br>
-		<div class="post-image">
+<table>
+       
+		<th colspan="2">
+			<td><h1>{{ page.title }}</h1></td>
+		</th><br>
+		<tr colspan="2"></td>
 			{% if page.image %}    
 			<img src="{{ page.image }}" alt="Featured Photo">
 			{% else %}
 			<img src="{{ "/assets/img/off.jpg" | prepend: site.baseurl }}" alt="No Featured Photo Available"> 
 			{% endif %} 
-		</div><br>
-                <div class="postinfo">
-			<div class="postinfoitem"> 
+		</tr><br>
+                <tr>
+			<td> 
 				<div class="post-categories">
 					{% assign category = site.categories | where: 'short_name', page.category | first %}
                                 {% if category %}
                                 	<a href="{{ site.baseurl }}{{ category.url }}">{{ category.name }}</a>
                                 {% endif %}
 				</div>
-                        </div>
-			<div class="postinfoitem"> {{ page.date | date: '%B %d, %Y' }} </div>
-		</div><br>
-		<div class="p-container">
+                        </td>
+			<td> {{ page.date | date: '%B %d, %Y' }} </td>
+		</tr><br>
+		<tr colspan="2">
 			<p>
 			{% assign author = site.authors | where: 'short_name', page.author | first %}
 			{% if author %}
@@ -45,9 +45,9 @@ layout: default
 				{% endfor %}
 		{% include comments.html %}
 		{% include share.html %}
-		</div>
-	</div>
-
+		</tr>
+	
+</table>
 </article>
 
 <aside class="middle column2">
