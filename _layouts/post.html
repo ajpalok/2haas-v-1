@@ -53,19 +53,22 @@ layout: default
 </article>
 
 <aside class="middle column2">
-
-		<div class="post-header"><center><h2>Read Next:</h2></center></div>
-                      
+<table>
+	<tr>
+		<th><h2>Read Next:</h2></th>
+	</tr>
                         {% assign next_posts = site.posts | where_exp:"post","post.path != page.path" %}
                         {% assign shuffled_array = next_posts | shuffle %}
                         {% for post in shuffled_array limit:3 %}
-                            
-				<div class="post-header">
+	<tr>
+		<td>
                                 	<a href="{{ site.baseurl }}{{ post.url }}">
 			                      <h1>{{ post.title }}</h1>
                                         </a>
-				</div><br>
-				<div class="post-header">
+		</td>
+	</tr>
+	<tr>
+		<td>
                                          <a class="post-image" href="{{ site.baseurl }}{{ post.url }}">
 			                 {% if post.image %}    
 			                 <img src="{{ post.image }}">
@@ -73,9 +76,9 @@ layout: default
 			                 <img src="{{ "/assets/img/off.jpg" | prepend: site.baseurl }}">
 			                 {% endif %} 
                                          </a>
-				</div><br>
+		</td>
 
-
+	</tr>
                         {% endfor %}
 	{% include links.html %}
 </aside>
