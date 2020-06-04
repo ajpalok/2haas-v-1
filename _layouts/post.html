@@ -61,11 +61,11 @@ layout: default
                         {% assign shuffled_array = next_posts | shuffle %}
                         {% for post in shuffled_array limit:3 %}
 	<tr>
-		<td>
+		<th>
                                 	<a href="{{ site.baseurl }}{{ post.url }}">
 			                      <h1>{{ post.title }}</h1>
                                         </a>
-		</td>
+		</th>
 	</tr>
 	<tr>
 		<td>
