@@ -36,10 +36,11 @@ img{
 	width: 100%;
 }
 
-iframe {
+iframe, blockquote, embed, object{
 	width: 96%;
 	margin-left: 2%;
 	margin-right: 2%;
 	margin-top: 13px;
 	margin-bottom: 13px;
 }
+
