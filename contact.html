@@ -31,18 +31,12 @@ msg{
 	resize: none;
 }
 
-.hidden{
-display: none;
-}
-
 </style>
 <center>
+<form action="{{ site.baseurl }}/contact/message-sent/" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true>
+
 <fieldset>
     <legend>Contact</legend>
-<form action="{{ site.baseurl }}/contact/message-sent/" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true>
-<div class="hidden">
-    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-</div>
 	<label>Full Name</label> <br>
 	<input type="text" name="name" placeholder="Enter Your Full Name" required><br>
 	<label>Email</label> <br> 
