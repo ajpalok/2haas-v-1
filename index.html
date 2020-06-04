@@ -5,7 +5,7 @@ layout: home
 {% for post in paginator.posts %}
 		<table>
 		<tr>
-			<th colspan="2"><h1><a href='{{ site.baseurl }}{{ post.url }}'>{{ post.title }}</a></h1></th>
+			<th colspan="2"><a href='{{ site.baseurl }}{{ post.url }}'><h1>{{ post.title }}</h1></a></th>
 		</tr>
 		<tr>
 			<td colspan="2">
@@ -19,21 +19,21 @@ layout: home
 			</td>
 		</tr>
                 <tr>
-			<td> 
+			<th> 
 				{% assign category = site.categories | where: 'short_name', page.category | first %}
                                 {% if category %}
                                 	<a href="{{ site.baseurl }}{{ category.url }}">{{ category.name }}</a>
                                 {% endif %}
-                        </td>
-			<td> {{ post.date | date: '%B %d, %Y' }} </td>
+                        </th>
+			<th> {{ post.date | date: '%B %d, %Y' }} </th>
 		</tr>
 		<tr>
 			<td colspan="2">
 				<p>
 				{% assign author = site.authors | where: 'short_name', page.author | first %}
                                 {% if author %}
-                                	<a hrhef="{{ site.baseurl }}{{ author.url }}">{{ author.name }}</a>
-                                {% endif %}
+                                	<a href="{{ site.baseurl }}{{ author.url }}">{{ author.name }}</a>
+                                {% endif %}<br>
 				{{ post.excerpt | strip_html | truncate: 250 }} <a class="more" href="{{ site.baseurl }}{{ post.url }}">more</a>
 				</p>
 			</td>
