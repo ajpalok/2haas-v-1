@@ -17,13 +17,13 @@ layout: default
 			</td>
 		</tr>
                 <tr>
-			<td> 
-					{% assign category = site.categories | where: 'short_name', page.category | first %}
+			<th> 
+				{% assign category = site.categories | where: 'short_name', page.category | first %}
                                 {% if category %}
                                 	<a href="{{ site.baseurl }}{{ category.url }}">{{ category.name }}</a>
                                 {% endif %}
-            </td>
-			<td> {{ page.date | date: '%B %d, %Y' }} </td>
+            		</th>
+			<th> {{ page.date | date: '%B %d, %Y' }} </th>
 		</tr>
 		<tr>
 		<td colspan="2">
