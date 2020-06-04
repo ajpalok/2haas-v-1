@@ -22,7 +22,7 @@ input[type=submit] {
 	border: 1px solid #ff3333;
 	border-radius: 10px;
 }
-msg{
+.msg{
     width: 50%;
 	height: 50px;
 	padding: 0 20px;
@@ -33,17 +33,17 @@ msg{
 
 </style>
 <center>
-<form action="{{ site.baseurl }}/contact/message-sent/" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+<form action="/contact/message-sent/" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
 
 <fieldset>
     <legend>Contact</legend>
-	<label>Full Name</label> <br>
+	Full Name <br>
 	<input type="text" name="name" placeholder="Enter Your Full Name" required><br>
-	<label>Email</label> <br> 
+	Email <br> 
 	<input type="email" name="email" placeholder="Enter Your Email Name" required> <br>
-	<label>Message</label><br>
+	Message<br>
 	<textarea type="text" class="msg" required name="message">Message: </textarea><br>
-	<label>Files (If Necessary)<input type="file"/></label> 
+	Files (If Necessary)<input type="file"/>
 <br>
 
   <div data-netlify-recaptcha="true"></div>
