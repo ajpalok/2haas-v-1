@@ -1,0 +1,44 @@
+.share{
+	width:auto;
+	max-width:800px;
+	float:none;
+	display:block;
+	margin-right:auto;
+	margin-left:auto;
+	padding-left:0;
+	padding-right:0;
+	text-align:center;
+	border-top:1px solid #f2f2f2;
+	padding-top:1.25rem;
+	margin-top:.625rem
+}
+.share::after{
+	content:'';
+	display:table;
+	clear:both
+}
+@media (min-width: 37.5rem){
+.share{
+	margin-top:3.125rem
+}}
+article .share{
+	border-top:none
+}
+.share svg{
+	margin:.9375rem;
+	width:35px;
+	height:35px
+}
+.share a{
+	text-decoration:none;
+	border:none;
+}
+.share .icon{
+	transition:all 0.3s
+}
+.share .icon-twitter:hover{
+	fill:#1da1f3
+}
+.share .icon-facebook:hover{
+	fill:#3b5998
+}
