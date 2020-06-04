@@ -22,7 +22,7 @@
 	color: #f1f1f1;
 }
 
-.srbtn::before i{
+.srbtn::before{
 	content: "";
 	height: 120%;
 	width: 120%;
@@ -33,13 +33,13 @@
 	top: 90%;
 }
 
-.stbtn:hover::before i{
+.stbtn:hover::before{
 	animation: aaa 0.7s 1;
 	top: -10%;
 	left:-10%;
 }
 
-@keyframe{
+@keyframe aaa{
 	0%{
 		left: -110%;
 		top: 90%;
