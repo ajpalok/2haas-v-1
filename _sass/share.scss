@@ -13,5 +13,19 @@
 
 .srbtn i{
 	line-height: 90px;
-	Font-size: 30px;
+	font-size: 30px;
+	transition: 0.2s linier;
+}
+
+.srbtn:hover i{
+	transform: scale(1.3);
+	color: #f1f1f1;
+}
+
+.srbtn::before{
+	content: "";
+	height: 120%;
+	width: 120%;
+	position: absolute;
+	background: #3489db;
 }
