@@ -28,4 +28,28 @@
 	width: 120%;
 	position: absolute;
 	background: #3489db;
+	transform: rotate(45deg);
+	left: -110%;
+	top: 90%;
+}
+
+.stbtn:hover::before{
+	animation: aaa 0.7s 1;
+	top: -10%;
+	left:-10%;
+}
+
+@keyframe{
+	0%{
+		left: -110%;
+		top: 90%;
+	}
+	50%{
+		top: 30%;
+		left: -10%;
+	}
+	100%{
+		top: -10%;
+		left:-10%;
+	}
 }
