@@ -26,7 +26,11 @@
 	margin-left: 10%;
 	margin-right: 10%;
 }
-
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .column1{
 	float: left;
 	width: 60%;
