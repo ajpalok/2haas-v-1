@@ -1,7 +1,8 @@
-.srbtn{
+.srbtnfb{
 	display: inline-block;
 	width: 90px;
 	height: 90px;
+	color: #5f67a3;
 	background-color: #f1f1f1;
 	margin: 10px;
 	border-radius: 30%;
@@ -9,35 +10,69 @@
 	overflow: hidden;
 	position: relative;
 }
-.srbtnfb{color: #5f67a3;}
-.srbtntwitter{color: #56ccf0;}
-.srbtn i{
+
+.srbtntwitter{
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	color: #56ccf0;
+	background-color: #f1f1f1;
+	margin: 10px;
+	border-radius: 30%;
+	box-shadow: 0 5px 15px -5px #00000070;
+	overflow: hidden;
+	position: relative;
+}
+
+.srbtnfb i{
+	line-height: 90px;
+	font-size: 30px;
+	transition: 0.2s linier;
+}
+.srbtntwitter i{
 	line-height: 90px;
 	font-size: 30px;
 	transition: 0.2s linier;
 }
 
-.srbtn:hover i{
+.srbtnfb:hover i{
 	transform: scale(1.3);
+	color: #5f67a3;
+}
+.srbtntwitter:hover i{
+	transform: scale(1.3);
+	color: #56ccf0;
 }
 
-.srbtnfb:hover i{color: #5f67a3;}
-.srbtntwitter:hover i{color: #56ccf0;}
 
-.srbtn::before{
+.srbtnfb::before{
 	content: "";
 	height: 120%;
 	width: 120%;
+	background: #5f67a3;
+	position: absolute;
+	transform: rotate(45deg);
+	left: -110%;
+	top: 90%;
+}
+.srbtntwitter::before{
+	content: "";
+	height: 120%;
+	width: 120%;
+	background: #56ccf0;
 	position: absolute;
 	transform: rotate(45deg);
 	left: -110%;
 	top: 90%;
 }
 
-.srbtnfb::before{background: #5f67a3;}
-.srbtntwitter::before{background: #56ccf0;}
+.srbtnfb:hover::before{
+	animation: aaa 0.7s 1;
+	top: -10%;
+	left:-10%;
+}
 
-.stbtn:hover::before{
+.srbtntwitter:hover::before{
 	animation: aaa 0.7s 1;
 	top: -10%;
 	left:-10%;
