@@ -10,11 +10,17 @@ layout: home
 		<tr>
 			<td colspan="2">
 			<a href='{{ site.baseurl }}{{ post.url }}'>
-			{% if post.image %}    
-			<img src="{{ post.image }}">
-			{% else %}
-			<img src="{{ "/assets/img/off.jpg" | prepend: site.baseurl }}">
-			{% endif %} 
+			{% if post.image %}
+                        <img src="/assets/img/placeholder.png" width="100%" data-url="{{ post.image }}" class="preload">
+                                <noscript>
+                                    <img src="{{ post.image }}" width="100%">
+                                </noscript>
+                        {% else %}
+                                <img src="/assets/img/placeholder.png" width="100%" data-url="/assets/img/off.jpg" class="preload">
+                                <noscript>
+                                    <img src="/assets/img/off.jpg" width="100%">
+                                </noscript>
+                        {% endif %}
 			</a>
 			</td>
 		</tr>
