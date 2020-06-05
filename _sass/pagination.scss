@@ -17,9 +17,9 @@ ul.pagination li a {
 }
 
 ul.pagination li a.active {
-    background-color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    background-color: red;
     color: white;
-    border: 1px solid radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    border: 1px solid red;
 }
 
 ul.pagination li a:hover:not(.active) {background-color: #e0e0e0;}
