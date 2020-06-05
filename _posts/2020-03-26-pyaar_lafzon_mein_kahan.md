@@ -6,7 +6,7 @@ description: This work is done from a TV series named "Pyaar Lafzon Mein Kahan" 
 image: https://res.cloudinary.com/thaas/image/upload/v1587390397/90746306_869640146792292_4012353397041659904_o.jpg_lmlk1g.jpg
 category: 'sketch'
 tags: [2haas, sketch, murat, hayat, pencil_sketch, sketch_art, romance, romantic scene, pyaar lafzon mein kahan]
-author: abrarjahin
+author: ajpalok
 ---
 
 Title: Pyaar Lafzon Mein Kahan
