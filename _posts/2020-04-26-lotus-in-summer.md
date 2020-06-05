@@ -4,8 +4,33 @@ title: Lotus In Summer
 description: This is a Drawing of a Lotus
 image: https://res.cloudinary.com/thaas/image/upload/v1587921307/IMG_20200426_151607_630_vvrkdk.jpg
 category: drawing
-tags: [2haas,draw,drawing,Sketch,sketching,art,artworks,Oil pastel,Oil,oil,oil pastel,Pastel,pastel,Lotus flower,lotus,how to draw with oil pastels,how to draw with oil pastel,corona,update,Stayhome,WithMe,lotus evija,how to draw,how to,how]
-author: abrarjahin
+tags:
+  - 2haas
+  - draw
+  - drawing
+  - Sketch
+  - sketching
+  - art
+  - artworks
+  - Oil pastel
+  - Oil
+  - oil
+  - oil pastel
+  - Pastel
+  - pastel
+  - Lotus flower
+  - lotus
+  - how to draw with oil pastels
+  - how to draw with oil pastel
+  - corona
+  - update
+  - Stayhome
+  - WithMe
+  - lotus evija
+  - how to draw
+  - how to
+  - how
+author: ajpalok
 ---
 
 Title: Lotus In Summer
