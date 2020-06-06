@@ -53,11 +53,24 @@
 
 
     <!-- Social: Facebook / Open Graph -->
-    <meta property="og:url" content="{{ url }}">
-    <meta property="og:title" content="{{ title }}">
-    <meta property="og:image" content="{{ image }}">
-    <meta property="og:description" content="{{ description }}">
-    <meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:image" content="{{ site.url }}{{ page.image }}" />
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="article:publisher" content="https://www.facebook.com/2haas" />
+<meta property="article:author" content="https://www.facebook.com/aj.palok5" />
+<meta property="article:published_time" content="{{ page.date }}" />
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
+    <!-- Social: Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta name="twitter:site" content="@2haas_ml" />
+<meta name="twitter:creator" content="@aj_palok">
+<meta name="twitter:card" content="summary">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon" />
