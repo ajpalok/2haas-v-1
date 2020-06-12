@@ -12,6 +12,46 @@
    <!-- Include the script that allows Netlify CMS login -->
 
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  
+
+  <script>
+    CMS.registerPreviewStyle("/assets/css/preview.css");
+  </script>
+
+
+<script>
+    var PostPreview = createClass({
+      render: function() {
+           return h('table', {},
+                         h('tr', {},
+                                   h('th', {'colspan': '2'},
+                                              h('h1', {}, entry.getIn(['data', 'title'])
+                                               )
+                                    )
+                          ),
+                         h('tr', {},
+                                   h('td', {'colspan': '2'},
+                                              h('img', {'src': this.props.getAsset(entry.getIn(['data', 'image']))}
+                                               )
+                                    )
+                          ),
+                         h('tr', {},
+                                   h('td', {}, entry.getIn(['data', 'category'])
+                                    ),
+                                   h('td', {}, entry.getIn(['data', 'date'])
+                                    )
+                          ),
+                         h('tr', {},
+                                   h('td', {'colspan': '2'},
+                                              h('p', this.props.widgetFor('body')
+                                               )
+                                    )
+                          ),
+                   )
+      }
+    });
+
+    CMS.registerPreviewTemplate('posts', PostPreview);
+  </script>
+
 </body>
 </html>
