@@ -11,7 +11,7 @@ layout: home
 			<td colspan="2">
 			<a href='{{ site.baseurl }}{{ post.url }}'>
 			{% if post.image %}    
-			<img src="{{ post.image }}" alt="Featured Photo">
+			<img src="{{ post.image }}" alt="{{ page.title }}'s Featured Photo">
 			{% else %}
 			<img src="{{ "/assets/img/off.jpg" | prepend: site.baseurl }}" alt="No Featured Photo Available"> 
 			{% endif %}
