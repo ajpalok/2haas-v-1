@@ -21,41 +21,23 @@
 <script>
     var PostPreview = createClass({
       render: function() {
-          var entry = this.props.entry;
-          var heading = entry.getIn(['data', 'page_title']);
+
+        var entry = this.props.entry;
+
+        var elements = [];
+
+        var postTitle = h('h1', {'className': 'post-title'}, entry.getIn(['data', 'title']));
+        elements.push(postTitle);
+
           var image = entry.getIn(['data', 'image']);
           var bg = this.props.getAsset(image);
-          var category = entry.getIn(['data', 'category']);;
-          var date = entry.getIn(['data', 'date']);
-          var body =  this.props.widgetFor('body');
+          var featuredImage = h('img', {'className': 'post-cover', 'src': bg.toString()});
+          elements.push(featuredImage);
 
-        return h('table', {},
-                         h('tr', {},
-                                   h('th', {'colspan': '2'},
-                                              h('h1', {}, heading
-                                               )
-                                    )
-                          ),
-                         h('tr', {},
-                                   h('td', {'colspan': '2'},
-                                            h('img', {'className': 'post-cover', 'src': bg.toString()}
-                                              )
-                                    )
-                          ),
-                         h('tr', {},
-                                   h('td', {}, category
-                                    ),
-                                   h('td', {}, date
-                                    )
-                          ),
-                         h('tr', {},
-                                   h('td', {'colspan': '2'},
-                                              h('p', this.props.widgetFor('body')
-                                               )
-                                    )
-                          )
-                   );
+        var body = h('div', {'className': 'text'}, this.props.widgetFor('body'));
+        elements.push(body);
 
+        return h('div', {}, elements);
       }
     });
 
