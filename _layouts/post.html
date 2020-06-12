@@ -72,9 +72,9 @@ layout: default
 		<td>
                                          <a class="post-image" href="{{ site.baseurl }}{{ post.url }}">
 			                 {% if post.image %}    
-			                 <img src="{{ post.image }}">
+			                 <img src="{{ post.image }}" alt="{{ post.title }}'s Featured Photo">
 			                 {% else %}
-			                 <img src="{{ "/assets/img/off.jpg" | prepend: site.baseurl }}">
+			                 <img src="{{ "/assets/img/off.jpg" | prepend: site.baseurl }}" alt="No Feature Photo">
 			                 {% endif %} 
                                          </a>
 		</td>
