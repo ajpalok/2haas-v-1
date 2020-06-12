@@ -21,18 +21,40 @@
 <script>
     var PostPreview = createClass({
       render: function() {
-           var entry = this.props.entry;
-           var elements = [];
-
+          var entry = this.props.entry;
+          var heading = entry.getIn(['data', 'page_title']);
           var image = entry.getIn(['data', 'image']);
           var bg = this.props.getAsset(image);
-          var featuredImage = h('img', {'src': bg.toString()});
-          elements.push(featuredImage);
+          var category = entry.getIn(['data', 'category']);;
+          var date = entry.getIn(['data', 'date']);;
+          var body =  this.props.widgetFor('body');
 
-        var body = h('p', {}, this.props.widgetFor('body'));
-        elements.push(body);
-
-        return h('div', {}, elements);
+        return h('table', {},
+                         h('tr', {},
+                                   h('th', {'colspan': '2'},
+                                              h('h1', {}, heading
+                                               )
+                                    )
+                          ),
+                         h('tr', {},
+                                   h('td', {'colspan': '2'},
+                                            h('img', {'className': 'post-cover', 'src': bg.toString()}
+                                              )
+                                    )
+                          ),
+                         h('tr', {},
+                                   h('td', {}, category
+                                    ),
+                                   h('td', {}, date
+                                    )
+                          ),
+                         h('tr', {},
+                                   h('td', {'colspan': '2'},
+                                              h('p', this.props.widgetFor('body')
+                                               )
+                                    )
+                          ),
+                   )
 
       }
     });
