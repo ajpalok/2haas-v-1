@@ -2,19 +2,10 @@
 date: 2020-06-11T23:51:47.000Z
 layout: post
 title: Macro Eye Sketch | 2HAAS | Draw Your Imagination
-description: "I have brought a set of pencils in different shades.. After that
-  washed my hands to use the pencils.. You also wash your hands to watch this
-  video 🤣.. This drawing is drawn from a frame of Pinterest  .. Read more
-  on:   https://2haas.ml/macro-eye-sketch"
-image: /eye_macro_full_pflyhn.jpg
+description: "I have brought a set of pencils in different shades.. After that washed my hands to use the pencils.. You also wash your hands to watch this video 🤣.. This drawing is drawn from a frame of Pinterest  .. Read more on:   https://2haas.ml/macro-eye-sketch"
+image: https://res.cloudinary.com/thaas/image/upload/v1591957167/eye_macro_full_pflyhn.jpg
 category: sketch
-tags:
-  - 2haas
-  - 2HAAS
-  - sketch
-  - sketching
-  - eye
-  - eye drawing
+tags: [2haas,2HAAS,sketch,Sketch,sketch ideas,eye drawing,how to draw an eye,how to sketch something]
 author: ajpalok
 ---
 
