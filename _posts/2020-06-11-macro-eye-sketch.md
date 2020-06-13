@@ -19,9 +19,9 @@ Watch the video:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YE015XPPOVE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Here I used **Artline** pencils (HB, 4B, 10B). Graphites are so soft to draw, simply love it. We can see many videos in online like **How To Draw Eye**, **Eye Drawings**, **realistic eye drawing** etc. So I thought, "Why not just draw the same thing but little bit different?" And done in 1 and half hours
+Here I used **Artline** pencils (HB, 4B, 10B). Graphites are so soft to draw, simply loved it. We can see many videos in online like **How To Draw Eye**, **Eye Drawings**, **realistic eye drawing** etc. So I thought, "Why not just draw the same thing but little bit different?" And done in 1 and half hours
 
-#2haas #sketch #eye
+#2haas #sketch #eye  
 ______________________________________________
   
 Also available on:
