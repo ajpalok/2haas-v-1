@@ -89,7 +89,6 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
-        buttons: "bold, italic, code, link, heading-one, heading-two, heading-three, heading-four, heading-five, heading-six, quote, bulleted-list, numbered-list"
   - label: "Pages"
     name: "pages"
     folder: "pages"
