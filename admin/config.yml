@@ -8,6 +8,7 @@ media_library:
   config:
     cloud_name: thaas
     api_key: 966427422818518
+    output_filename_only: false
 publish_mode: editorial_workflow
 display_url: https://2haas.ml
 logo_url: https://2haas.ml/favicon.ico
@@ -49,8 +50,8 @@ collections:
     fields:
       - label: "Publish Date"
         name: "date"
-        widget: "datetime"
-        format: "YYYY-MM-DD HH:mm:ss"
+        widget: "date"
+        format: "YYYY-MM-DD"
       - label: "Layout"
         name: "layout"
         widget: "hidden"
@@ -88,6 +89,7 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
+        
   - label: "Pages"
     name: "pages"
     folder: "pages"
