@@ -48,6 +48,8 @@ defaults:
     values:
       layout: "post"
 
+fbappid: "272668597418368"
+
 exclude: [
   'src',
   'node_modules',
