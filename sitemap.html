@@ -1,0 +1,21 @@
+---
+layout: page
+title: Sitemap | 2HAAS
+description: This page is a sitemap for all.
+permalink: /sitemap/
+---
+    {% for page in site.pages %}
+        <ul>
+            <li><a href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">{{page.title}}</a></li>
+        </ul>
+    {% endfor %}
+    {% for post in site.posts %}
+        <ul>
+            <li><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{post.title}}</a></li>
+        </ul>
+    {% endfor %}
+    {% for author in site.authors %}
+        <ul>
+            <li><a href="{{ author.url | prepend: site.baseurl | prepend: site.url }}">{{author.name}}</a></li>
+        </ul>
+    {% endfor %}
