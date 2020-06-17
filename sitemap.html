@@ -10,12 +10,6 @@ permalink: /sitemap/
             <li><a href="{{ author.url | prepend: site.baseurl | prepend: site.url }}">{{author.name}}</a></li>
         </ul>
     {% endfor %}
-<center><h1>Pages</h1></center>
-    {% for page in site.pages %}
-        <ul>
-            <li><a href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">{{page.title}}</a></li>
-        </ul>
-    {% endfor %}
 <center><h1>Posts</h1></center>
     {% for post in site.posts %}
         <ul>
