@@ -32,13 +32,6 @@
         {% assign description = site.description %}
     {% endif %}
 
-    {% assign tags = '' %}
-    {% if page.tags %}
-        {% assign tags = page.tags | strip_html | strip_newlines %}
-    {% else %}
-        {% assign tags = site.tags %}
-    {% endif %}
-
     {% assign url = '' %}
     {% if paginator.page_trail %}
         {% assign url = paginator.first_page_path | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
@@ -51,9 +44,11 @@
 
 <meta name="description" content="{{ description }}">
 
-
-<meta name="keywords" content="{{ tags | join: ", " }}">
-
+{% if page.tags %}
+<meta name="keywords" content="{{ page.tags | join: ", " }}">
+{% else %}
+<meta name="keywords" content="{{ site.tags | join: ", " }}">
+{% endif%}
 
     <!-- Social: Facebook / Open Graph -->
 <meta property="og:locale" content="en_US">
