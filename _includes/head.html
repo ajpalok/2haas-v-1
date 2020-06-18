@@ -45,10 +45,8 @@
 <meta name="description" content="{{ description }}">
 
 {% if page.tags %}
-<meta name="keywords" content="{{ page.tags | join: ", " }}">
-{% else %}
-<meta name="keywords" content="{{ site.tags | join: ", " }}">
-{% endif%}
+  <meta name="keywords" content="{{ page.tags | join: ', ' }}">
+{% endif %}
 
     <!-- Social: Facebook / Open Graph -->
 <meta property="og:locale" content="en_US">
