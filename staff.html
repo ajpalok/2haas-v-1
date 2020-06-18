@@ -10,7 +10,7 @@ description: Meet our respective Members and content creators of 2HAAS Family..
 	{% for author in site.authors %}
 	<tr>
 		<td rowspan="2">
-			<a href="..{{ author.url }}"><img class="proimg proimgbb" src="{{ author.profile_image }}"/></a>
+			<a href="{{ author.url }}"><img class="proimg proimgbb" src="{{ author.profile_image }}"/></a>
 		</td>
 		<th>
 			<h1 class="proname"><a href="..{{ author.url }}">{{ author.name }}</a></h1>
