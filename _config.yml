@@ -50,6 +50,7 @@ defaults:
       layout: "post"
 
 fbappid: "272668597418368"
+googleanalytics: "UA-159593309-1"
 
 exclude: [
   'src',
