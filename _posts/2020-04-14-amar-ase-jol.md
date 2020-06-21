@@ -12,7 +12,7 @@ Title: আমার আছে জল
 
 Art Work by: Abrar Jahin 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aPH-It6tL0I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Watch the <a href="https://youtu.be/aPH-It6tL0I">video.</a>
 
 
 I started my drawing again after 4 years. Now my old color lost the softness.. But tried to draw with the old color to pass the time. Comment below with some tips for me..
