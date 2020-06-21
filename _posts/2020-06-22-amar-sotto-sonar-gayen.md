@@ -27,9 +27,6 @@ tags:
   - black and white
 author: ajpalok
 ---
-`r`
-
-```
 Title: একবার যেতে দে না আমার ছোট্ট সোনার গাঁয়ে  
 
 Art Work by: Abrar Jahin 
@@ -66,5 +63,3 @@ Pinterest: [2HAAS](https://pinterest.com/2haas_ml)
 
 Music: একবার যেতে দে না আমার ছোট্ট সোনার গাঁয়ে  
 
-
-```
