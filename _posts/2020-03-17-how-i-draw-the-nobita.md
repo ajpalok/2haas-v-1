@@ -10,9 +10,7 @@ author: ajpalok
 ---
 ## About Nobita  
   
-Here comes the sketch of Nobita, the character of Doremon cartoon series.. The time lapse has been uploaded in previous post.. Watch here
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-YYUvtyo3H8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Here comes the sketch of Nobita, the character of Doremon cartoon series.. The time lapse has been uploaded in previous post.. Watch the <a href="https://www.youtube.com/embed/-YYUvtyo3H8">video.</a>
    
 He was a Goofy person who make shine in life with his dreams in future... So don't be so upset with your laggings. Try from the core of your heart that you love to do. You may will be successful in life..
   
