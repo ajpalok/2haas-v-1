@@ -3,7 +3,7 @@ date: 2020-06-11T23:51:47.000Z
 layout: post
 title: একবার যেতে দে না আমার ছোট্ট সোনার গাঁয়ে
 description: "This portrait is a scenario of a village in Bangladesh. very nice view with the scene of realty of poverty. Read more on: https://2haas.ml/amar-sotto-sonar-gayen"
-image: 
+image: "https://res.cloudinary.com/thaas/image/upload/v1592766922/village_temp_ekiqyd.jpg"
 category: sketch
 tags: [2haas,draw,drawing,Sketch,sketching,art,artworks,village,great,great scenario,poor,lockdown,quarantines,black lives matter,#YouTubeBlack,YouTubeBlack,White,black,black and white]
 author: ajpalok
