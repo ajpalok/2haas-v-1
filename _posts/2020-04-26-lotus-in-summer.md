@@ -40,10 +40,7 @@ Title: Lotus In Summer
 Art Work by: Abrar Jahin 
  
   
-This is a Drawing of a Lotus.. Drawing medium: Oil pastel. Watch the video:
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rXXKo9PcKpQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+This is a Drawing of a Lotus.. Drawing medium: Oil pastel. Watch the <a href="https://youtu.be/rXXKo9PcKpQ">video.</a>
 
 Dew to quarantine days, we are passing a bored time.. So try anything new from your self and develop that by practicing..
 Do anything new what ever you can or your ambition. This pandemic panic moment can also be use full for your..! You can do something new. Try and share with us on <a href="https://www.facebook.com/2haas">Facebook</a>
