@@ -1,5 +1,5 @@
 ---
-date: 2020-06-22
+date: 2020-06-22T00:00:00.000Z
 title: একবার যেতে দে না আমার ছোট্ট সোনার গাঁয়ে
 description: This portrait is a scenario of a village in Bangladesh. very nice
   view with the scene of realty of poverty. Read more
@@ -27,7 +27,7 @@ tags:
   - black and white
 author: ajpalok
 ---
-Title: একবার যেতে দে না আমার ছোট্ট সোনার গাঁয়ে  
+# Title: একবার যেতে দে না আমার ছোট্ট সোনার গাঁয়ে  
 
 Art Work by: Abrar Jahin 
 
@@ -35,7 +35,7 @@ This portrait is a scenario of a village in Bangladesh. very nice view with the 
 
 At the ending, we tried to show you that White is not enough. Black also can set the beauty of white. 
 
-------------------------------------------------------------------------------------
+- - -
 
 Watch more:
 
@@ -43,7 +43,7 @@ Macro Eye Sketch: https://youtu.be/YE015XPPOVE
 
 How I Draw The Daffodil: https://youtu.be/NsSFVHE4Xqw
 
-------------------------------------------------------------------------------------
+- - -
 
 Also available on:
 
@@ -57,9 +57,6 @@ Instagram: [2HAAS](https://instagram.com/2haas.ml)
 
 Pinterest: [2HAAS](https://pinterest.com/2haas_ml)  
 
-  
+- - -
 
-------------------------------------------------------------------------------------
-
-Music: একবার যেতে দে না আমার ছোট্ট সোনার গাঁয়ে  
-
+Music: একবার যেতে দে না আমার ছোট্ট সোনার গাঁয়ে
