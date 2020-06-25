@@ -8,34 +8,5 @@
 <body>
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <script>
-    CMS.registerPreviewStyle("/assets/css/preview.css");
-  </script>
-<script>
-    var PostPreview = createClass({
-      render: function() {
-
-        var entry = this.props.entry;
-
-        var elements = [];
-
-        var postTitle = h('h1', {'className': 'post-title'}, entry.getIn(['data', 'title']));
-        elements.push(postTitle);
-
-          var image = entry.getIn(['data', 'image']);
-          var bg = this.props.getAsset(image);
-          var featuredImage = h('img', {'className': 'post-cover', 'src': bg.toString()});
-          elements.push(featuredImage);
-
-        var body = h('div', {'className': 'text'}, this.props.widgetFor('body'));
-        elements.push(body);
-
-        return h('div', {}, elements);
-      }
-    });
-
-    CMS.registerPreviewTemplate('posts', PostPreview);
-  </script>
-
-</body>
+  </body>
 </html>
