@@ -3,69 +3,64 @@ layout: home
 ---
 
 {% for post in paginator.posts %}
-		<table>
-		<tr>
-			<th colspan="2"><a href='{{ site.baseurl }}{{ post.url }}'><h1>{{ post.title }}</h1></a></th>
-		</tr>
-		<tr>
-			<td colspan="2">
-			<a href='{{ site.baseurl }}{{ post.url }}'>
-			{% if post.image %}    
-			<img src="{{ post.image }}" alt="{{ post.title }}'s Featured Photo">
-			{% else %}
-			<img src="{{ "/assets/img/off.jpg" | prepend: site.baseurl }}" alt="No Featured Photo Available"> 
-			{% endif %}
-			</a>
-			</td>
-		</tr>
-                <tr>
-			<th> 
-				{% assign category = site.categories | where: 'short_name', page.category | first %}
-                                {% if category %}
-                                	<a href="{{ site.baseurl }}{{ category.url }}">{{ category.name }}</a>
-                                {% endif %}
-                        </th>
-			<th> <p>{{ post.date | date: '%B %d, %Y' }}</p> </th>
-		</tr>
-		<tr>
-			<td colspan="2">
-				<p>
-				{% assign author = site.authors | where: 'short_name', page.author | first %}
-                                {% if author %}
-                                	<a href="{{ site.baseurl }}{{ author.url }}">{{ author.name }}</a>
-                                {% endif %}<br>
-				{{ post.excerpt | strip_html | truncate: 250 }} <a class="more" href="{{ site.baseurl }}{{ post.url }}">more</a>
-				</p>
-			</td>
-		</tr>
-		</table>
-
+<table>
+<tr>
+<th colspan="2"><a href='{{ site.baseurl }}{{ post.url }}'><h2>{{ post.title }}</h2></a></th>
+</tr>
+<tr>
+<td colspan="2">
+<a href='{{ site.baseurl }}{{ post.url }}'>
+{% if post.image %}    
+<img src="{{ post.image }}" alt="{{ post.title }}'s Featured Photo">
+{% else %}
+<img src="{{ "/assets/img/off.jpg" | prepend: site.baseurl }}" alt="No Featured Photo Available"> 
+{% endif %}
+</a>
+</td>
+</tr>
+<tr>
+<th> 
+{% assign category = site.categories | where: 'short_name', page.category | first %}
+{% if category %}
+<a href="{{ site.baseurl }}{{ category.url }}">{{ category.name }}</a>
+{% endif %}
+</th>
+<th> <p>{{ post.date | date: '%B %d, %Y' }}</p> </th>
+</tr>
+<tr>
+<td colspan="2">
+<p>
+{% assign author = site.authors | where: 'short_name', page.author | first %}
+{% if author %}
+<a href="{{ site.baseurl }}{{ author.url }}">{{ author.name }}</a>
+{% endif %}<br>
+{{ post.excerpt | strip_html | truncate: 250 }} <a class="more" href="{{ site.baseurl }}{{ post.url }}">more</a>
+</p>
+</td></tr>
+</table>
 {% endfor %}
-
 <center>
 {% if paginator.total_pages > 1 %}
 <ul class="pagination">
-  {% if paginator.previous_page %}
-     <li><a href="{{ paginator.previous_page_path | relative_url }}">&laquo;</a></li>
-  {% else %}
-    <li><a>&laquo;</a></li>
-  {% endif %}
-
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-  <li><a class="active">{{ page }}</a></li>
-    {% elsif page == 1 %}
-      <li><a href="{{ paginator.previous_page_path | relative_url }}">{{ page }}</a></li>
-    {% else %}
-      <li><a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a></li>
-    {% endif %}
-  {% endfor %}
-
-  {% if paginator.next_page %}
-    <li><a href="{{ paginator.next_page_path | relative_url }}">&raquo;</a></li>
-  {% else %}
-    <li><a>&raquo;</a></li>
-  {% endif %}
+{% if paginator.previous_page %}
+<li><a href="{{ paginator.previous_page_path | relative_url }}">&laquo;</a></li>
+{% else %}
+<li><a>&laquo;</a></li>
+{% endif %}
+{% for page in (1..paginator.total_pages) %}
+{% if page == paginator.page %}
+<li><a class="active">{{ page }}</a></li>
+{% elsif page == 1 %}
+<li><a href="{{ paginator.previous_page_path | relative_url }}">{{ page }}</a></li>
+{% else %}
+<li><a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a></li>
+{% endif %}
+{% endfor %}
+{% if paginator.next_page %}
+<li><a href="{{ paginator.next_page_path | relative_url }}">&raquo;</a></li>
+{% else %}
+<li><a>&raquo;</a></li>
+{% endif %}
 </ul>
 {% endif %}
 </center>
