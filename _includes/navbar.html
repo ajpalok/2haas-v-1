@@ -1,6 +1,6 @@
 <!-- fixed bottom navbar -->
 	<div class="navbar">
-		<a class="nav-item center" href="{{ site.baseurl }}"> <i class="fas fa-home"></i></a>
+		<a class="nav-item center" href="{{ site.baseurl | prepand: site.url }}"> <i class="fas fa-home"></i></a>
 		<a class="nav-item center" href="{{ site.baseurl | prepand: site.url }}/search/"><i class="fas fa-search"></i></a>
 		<a class="nav-item center" href="{{ site.baseurl | prepand: site.url }}/categories/"><i class="fas fa-tags"></i></a>
 		<a class="nav-item center" href="{{ site.baseurl | prepand: site.url }}/contact/"><i class="fas fa-paper-plane"></i></a>
