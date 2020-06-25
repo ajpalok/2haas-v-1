@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
   repo: 2hwd/m-ws
   branch: master
   site_domain: https://2haas.ml
