@@ -1,29 +1,51 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ site.language }}">
+<head>
+{% include head.html %}
+</head>
+<body>
+{% include header.html %}
+{% include navbar.html %}
+<div class="main">
+<div class="main-container">
 <div class="row">
 <article class="middle column1">
-	{{ content }}
+{{ content }}
 </article>
 <aside class="middle column2">
-	<table>
-		{% for author in site.authors %}
-	<tr>
-		<td rowspan="2">
-			<a href="..{{ author.url | prepend: site.baseurl }}"><img class="proimg proimgbb" src="{{ author.profile_image }}" alt="{{author.name}}'s profile picture"/></a>
-		</td>
-		<td>
-			<a href="..{{ author.url | prepend: site.baseurl }}"><h1 class="proname">{{ author.name }}</h1></a>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a href="..{{ author.url | prepend: site.baseurl }}"><h2 class="proposition">{{ author.position }}</h2></a>
-		</td>
-	</tr>
-		{% endfor %}
-	</table>
-	{% include footer.html %}
-
+<table>
+{% for author in site.authors %}
+<tr>
+<td rowspan="2">
+<a href="..{{ author.url | prepend: site.baseurl }}"><img class="proimg proimgbb" src="{{ author.profile_image }}" alt="{{author.name}}'s profile picture"/></a>
+</td>
+<td>
+<a href="/{{ author.url | prepend: site.baseurl }}"><h1 class="proname">{{ author.name }}</h1></a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/{{ author.url | prepend: site.baseurl }}"><h2 class="proposition">{{ author.position }}</h2></a>
+</td>
+</tr>
+{% endfor %}
+</table>
+{% include footer.html %}
 </aside>
 </div>
+</div>
+</div>
+</body>
+</html>
+<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script defer>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
