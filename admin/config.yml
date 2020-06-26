@@ -15,6 +15,50 @@ logo_url: https://2haas.ml/favicon.ico
 show_preview_links: true
 
 collections:
+  - label: "Authors"
+    name: "authors"
+    folder: "_authors/"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "author"
+      - label: "Photo"
+        name: "profile_image"
+        widget: "image"
+        required: false
+        hint: "Use a square picture"
+      - label: "Short URL Name"
+        name: "short_name"
+        widget: "string"
+      - label: "Diplay Name"
+        name: "name"
+        widget: "string"
+      - label: "Position"
+        name: "position"
+        widget: "string"
+        required: false
+      - label: "Bio"
+        name: "body"
+        widget: "text"
+      - label: "Facebook Username"
+        name: "facebook_username"
+        widget: "string"
+        hint: "Your Facebook ID's profile id code"
+        required: false
+      - label: "Twitter Username"
+        name: "twitter_username"
+        widget: "string"
+        hint: "Your Twitter ID's profile id code"
+        required: false
+      - label: "Instagram Username"
+        name: "instagram_username"
+        widget: "string"
+        hint: "Your Instagram ID only."
+        required: false
   - label: "Categories"
     name: "categories"
     folder: "_categories"
@@ -129,47 +173,3 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
-  - label: "Authors"
-    name: "authors"
-    folder: "_authors/"
-    create: true
-    editor:
-      preview: false
-    fields:
-      - label: "Layout"
-        name: "layout"
-        widget: "hidden"
-        default: "author"
-      - label: "Photo"
-        name: "profile_image"
-        widget: "image"
-        required: false
-        hint: "Use a square picture"
-      - label: "Short URL Name"
-        name: "short_name"
-        widget: "string"
-      - label: "Diplay Name"
-        name: "name"
-        widget: "string"
-      - label: "Position"
-        name: "position"
-        widget: "string"
-        required: false
-      - label: "Bio"
-        name: "body"
-        widget: "text"
-      - label: "Facebook Username"
-        name: "facebook_username"
-        widget: "string"
-        hint: "Your Facebook ID's profile id code"
-        required: false
-      - label: "Twitter Username"
-        name: "twitter_username"
-        widget: "string"
-        hint: "Your Twitter ID's profile id code"
-        required: false
-      - label: "Instagram Username"
-        name: "instagram_username"
-        widget: "string"
-        hint: "Your Instagram ID only."
-        required: false
