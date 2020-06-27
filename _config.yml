@@ -7,7 +7,7 @@ tags: [2haas, 2HAAS, drawings, drawing, sketching, sketch, pencil sketch, oil pa
 
 # advance settings
 url: "https://2haas.ml"
-baseurl: "m-ws"
+baseurl: ""
 markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 highlighter: rouge
