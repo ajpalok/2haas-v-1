@@ -1,8 +1,7 @@
 backend:
-  name: github
+  name: git-gateway
   repo: 2HAAS/m-ws
   branch: master
-  api_root: https://api.github.com
   site_domain: https://2haas.ml
 media_library:
   name: cloudinary
@@ -11,10 +10,8 @@ media_library:
     api_key: 966427422818518
     output_filename_only: false
 publish_mode: editorial_workflow
-display_url: https://2haas.ml
 logo_url: https://2haas.ml/favicon.ico
 show_preview_links: true
-
 collections:
   - label: "Authors"
     name: "authors"
