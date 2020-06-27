@@ -17,7 +17,7 @@
 {% for author in site.authors %}
 <tr>
 <td rowspan="2">
-<a href="..{{ author.url | prepend: site.baseurl }}"><img class="proimg proimgbb" src="{{ author.profile_image }}" alt="{{author.name}}'s profile picture"/></a>
+<a href="/{{ author.url | prepend: site.baseurl }}"><img class="proimg proimgbb" src="{{ author.profile_image }}" alt="{{author.name}}'s profile picture"/></a>
 </td>
 <td>
 <a href="/{{ author.url | prepend: site.baseurl }}"><h1 class="proname">{{ author.name }}</h1></a>
@@ -37,8 +37,8 @@
 </div>
 </body>
 </html>
-<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script defer>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
       if (!user) {
