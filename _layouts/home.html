@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="{{ site.language }}">
-<head>
-{% include head.html %}
-</head>
-<body>
-{% include header.html %}
-{% include navbar.html %}
-<div class="main">
-<div class="main-container">
+---
+layout: default
+---
 <div class="row">
 <article class="middle column1">
 {{ content }}
@@ -33,19 +26,3 @@
 {% include footer.html %}
 </aside>
 </div>
-</div>
-</div>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
-</body>
-</html>
