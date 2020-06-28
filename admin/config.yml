@@ -15,3 +15,28 @@ logo_url: https://2haas.ml/favicon.ico
 show_preview_links: true
 
 collections:
+  - label: "Categories"
+    name: "categories"
+    folder: "_categories"
+    create: true
+    editor:
+      preview: false
+    slug: "{{slug}}"
+    preview_path: "_categories/{{slug}}"
+    extension: "md"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "category"
+      - label: "Title"
+        name: "name"
+        widget: "string"
+      - label: "Slug"
+        name: "short_name"
+        widget: "hidden"
+        default: "{{slug}}"
+      - label: "Description"
+        name: "description"
+        widget: "string"
+        required: false
