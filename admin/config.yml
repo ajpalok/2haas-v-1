@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
-  repo: 2HAAS/m-ws
   branch: master
+  repo: 2HAAS/m-ws
   site_domain: https://2haas.ml
 media_library:
   name: cloudinary
