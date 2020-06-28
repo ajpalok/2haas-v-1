@@ -1,1 +1,17 @@
+backend:
+  name: git-gateway
+  repo: 2HAAS/m-ws
+  branch: master
+  site_domain: https://2haas.ml
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: thaas
+    api_key: 966427422818518
+  output_filename_only: true
+publish_mode: editorial_workflow
+display_url: https://2haas.ml
+logo_url: https://2haas.ml/favicon.ico
+show_preview_links: true
 
+collections:
