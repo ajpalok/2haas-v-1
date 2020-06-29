@@ -1,10 +1,24 @@
 ---
-date: 2020-06-29T00:00:00.000Z
+date: 2020-06-29
 title: Badol Diner Prothom Kodom Ful
 description: "Kadamba, A flower of rainy season. During raining, Kadamba makes the environment adorable.."
 image: "https://res.cloudinary.com/thaas/image/upload/v1593450091/Badol_Diner_Prothom_Kodom_Ful_yt_thumb_vom7e2.jpg"
 category: drawing
-tags: [2haas,draw,drawing,Sketch,sketching,art,artworks,kodom ful,kodom,fBadol Diner Prothom Kodom Ful,https://2haas.ml/badol-diner-prothom-kodom-ful,rabindra songs,rabindranath,Tagore]
+tags:
+  - 2haas
+  - draw
+  - drawing
+  - Sketch
+  - sketching
+  - art
+  - artworks
+  - kodom ful
+  - kodom
+  - Badol Diner Prothom Kodom Ful
+  - https://2haas.ml/badol-diner-prothom-kodom-ful
+  - rabindra songs
+  - rabindranath
+  - Tagore
 author: ajpalok
 ---
 Title: Badol Diner Prothom Kodom Ful
