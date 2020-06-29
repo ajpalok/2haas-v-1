@@ -1,5 +1,5 @@
 ---
-date: 2020-06-29
+date: 2020-06-29T00:00:00.000Z
 title: Badol Diner Prothom Kodom Ful
 description: "Kadamba, A flower of rainy season. During raining, Kadamba makes the environment adorable.."
 image: "https://res.cloudinary.com/thaas/image/upload/v1593450091/Badol_Diner_Prothom_Kodom_Ful_yt_thumb_vom7e2.jpg"
