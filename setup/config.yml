@@ -23,7 +23,7 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "author"}
       - {label: "Photo", name: "profile_image", widget: "image", required: "false", hint: "Use a square picture"}
-      - {label: "Short URL Name" name: "short_name" widget: "string"}
+      - {label: "Short URL Name", name: "short_name", widget: "string"}
       - {label: "Diplay Name", name: "name", widget: "string"}
       - {label: "Position", name: "position", widget: "string", required: "false"}
       - {label: "Bio", name: "body", widget: "markdown"}
