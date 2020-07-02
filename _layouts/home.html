@@ -10,15 +10,15 @@ layout: default
 {% for author in site.authors %}
 <tr>
 <td rowspan="2">
-<a href="/{{ author.url | prepend: site.baseurl }}"><img class="proimg proimgbb" src="{{ author.profile_image }}" alt="{{author.name}}'s profile picture"/></a>
+<a href="{{site.url}}/{{ author.url | prepend: site.baseurl }}"><img class="proimg proimgbb" src="{{site.baseurl | prepend : site.url}}{{ author.profile_image }}" alt="{{author.name}}'s profile picture"/></a>
 </td>
 <td>
-<a href="/{{ author.url | prepend: site.baseurl }}"><h1 class="proname">{{ author.name }}</h1></a>
+<a href="{{site.url}}/{{ author.url | prepend: site.baseurl }}"><h1 class="proname">{{ author.name }}</h1></a>
 </td>
 </tr>
 <tr>
 <td>
-<a href="/{{ author.url | prepend: site.baseurl }}"><h2 class="proposition">{{ author.position }}</h2></a>
+<a href="{{site.url}}/{{ author.url | prepend: site.baseurl }}"><h2 class="proposition">{{ author.position }}</h2></a>
 </td>
 </tr>
 {% endfor %}
