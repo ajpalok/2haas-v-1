@@ -13,7 +13,7 @@ layout: default
 			{% if page.image %}    
 			<img src="{{ page.image }}" alt="{{ page.title }}'s Featured Photo">
 			{% else %}
-			<img src="{{ "/assets/img/off.jpg" | prepend: site.baseurl }}" alt="No Featured Photo Available"> 
+			<img src="{{site.url}}{{ "/assets/img/off.jpg" | prepend: site.baseurl }}" alt="No Featured Photo Available"> 
 			{% endif %}
 			</td>
 		</tr>
@@ -21,7 +21,7 @@ layout: default
 			<th> 
 				{% assign category = site.categories | where: 'short_name', page.category | first %}
                                 {% if category %}
-                                	<a href="{{ site.baseurl }}{{ category.url }}">{{ category.name }}</a>
+                                	<a href="{{ site.baseurl | prepend : site.url }}{{ category.url }}">{{ category.name }}</a>
                                 {% endif %}
             		</th>
 			<th> <p>{{ page.date | date: '%B %d, %Y' }}</p> </th>
@@ -31,7 +31,7 @@ layout: default
 			<p>
 			{% assign author = site.authors | where: 'short_name', page.author | first %}
 			{% if author %}
-			<a href="{{ site.baseurl }}{{ author.url }}">{{ author.name }}</a>
+			<a href="{{ site.baseurl | prepend : site.url }}{{ author.url }}">{{ author.name }}</a>
 			{% endif %}
 			{{ content }}
 			</p>
@@ -42,7 +42,7 @@ layout: default
 				{% assign tags = page.tags %}
 				{% endif %}
 				{% for tag in tags %}
-					<a class="tags" href="{{site.baseurl}}/tags/#{{tag|slugize}}">#{{tag}}</a>
+					<a class="tags" href="{{site.baseurl | prepend : site.url}}/tags/#{{tag|slugize}}">#{{tag}}</a>
 				{% unless forloop.last %}&nbsp;{% endunless %}
 				{% endfor %}
 		{% include comments.html %}
@@ -63,18 +63,18 @@ layout: default
                         {% for post in shuffled_array limit:3 %}
 	<tr>
 		<th>
-                                	<a href="{{ site.baseurl }}{{ post.url }}">
+                                	<a href="{{ site.baseurl | prepend : site.url }}{{ post.url }}">
 			                      <h1>{{ post.title }}</h1>
                                         </a>
 		</th>
 	</tr>
 	<tr>
 		<td>
-                                         <a class="post-image" href="{{ site.baseurl }}{{ post.url }}">
+                                         <a class="post-image" href="{{ site.baseurl | prepend : site.url }}{{ post.url }}">
 			                 {% if post.image %}    
 			                 <img src="{{ post.image }}" alt="{{ post.title }}'s Featured Photo">
 			                 {% else %}
-			                 <img src="{{ "/assets/img/off.jpg" | prepend: site.baseurl }}" alt="No Featured Photo">
+			                 <img src="{{site.url}}{{ "/assets/img/off.jpg" | prepend: site.baseurl }}" alt="No Featured Photo">
 			                 {% endif %} 
                                          </a>
 		</td>
