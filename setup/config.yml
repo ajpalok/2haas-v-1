@@ -19,6 +19,8 @@ collections:
     create: true
     editor:
       preview: false
+    slug: "{{slug}}"
+    preview_path: "_authors/{{slug}}"
     fields:
       - label: "Layout"
         name: "layout"
