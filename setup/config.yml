@@ -21,43 +21,23 @@ collections:
     editor:
       preview: false
     fields:
-      - label: "Layout"
-        name: "layout"
-        widget: "hidden"
-        default: "author"
-      - label: "Photo"
-        name: "profile_image"
-        widget: "image"
-        required: false
-        hint: "Use a square picture"
-      - label: "Short URL Name"
-        name: "short_name"
-        widget: "string"
-      - label: "Diplay Name"
-        name: "name"
-        widget: "string"
-      - label: "Position"
-        name: "position"
-        widget: "string"
-        required: false
-      - label: "Bio"
-        name: "body"
-        widget: "markdown"
-      - label: "Facebook Username"
-        name: "facebook_username"
-        widget: "string"
-        hint: "Your Facebook ID's profile id code"
-        required: false
-      - label: "Twitter Username"
+      - {label: "Layout" name: "layout" widget: "hidden" default: "author"}
+      - {label: "Photo" name: "profile_image" widget: "image" required: "false" hint: "Use a square picture"}
+      - {label: "Short URL Name" name: "short_name" widget: "string"}
+      - {label: "Diplay Name" name: "name" widget: "string"}
+      - {label: "Position" name: "position" widget: "string" required: "false"}
+      - {label: "Bio" name: "body" widget: "markdown"}
+      - {label: "Facebook Username" name: "facebook_username" widget: "string" hint: "Your Facebook ID's profile id code" required: "false"}
+      - {label: "Twitter Username"
         name: "twitter_username"
         widget: "string"
         hint: "Your Twitter ID's profile id code"
-        required: false
-      - label: "Instagram Username"
+        required: "false"}
+      - {label: "Instagram Username"
         name: "instagram_username"
         widget: "string"
         hint: "Your Instagram ID only."
-        required: false
+        required: "false"}
   - label: "Categories"
     name: "categories"
     folder: "_categories"
@@ -68,72 +48,72 @@ collections:
     preview_path: "_categories/{{slug}}"
     extension: "md"
     fields:
-      - label: "Layout"
+      - {label: "Layout"
         name: "layout"
         widget: "hidden"
-        default: "category"
-      - label: "Title"
+        default: "category"}
+      - {label: "Title"
         name: "name"
-        widget: "string"
-      - label: "Slug"
+        widget: "string"}
+      - {label: "Slug"
         name: "short_name"
         widget: "hidden"
-        default: "{{slug}}"
-      - label: "Description"
+        default: "{{slug}}"}
+      - {label: "Description"
         name: "description"
         widget: "string"
-        required: false
+        required: "false"}
   - label: "Posts"
     name: "posts"
     folder: "_posts"
     create: true
     editor:
-      preview: false
+      preview: "false"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     preview_path: "_posts/{{slug}}"
     extension: "md"
     fields:
-      - label: "Publish Date"
+      - {label: "Publish Date"
         name: "date"
         widget: "date"
-        format: "YYYY-MM-DD"
-      - label: "Layout"
+        format: "YYYY-MM-DD"}
+      - {label: "Layout"
         name: "layout"
         widget: "hidden"
-        default: "post"
-      - label: "Title"
+        default: "post"}
+      - {label: "Title"
         name: "title"
-        widget: "string"
-      - label: "Description"
+        widget: "string"}
+      - {label: "Description"
         name: "description"
         hint: "This will be used across the pages and for search engines."
-        widget: "string"
-      - label: "Featured Image"
+        widget: "string"}
+      - {label: "Featured Image"
         name: "image"
         widget: "image"
-        allow_multiple: false
-        required: false
-      - label: "Category"
+        allow_multiple: "false"
+        required: "false"}
+      - {label: "Category"
         name: "category"
         widget: "relation"
         collection: "categories"
         searchFields: ["name"]
         valueField: "short_name"
-        displayFields: ["name"]
-      - label: "Tags"
+        displayFields: ["name"]}
+      - {label: "Tags"
         name: "tags"
         hint: "Separate with commas. These will also be used as keywords for search engines."
-        widget: "list"
-      - label: "Author"
+        widget: "list"}
+      - {label: "Author"
         name: "author"
         widget: "relation"
         collection: "authors"
         displayFields: ["name"]
         searchFields: ["name"]
-        valueField: "short_name"
-      - label: "Article"
+        valueField: "short_name"}
+      - {label: "Article"
         name: "body"
-        widget: "markdown"
+        widget: "markdown"}
   - label: "Pages"
     name: "pages"
     folder: "pages"
@@ -144,31 +124,31 @@ collections:
     preview_path: "{{slug}}"
     extension: "md"
     fields:
-      - label: "Layout"
+      - {label: "Layout"
         name: "layout"
         widget: "hidden"
-        default: "page"
-      - label: "Publish Date"
+        default: "page"}
+      - {label: "Publish Date"
         name: "date"
         widget: "datetime"
-        format: "YYYY-MM-DD HH:mm:ss"
-      - label: "Title"
+        format: "YYYY-MM-DD"}
+      - {label: "Title"
         name: "title"
-        widget: "string"
-      - label: "Permalink"
+        widget: "string"}
+      - {label: "Permalink"
         name: "permalink"
         widget: "hidden"
-        default: "/{{slug}}/"
-      - label: "Description"
+        default: "/{{slug}}/"}
+      - {label: "Description"
         name: "description"
         hint: "This will be used as description for search engines."
         widget: "string"
-        required: false
-      - label: "Keywords"
+        required: "false"}
+      - {label: "Keywords"
         name: "tags"
         hint: "Separate with commas. These will also be used as keywords for search engines."
         widget: "list"
-        required: false
-      - label: "Body"
+        required: "false"}
+      - {label: "Body"
         name: "body"
-        widget: "markdown"
+        widget: "markdown"}
