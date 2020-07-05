@@ -1,13 +1,13 @@
 <center><p><b>NO ADS, NO DISTRACTIONS</b></p></center>
 <center><h4>Quick Links</h4></center>
 <center><a href="{{site.baseurl | perpend: site.url}}">Home</a> <a href="{{site.baseurl | perpend: site.url}}/about/">About</a> <a href="{{site.baseurl | perpend: site.url}}/contact/">Contact</a> <a href="{{site.baseurl | perpend: site.url}}/sitemap/">Sitemap</a></center>
-<p>©{{ 'now' | date: "%Y" }} {{ site.name }}</p> {% include links.html %}
+<p>©{{ 'now' | date: "%Y" }} {{ site.data.2haas.name }}</p> {% include links.html %}
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
   "@type": "Organization",
-  "name": "{{ site.name }}",
-  "description": "{{ site.description }}",
+  "name": "{{ site.data.2haas.name }}",
+  "description": "{{ site.data.2haas.description }}",
   "url": "{{ site.url }}{{site.baseurl}}/",
   "logo": {
       "@type": "ImageObject",
