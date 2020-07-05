@@ -2,7 +2,7 @@
     {% if page.layout == 'author' %}
         {% assign title = page.name %}
     {% elsif page.title %}
-        {% assign title = page.title | append: " | " | append: site.name %}
+        {% assign title = page.title | append: " | " | append: site.data.2haas.name %}
     {% else %}
         {% assign title = site.data.2haas.title %}
     {% endif %}
