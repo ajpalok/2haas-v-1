@@ -6,7 +6,7 @@ description: Spring is the story where a shepherd girl and her dog faced ancient
   spirits in order to continue the cycle of life. This sketch is drawn from the
   poetic and visually stunning short film which was written and directed by Andy
   Goralczyk, inspired by his childhood in the mountains of Germany.
-image: 
+image: https://res.cloudinary.com/thaas/image/upload/v1594166924/IMG_20200707_180200_wtjrrj.jpg
 category: sketch
 tags:
   - 2haas
