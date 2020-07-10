@@ -1,5 +1,5 @@
 ---
-date: 2020-07-10
+date: 2020-07-09
 layout: post
 title: Portrait Of Rifaa Tasniya
 description: This is a drawing of Rifaa Tasniyaa, admin of RTS Drawing Book ..
@@ -22,6 +22,9 @@ tags:
   - bangladesh
 author: ajpalok
 ---
+This is a drawing of Rifaa Tasniyaa, admin of RTS Drawing Book ..
+  She is a great artist and I tried to draw her portrait.. Rate it on comment
+  section.
 
 - - -
 
@@ -38,6 +41,3 @@ Instagram: [2haas.ml](https://instagram.com/2haas.ml)
 Pinterest: [2haas_ml](https://pinterest.com/2haas_ml)  
 
 - - -
-
-
-![]()
