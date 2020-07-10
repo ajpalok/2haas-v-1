@@ -22,9 +22,7 @@ tags:
   - bangladesh
 author: ajpalok
 ---
-This is a drawing of Rifaa Tasniyaa, admin of RTS Drawing Book ..
-  She is a great artist and I tried to draw her portrait.. Rate it on comment
-  section.
+This is a drawing of Rifaa Tasniyaa, admin of RTS Drawing Book .. She is a great artist and I tried to draw her portrait.. Rate it on comment section.
 
 - - -
 
