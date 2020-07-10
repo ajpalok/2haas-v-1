@@ -7,7 +7,7 @@ description: "This drawing of party balloons or air balloon drawing whatever is
   decoration perpose. I first thought she wanna told me to draw a hot air
   balloon drawing. After making the sketch of that, she told me to draw heart
   shaped balloons in the sky. "
-image: /PicsArt_07-10-01.33.05_naciai.jpg
+image: https://res.cloudinary.com/thaas/image/upload/v1594374805/PicsArt_07-10-01.33.05_naciai.jpg
 category: drawing
 tags:
   - 2haas
