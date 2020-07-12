@@ -9,14 +9,13 @@ author: ajpalok
 ---
 
 Title: আমার আছে জল
-
+  
 Art Work by: Abrar Jahin 
 
-Watch the <a href="https://youtu.be/aPH-It6tL0I">video.</a>
-
-
-I started my drawing again after 4 years. Now my old color lost the softness.. But tried to draw with the old color to pass the time. Comment below with some tips for me..
-At last we say #StayHome and Draw #WithMe
+I started my drawing again after 4 years. Now my old color lost the softness.. But tried to draw with the old color to pass the time. Watch the video:
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aPH-It6tL0I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Comment below with some tips for me..
+At last we say <h6>Stay Home</h6> and Draw <h6>With Me</h6>
 
 Also available on:
 
