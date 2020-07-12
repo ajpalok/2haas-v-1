@@ -28,7 +28,8 @@ tags:
 author: ajpalok
 ---
 
-This a drawing of a poopy flower. Watch this on [YouTube](https://youtu.be/9HdxSmMryhA)
+This a drawing of a poopy flower. Watch the video:
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9HdxSmMryhA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The photo of the reference is
 
