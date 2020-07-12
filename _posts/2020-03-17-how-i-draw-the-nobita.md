@@ -10,7 +10,9 @@ author: ajpalok
 ---
 ## About Nobita  
   
-Here comes the sketch of Nobita, the character of Doremon cartoon series.. The time lapse has been uploaded in previous post.. Watch the <a href="https://www.youtube.com/embed/-YYUvtyo3H8">video.</a>
+Here comes the sketch of Nobita, the character of Doremon cartoon series.. The time lapse has already been uploaded. Watch the video:
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-YYUvtyo3H8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
    
 He was a Goofy person who make shine in life with his dreams in future... So don't be so upset with your laggings. Try from the core of your heart that you love to do. You may will be successful in life..
   
@@ -18,11 +20,18 @@ He was a Goofy person who make shine in life with his dreams in future... So don
   
 To draw this I make a Line Image of Nobita.. Then started to out-line the edges of it. After that I started to shade the non lighting parts. In this process I have made the Sketch..  
   
-Also available  
-  
-Website: [2HAAS](https://2haas.ml)  
-Facebook: [2HAAS](https://facebook.com/2haas)  
-Instagram: [@2haas.ml](https://instagram.com/2haas.ml)  
-Pinterest:  [2HAAS](https://pin.it/2VQJynH)
-  
-Thanks.. Stay with us.  
+- - -
+
+Also available on:  
+
+Website: [2HAAS](https://2haas.ml/)  
+
+Facebook: [2haas](https://facebook.com/2haas)  
+
+Twitter: [2haas_ml](https://twitter.com/2haas_ml)  
+
+Instagram: [2haas.ml](https://instagram.com/2haas.ml)  
+
+Pinterest: [2haas_ml](https://pinterest.com/2haas_ml)  
+
+- - -
