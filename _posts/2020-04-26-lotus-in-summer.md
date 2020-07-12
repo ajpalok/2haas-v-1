@@ -35,10 +35,7 @@ author: ajpalok
 
 Title: Lotus In Summer
   
-
-  
 Art Work by: Abrar Jahin 
- 
   
 This is a Drawing of a Lotus.. Drawing medium: Oil pastel. Watch the video:
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rXXKo9PcKpQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
