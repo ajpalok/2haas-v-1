@@ -16,16 +16,24 @@ Art Work by: [Abrar Jahin
 ](https://aj.palok.ga)  
   
 This work is done from a TV series named "Pyaar Lafzon Mein Kahan" character Murat and Hayat. This show is full with romance, fun and excitement..  
-Watch full <a href="https://youtu.be/mJ2fY0mAk0Q">video</a>
-   
-----------------------------------------------------------------------------------------------------------  
+Watch the video:
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/mJ2fY0mAk0Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+- - -
+
 Also available on:  
+
 Website: [2HAAS](https://2haas.ml/)  
+
 Facebook: [2haas](https://facebook.com/2haas)  
-Instagram: [@2haas.ml](https://instagram.com/2haas.ml)  
+
+Twitter: [2haas_ml](https://twitter.com/2haas_ml)  
+
+Instagram: [2haas.ml](https://instagram.com/2haas.ml)  
+
 Pinterest: [2haas_ml](https://pinterest.com/2haas_ml)  
 
-----------------------------------------------------------------------------------------------------------  
+- - -
+
 Music: Pyaar Lafzon Mein Kahan  
 Video Edited with: Quic, VLLO  
 Audio Edited with: AudioLab  
