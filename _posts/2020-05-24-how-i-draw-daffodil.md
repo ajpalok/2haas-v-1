@@ -14,7 +14,9 @@ Art Work by: Abrar Jahin
 Drawing:
 <img src="https://res.cloudinary.com/thaas/image/upload/v1590519909/Daffodil_temp_drdgz6.jpg">
 
-Starting to draw at medium level.. How I draw this daffodil flower.. Watch this <a href="https://youtu.be/NsSFVHE4Xqw">video.</a>
+Starting to draw at medium level.. How I draw this daffodil flower.. Watch the video:
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NsSFVHE4Xqw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 I find this photo as "How to grow Daffodils" in someone's post. Started to draw but can't satisfied with the drawing..
   
