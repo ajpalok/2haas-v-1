@@ -9,35 +9,8 @@ image: https://res.cloudinary.com/thaas/image/upload/q_40/v1595660756/Old_pic_t7
 category: drawing
 tags:
   - tea
-  - cha
-  - chai
   - tealover
   - teacoholic
-  - tealove
-  - teastagram
-  - teagraphy
-  - teaphotography
-  - teaphotographer
-  - teaphoto
-  - tealife
-  - teatime
-  - chatime
-  - evening
-  - teareview
-  - creative
-  - teaddict
-  - photography
-  - photoshoot
-  - photographer
-  - photooftheday
-  - tearoom
-  - bangladesh
-  - food
-  - foodporn
-  - foodphotography
-  - foodstagram
-  - teablogger
-  - teablog
 author: ajpalok
 ---
 Tea is not only a beverage but also a love to us. This makes us refresh and joyful. So Let's watch the Drawing of the love.
