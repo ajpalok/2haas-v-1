@@ -5,7 +5,7 @@ title: A Cup Of Love
 description: "This drawing is taken from the Instagram ID: @_teacoholic_
   (https://www.instagram.com/_teacoholic_/.. An amazing ID for publishing many
   tea basis frames. Follow her ID for more amazing portraits of teas. "
-image: https://res.cloudinary.com/thaas/image/upload/q_40/v1595662352/ek_cup_valobasha.png
+image: https://res.cloudinary.com/thaas/image/upload/q_40/v1595660756/Old_pic_t7q4uj.png
 category: drawing
 tags:
   - tea
@@ -48,10 +48,11 @@ This was the first time I draw in Autodesk app and really loved the app.. The fi
 
 This drawing is taken from the Instagram ID: [@_teacoholic_](https://www.instagram.com/_teacoholic_/).. An amazing **ID** for publishing many tea basis frames. Follow her ID for more amazing portraits of teas. 
 
-After that I tried to draw the same fig again. Here it is.
-![2nd drawing](https://res.cloudinary.com/thaas/image/upload/v1595660756/Old_pic_t7q4uj.png)
+But unfortunately, the video of the 1st drawing deleted accidentally before backing up and then tried for 2 times more to shoot a video but same thing occurred... But fortunately 3rd time got success and that's the video you watched there. Here is this
 
-But the video of the image deleted accidentally and tried for 2 times more to shoot a video but failed... But fortunately 3rd time got success and that's the video you watched there.. 
+![2nd drawing](https://res.cloudinary.com/thaas/image/upload/q_40/v1595662352/ek_cup_valobasha.png)
+
+But to be honest I like the first one! What do you think? Comment through Email.. 
 
 Thanks for watching.. **Stay Tuned**
 
