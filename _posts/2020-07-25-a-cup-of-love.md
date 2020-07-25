@@ -1,0 +1,72 @@
+---
+date: 2020-07-25
+layout: post
+title: A Cup Of Love
+description: "This drawing is taken from the Instagram ID: @_teacoholic_
+  (https://www.instagram.com/_teacoholic_/.. An amazing ID for publishing many
+  tea basis frames. Follow her ID for more amazing portraits of teas. "
+image: https://res.cloudinary.com/thaas/image/upload/q_40/v1595662352/ek_cup_valobasha.png
+category: drawing
+tags:
+  - tea
+  - cha
+  - chai
+  - tealover
+  - teacoholic
+  - tealove
+  - teastagram
+  - teagraphy
+  - teaphotography
+  - teaphotographer
+  - teaphoto
+  - tealife
+  - teatime
+  - chatime
+  - evening
+  - teareview
+  - creative
+  - teaddict
+  - photography
+  - photoshoot
+  - photographer
+  - photooftheday
+  - tearoom
+  - bangladesh
+  - food
+  - foodporn
+  - foodphotography
+  - foodstagram
+  - teablogger
+  - teablog
+author: ajpalok
+---
+Tea is not only a beverage but also a love to us. This makes us refresh and joyful. So Let's watch the Drawing of the love.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+This was the first time I draw in Autodesk app and really loved the app.. The first thing is all lot of tools are available and second things very much user friendly.. 
+
+This drawing is taken from the Instagram ID: [@_teacoholic_](https://www.instagram.com/_teacoholic_/).. An amazing **ID** for publishing many tea basis frames. Follow her ID for more amazing portraits of teas. 
+
+After that I tried to draw the same fig again. Here it is.
+![2nd drawing](https://res.cloudinary.com/thaas/image/upload/v1595660756/Old_pic_t7q4uj.png)
+
+But the video of the image deleted accidentally and tried for 2 times more to shoot a video but failed... But fortunately 3rd time got success and that's the video you watched there.. 
+
+Thanks for watching.. **Stay Tuned**
+
+- - -
+
+Also available on:  
+
+Facebook: [2haas](https://facebook.com/2haas)  
+
+Twitter: [2haas_ml](https://twitter.com/2haas_ml)  
+
+Instagram: [2haas.ml](https://instagram.com/2haas.ml)  
+
+Pinterest: [2haas_ml](https://pinterest.com/2haas_ml)   
+
+YouTube: [2HAAS](https://www.youtube.com/channel/UCg3hEFuZ7bWxSVwOcDaCkIg)
+
+- - -
