@@ -4,6 +4,7 @@ layout: post
 title: My Boring Time Passing Art Work
 description: I have made a sketch in my boring times. This blog is written in the basis of the time..
 image: https://res.cloudinary.com/thaas/image/upload/v1587391694/81982858_811975722558735_5101792093852925952_n.jpg_cpgceb.jpg
+optimized_image: https://res.cloudinary.com/thaas/image/upload/q_10/v1587391694/81982858_811975722558735_5101792093852925952_n.jpg_cpgceb.jpg
 category: 'sketch'
 tags: [2haas, sketch, sketching, sketchbook, portrait, blackandwhite, pencildrawing, pencilsketch, pencilart]
 author: ajpalok
