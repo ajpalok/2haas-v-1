@@ -10,6 +10,8 @@ description: This drawing is created by Rifaa Tasniyaa
 
 image: https://res.cloudinary.com/thaas/image/upload/v1587394452/70558591_674448849699707_2096511272483815424_o.jpg_s7kqgb.jpg
 
+optimized_image: https://res.cloudinary.com/thaas/image/upload/q_10/v1587394452/70558591_674448849699707_2096511272483815424_o.jpg_s7kqgb.jpg
+
 category: 'drawing'
 
 tags: [cute_girl, drawing, color, trees, blossom, natural_beauty, rainy_season]
