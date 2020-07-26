@@ -5,7 +5,8 @@ title: A Cup Of Love
 description: "This drawing is taken from the Instagram ID: @_teacoholic_
   (https://www.instagram.com/_teacoholic_/.. An amazing ID for publishing many
   tea basis frames. Follow her ID for more amazing portraits of teas. "
-image: https://res.cloudinary.com/thaas/image/upload/q_40/v1595660756/Old_pic_t7q4uj.png
+image: https://res.cloudinary.com/thaas/image/upload/v1595660756/Old_pic_t7q4uj.png
+optimized_image: https://res.cloudinary.com/thaas/image/upload/q_10/v1595660756/Old_pic_t7q4uj.png
 category: drawing
 tags:
   - tea
