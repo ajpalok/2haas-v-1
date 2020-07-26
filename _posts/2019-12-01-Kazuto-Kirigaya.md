@@ -10,6 +10,8 @@ description: The anime character is drawn by Tasfiq Jawaad
 
 image: https://res.cloudinary.com/thaas/image/upload/v1587393581/78819875_431574870849875_8810619006065125995_n.jpg_rv4a4f.jpg
 
+optimized_image: https://res.cloudinary.com/thaas/image/upload/q_10/v1587393581/78819875_431574870849875_8810619006065125995_n.jpg_rv4a4f.jpg
+
 category: 'sketch'
 
 tags: [cute_boy, sketch, anime, pencil_sketch, character, Kazuto Kirigaya]
