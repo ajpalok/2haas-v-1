@@ -4,6 +4,7 @@ layout: post
 title: How I Draw The Nobita?
 description: Here comes our sketch of Nobita, the character of Doremon cartoon series.. He was a Goofy person who can make shine in life with his dreams... How I draw this sketch of Nobita? Read more
 image: https://res.cloudinary.com/thaas/image/upload/v1587390637/85084057_863864740703166_7335933660601778176_n.jpg_sbdksd.jpg
+optimized_image: https://res.cloudinary.com/thaas/image/upload/q_10/v1587390637/85084057_863864740703166_7335933660601778176_n.jpg_sbdksd.jpg
 category: 'sketch'
 tags: [2haas , sketch, nobita, doremon, pencil_sketch, sketch_art, boy, how to draw nobita]
 author: ajpalok
