@@ -4,6 +4,7 @@ layout: post
 title: Common Kingfisher
 description: Common kingfisher is a kind of bird which eats fishes to live..
 image: https://res.cloudinary.com/thaas/image/upload/v1587392885/26171372_391622797927365_5895828715136766800_o.jpg_rik5ew.jpg
+optimized_image: https://res.cloudinary.com/thaas/image/upload/q_10/v1587392885/26171372_391622797927365_5895828715136766800_o.jpg_rik5ew.jpg
 category: 'sketch'
 tags: [Common_kingfisher, sketch, bird, pencil_sketch, kingfisher, abrar_jahin, Birds sketch, Sketch, Ink drawing, Common kingfisher, Sketch of birds, Pencil sketch, Ink art, Pencil art, Birds, Black and white]
 author: ajpalok
