@@ -3,6 +3,7 @@ date: 26-04-2020
 title: Lotus In Summer
 description: This is a Drawing of a Lotus
 image: https://res.cloudinary.com/thaas/image/upload/v1587921307/IMG_20200426_151607_630_vvrkdk.jpg
+optimized_image: https://res.cloudinary.com/thaas/image/upload/q_10/v1587921307/IMG_20200426_151607_630_vvrkdk.jpg
 category: drawing
 tags:
   - 2haas
