@@ -4,6 +4,7 @@ layout: post
 title: Macro Eye Sketch | 2HAAS | Draw Your Imagination
 description: "I have brought a set of pencils in different shades.. After that washed my hands to use the pencils.. You also wash your hands to watch this video 🤣.. This drawing is drawn from a frame of Pinterest  .. Read more on:   https://2haas.ml/macro-eye-sketch"
 image: https://res.cloudinary.com/thaas/image/upload/v1591957167/eye_macro_full_pflyhn.jpg
+optimized_image: https://res.cloudinary.com/thaas/image/upload/q_10/v1591957167/eye_macro_full_pflyhn.jpg
 category: sketch
 tags: [2haas,2HAAS,sketch,Sketch,sketch ideas,eye drawing,how to draw an eye,how to sketch something,eye drawing reference,how to draw a realistic eye,drawing of eye,eye drawing easy,drawing an eye,drawings,eye drawings,eyes,drawing of an eye,drawing of a eye,realistic eye drawing,drawing ideas,step by step eye drawing,eyes drawing reference]
 author: ajpalok
