@@ -4,7 +4,7 @@ layout: post
 title: My Motherland Bangladesh
 description: "A simple scene of the beauty of Bangla, the scenario of Beautiful
   Bangladesh. "
-image: https://res.cloudinary.com/thaas/image/upload/v1594983419/Motherland_Is_My_Bangla_bunvtn.jpg
+image: https://res.cloudinary.com/thaas/image/upload/q_50/v1594983419/Motherland_Is_My_Bangla_bunvtn.jpg
 optimized_image: https://res.cloudinary.com/thaas/image/upload/q_10/v1594983419/Motherland_Is_My_Bangla_bunvtn.jpg
 category: drawing
 tags:
