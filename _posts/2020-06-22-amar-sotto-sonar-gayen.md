@@ -1,8 +1,9 @@
 ---
 date: 2020-06-22T00:00:00.000Z
 title: একবার যেতে দে না আমার ছোট্ট সোনার গাঁয়ে
-description: This portrait is a scenario of a village in Bangladesh. Very nice view with the scene of realty of poverty. Read more
-image: https://res.cloudinary.com/thaas/image/upload/v1592766922/village_temp_ekiqyd.jpg
+description: This portrait is a scenario of a village in Bangladesh. Very nice
+  view with the scene of realty of poverty. Read more
+image: https://res.cloudinary.com/thaas/image/upload/q_50/v1594983419/Motherland_Is_My_Bangla_bunvtn.jpg
 optimized_image: https://res.cloudinary.com/thaas/image/upload/q_10/v1592766922/village_temp_ekiqyd.jpg
 category: sketch
 tags:
