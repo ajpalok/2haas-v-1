@@ -2,7 +2,7 @@
 date: 2020-06-30
 title: Poppy Flower
 description: This a drawing of a poopy flower.
-image: https://res.cloudinary.com/thaas/image/upload/v1593528312/thumb_poopy_flower_fvr7wv.jpg
+image: https://res.cloudinary.com/thaas/image/upload/q_50/v1593528312/thumb_poopy_flower_fvr7wv.jpg
 optimized_image: https://res.cloudinary.com/thaas/image/upload/q_10/v1593528312/thumb_poopy_flower_fvr7wv.jpg
 category: drawing
 tags:
