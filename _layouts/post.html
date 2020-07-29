@@ -5,9 +5,11 @@ layout: default
 <article class="middle column1">
 <table>
 <tr><th colspan="2"><h1>{{ page.title }}</h1></th></tr>
-<tr><td colspan="2">{% if page.image %}<img src="{{ page.optimized_image }}" data-src="{{ page.image }}" alt="{{ page.title }}'s Featured Photo">{% else %}<img src="{{site.url}}{{ "/assets/img/off.jpg" | prepend: site.baseurl }}" alt="No Featured Photo Available">{% endif %}</td></tr>
+<tr><td colspan="2">{% if page.image %}<img src="{{ page.image }}" alt="{{ page.title }}'s Featured Photo">{% else %}<img src="{{site.url}}{{ "/assets/img/off.jpg" | prepend: site.baseurl }}" alt="No Featured Photo Available">{% endif %}</td></tr>
 <tr><th>{% assign category = site.categories | where: 'short_name', page.category | first %}{% if category %}<a href="{{ site.baseurl | prepend : site.url }}{{ category.url }}">{{ category.name }}</a>{% endif %}</th><th><p>{{ page.date | date: '%B %d, %Y' }}</p></th></tr>
-<tr><td colspan="2"><p>{% assign author = site.authors | where: 'short_name', page.author | first %}{% if author %}<a href="{{ site.baseurl | prepend : site.url }}{{ author.url }}">{{ author.name }}</a>{% endif %}{{ content }}</p>{% if post %}{% assign tags = post.tags %}{% else %}{% assign tags = page.tags %}{% endif %}{% for tag in tags %}<a class="tags" href="{{site.baseurl | prepend : site.url}}/tags/#{{tag|slugize}}">#{{tag}}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}{% include comments.html %}{% include share.html %}</td></tr>
+<tr><td colspan="2">{% assign author = site.authors | where: 'short_name', page.author | first %}{% if author %}<a href="{{ site.baseurl | prepend : site.url }}{{ author.url }}">{{ author.name }}</a>{% endif %}{{ content }}{% if post %}{% assign tags = post.tags %}{% else %}{% assign tags = page.tags %}{% endif %}{% for tag in tags %}<a class="tags" href="{{site.baseurl | prepend : site.url}}/tags/#{{tag|slugize}}">#{{tag}}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}
+{% include comments.html %}
+{% include share.html %}</td></tr>
 </table>
 </article>
 <aside class="middle column2">
@@ -20,12 +22,3 @@ layout: default
 </table>
 </aside>
 </div>
-<script>
-function init() {
-var imgDefer = document.getElementsByTagName('img');
-for (var i=0; i<imgDefer.length; i++) {
-if(imgDefer[i].getAttribute('data-src')) {
-imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
-} } }
-window.onload = init;
-</script>
