@@ -47,7 +47,6 @@ layout: home
 {% else %}
 <li><a>&laquo;</a></li>
 {% endif %}
-<div style="overflow-x: scroll;">
 {% for page in (1..paginator.total_pages) %}
 {% if page == paginator.page %}
 <li><a class="active">{{ page }}</a></li>
@@ -57,7 +56,6 @@ layout: home
 <li><a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a></li>
 {% endif %}
 {% endfor %}
-</div>
 {% if paginator.next_page %}
 <li><a href="{{ paginator.next_page_path | relative_url }}">&raquo;</a></li>
 {% else %}
