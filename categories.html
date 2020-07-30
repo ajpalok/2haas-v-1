@@ -4,10 +4,6 @@ title: Categories
 description: Here comes our list of Categories of 2HAAS's posts..
 ---
 
-<center> categories </center> 
-
-		<ul>
-			{% for category in site.categories%}
-				<li><a href="..{{ category.url }}"><h1 class="proname">{{ category.name }}</h1></a></li>
-			{% endfor %}
-		</ul>
+<center><h1>Categories</h1></center> 
+<ul>{% for category in site.categories%}<li><a href="{{ category.url }}"><h1 class="proname">{{ category.name }}</h1></a></li>
+{% endfor %}</ul>
