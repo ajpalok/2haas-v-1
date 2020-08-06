@@ -1,4 +1,4 @@
-.post-image{-webkit-transition:0.5s; transition: 0.5s;}
+.post-image{-webkit-transition:0.5s; -moz-transition:0.5s; -o-transition:0.5s; transition: 0.5s;}
 .post-image:hover{filter: grayscale(100%);}
 @media only screen and (max-width:900px){
 .main{
