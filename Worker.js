@@ -2,10 +2,16 @@ const static2HAAS = '2HAAS-cache-v1';
 const assets = [
   '/',
   '/index.html',
-  '/assets/js/search-script.js',
+  '/page-2/',
+  '/page-3/',
+  '/search/',
+  '/categories/',
+  '/contact/',
+  '/staff/',
   '/assets/css/main.css',
   '/assets/img/off.jpg',
-  'https://fonts.googleapis.com/',
+  '/assets/img/404.gif',
+  'https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&family=Galada&family=Roboto:wght@500&display=swap',
 ];
 self.addEventListener('install', evt => {
   evt.waitUntil(
