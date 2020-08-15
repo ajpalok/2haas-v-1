@@ -1,9 +1,3 @@
-{% assign image = '' %}
-    {% if page.image %}
-        {% assign image = page.image %}
-    {% else %}
-        {% assign image = "post.image" %}
-    {% endif %}
 const static2HAAS = "2HAAS-v1"
 const assets = [
   "/",
@@ -11,8 +5,6 @@ const assets = [
   "assets/css/main.css",
   "assets/js/app.js",
   "assets/img/off.jpg",
-  "{{ post.image }}",
-  "{{ page.image }}",
 ]
 
 self.addEventListener("install", installEvent => {
