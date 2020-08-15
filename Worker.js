@@ -4,8 +4,8 @@ const assets = [
   '/index.html',
   '/assets/js/search-script.js',
   '/assets/css/main.css',
-  '/assets/images/background-home.jpg',
-  'https://fonts.googleapis.com/css?family=Lato:300,400,700',
+  '/assets/img/off.jpg',
+  'https://fonts.googleapis.com/',
 ];
 self.addEventListener('install', evt => {
   evt.waitUntil(
