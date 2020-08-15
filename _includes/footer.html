@@ -2,7 +2,7 @@
 <center><h4>Quick Links</h4></center>
 <center><a href="{{site.baseurl | perpend: site.url}}">Home,</a> <a href="{{site.baseurl | perpend: site.url}}/about/">About,</a> <a href="{{site.baseurl | perpend: site.url}}/contact/">Contact,</a> <a href="{{site.baseurl | perpend: site.url}}/sitemap/">Sitemap</a></center>
 <center><p><b>©{{ 'now' | date: "%Y" }} {{ site.name }}</b></p> {% include links.html %}</center>
-<script type="application/ld+json">
+<script defer type="application/ld+json">
 {
   "@context": "http://schema.org",
   "@type": "Organization",
@@ -14,10 +14,6 @@
       "url": "{{ site.url }}{{site.baseurl}}/assets/img/icons/ms-icon-144x144.png",
       "width": "600",
       "height": "315"
-  },
-  "sameAs": [
-    {{ social_urls | split: "," | join: "," }}
-  ]
-}
+  }
 </script>
-<script defer src="/assets/js/app.js"></script>
+<script src="/assets/js/app.js"></script>
