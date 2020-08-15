@@ -1,23 +1,36 @@
-const static2HAAS = "2HAAS-v1"
+const static2HAAS = '2HAAS-cache-v1';
 const assets = [
-  "/",
-  "/index.html",
-  "assets/css/main.css",
-  "assets/js/app.js",
-  "assets/img/off.jpg",
-]
-
-self.addEventListener("install", installEvent => {
-  installEvent.waitUntil(
-    caches.open(static2HAAS).then(cache => {
-      cache.addAll(assets)
+  '/',
+  '/index.html',
+  '/assets/js/search-script.js',
+  '/assets/css/main.css',
+  '/assets/images/background-home.jpg',
+  'https://fonts.googleapis.com/css?family=Lato:300,400,700',
+];
+self.addEventListener('install', evt => {
+  evt.waitUntil(
+    caches.open(static2HAAS).then((cache) => {
+      console.log('caching shell assets');
+      cache.addAll(assets);
     })
-  )
-})
-self.addEventListener("fetch", fetchEvent => {
-  fetchEvent.respondWith(
-    caches.match(fetchEvent.request).then(res => {
-      return res || fetch(fetchEvent.request)
+  );
+});
+// activate event
+self.addEventListener('activate', evt => {
+  evt.waitUntil(
+    caches.keys().then(keys => {
+      return Promise.all(keys
+        .filter(key => key !== staticCacheName)
+        .map(key => caches.delete(key))
+      );
     })
-  )
-})
+  );
+});
+// fetch event
+self.addEventListener('fetch', evt => {
+  evt.respondWith(
+    caches.match(evt.request).then(cacheRes => {
+      return cacheRes || fetch(evt.request);
+    })
+  );
+});
