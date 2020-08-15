@@ -9,8 +9,8 @@ layout: default
 <tr><th>{% assign category = site.categories | where: 'short_name', page.category | first %}{% if category %}<a href="{{ site.baseurl | prepend : site.url }}{{ category.url }}">{{ category.name }}</a>{% endif %}</th><th><p>{{ page.date | date: '%B %d, %Y' }}</p></th></tr>
 <tr><td colspan="2">{% assign author = site.authors | where: 'short_name', page.author | first %}{% if author %}<a href="{{ site.baseurl | prepend : site.url }}{{ author.url }}">{{ author.name }}</a>{% endif %}{{ content }}
 
-{% include comments.html %}
-{% include share.html %}</td></tr>
+{% include share.html %}
+{% include comments.html %}</td></tr>
 </table>
 </article>
 <aside class="middle column2">
