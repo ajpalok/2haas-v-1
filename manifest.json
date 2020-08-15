@@ -2,6 +2,11 @@
   "short_name": "2HAAS",
   "name": "2HAAS | Draw Your Imagination",
   "description": "ART is related with HEART.. It's the imagination which is framed in a canvas. Arts have no boundaries. And it's an opportunity to show your imagination to the world with 2HAAS.. Publish your Arts With 2HAAS. And that's why we say 'Draw Your Imagination'..",
+  "start_url": "https://2haas.ml",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#000000",
  "icons": [
   {
    "src": "/assets/img/icons/android-icon-36x36.png",
@@ -39,10 +44,5 @@
    "type": "image/png",
    "density": "4.0"
   }
- ],
-  "start_url": "https://2haas.ml",
-  "background_color": "#ffffff",
-  "display": "fullscreen",
-  "scope": "/",
-  "theme_color": "#000000"
+ ]
 }
