@@ -1,25 +1,24 @@
 ---
 layout: page
-title: Staff
+title: Members
 description: Meet our respective Members and content creators of 2HAAS Family..
 ---
 
-<center> <h1>Staffs</h1> </center> 
-
+<center> <h1>Members</h1> </center> 
 <table>		
-	{% for author in site.authors %}
-	<tr>
-		<td rowspan="2">
-			<a href="{{ author.url | prepend: site.baseurl }}"><img class="proimg proimgbb" src="{{ author.profile_image }}" alt="{{author.name}}'s profile image"/></a>
-		</td>
-		<th>
-			<h1 class="proname"><a href="{{ author.url | prepend: site.baseurl }}">{{ author.name }}</a></h1>
-		</th>
-	</tr>
-	<tr>
-		<th>
-			<h2 class="proposition"><a href="{{ author.url | prepend: site.baseurl }}">{{ author.position }}</a></h2>
-		</th>
-	</tr>
-	{% endfor %}
+{% for author in site.authors %}
+<tr>
+<td rowspan="2">
+<a href="{{ author.url | prepend: site.url }}"><img class="proimg proimgbb" src="{{ author.profile_image }}" alt="{{author.name}}'s profile image"/></a>
+</td>
+<th>
+<h1 class="proname"><a href="{{ author.url | prepend: site.url }}">{{ author.name }}</a></h1>
+</th>
+</tr>
+<tr>
+<th>
+<h2 class="proposition"><a href="{{ author.url | prepend: site.url }}">{{ author.position }}</a></h2>
+</th>
+</tr>
+{% endfor %}
 </table>
