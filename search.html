@@ -13,32 +13,20 @@ input[type=text]{
 	border-radius: 10px;
 	text-align: center;
 }
-
-
-
 </style>
-
 <br>
-
-<center><h3>Search</h3></center>
-
 <center>
-
 <input type="text" id="search-input" placeholder="Search...">
-
 <ul type="none" id="results-container"></ul>
-
 </center>
-
 <!-- Script pointing to search-script.js -->
-<script src="{{ site.baseurl }}/assets/js/search-script.js" type="text/javascript"></script>
+<script src="{{ "/assets/js/search-script.js" | prepend: "site.url" }}" type="text/javascript"></script>
 
-<!-- Configuration -->
 <script>
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
-  json: '{{ site.baseurl }}/search.json',
+  json: '{{ site.url }}/search.json',
   searchResultTemplate: '<li><dl><dt><a href="{url}"><h1>{title}</h1></a></dt><dd><span>{date}</span><br> </dd></dl></li>',
   noResultsText: "<li>No result found!</li>"
 })
