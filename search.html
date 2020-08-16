@@ -26,7 +26,7 @@ input[type=text]{
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
-  json: '{{ site.url }}/search.json',
+  json: '{{ "/search.json" | prepend: "site.url" }}',
   searchResultTemplate: '<li><dl><dt><a href="{url}"><h1>{title}</h1></a></dt><dd><span>{date}</span><br> </dd></dl></li>',
   noResultsText: "<li>No result found!</li>"
 })
