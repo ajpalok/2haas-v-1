@@ -1,57 +1,45 @@
 ---
 layout: page
 ---
-
 <table>
-	<tr>
-		<td rowspan="2">
-			<img class="proimg proimgbb" src="{{ page.profile_image }}" alt="{{ page.name }}'s profile image"/>
-		</td>
-		<td>
-			<h1 class="proname">{{ page.name }}</h1>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<h2 class="proposition">{{ page.position }}</h2>
-		</td>
-	</tr>
-	<tr>
-		<td colspan="2">
-			<p>{{ content }}</p>
-		</td>
-	</tr>
-	<tr>
-		<td colspan="2">
-	<center>		
+<tr>
+<td rowspan="2">
+<img class="proimg proimgbb" src="{{ page.profile_image }}" alt="{{ page.name }}'s profile image"/>
+</td>
+<td>
+<h1 class="proname">{{ page.name }}</h1>
+</td>
+</tr>
+<tr>
+<td>
+<h2 class="proposition">{{ page.position }}</h2>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p>{{ content }}</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<center>		
 {% if page.facebook_username %}
-
-    <a class="idfb" href="https://facebook.com/{{page.facebook_username }}"><i class="fab fa-facebook-f"></i></a>
-
+<a class="idfb" href="https://facebook.com/{{page.facebook_username }}"><i class="fab fa-facebook-f"></i></a>
 {% endif %}
-
 {% if page.twitter_username %}
-
-    <a class="idtwitter" href="https://twitter.com/{{page.twitter_username }}"><i class="fab fa-twitter"></i></a>
-
-
+<a class="idtwitter" href="https://twitter.com/{{page.twitter_username }}"><i class="fab fa-twitter"></i></a>
 {% endif %}
-
 {% if page.instagram_username %}
-
-    <a class="idinsta" href="https://instagram.com/{{page.instagram_username }}"><i class="fab fa-instagram"></i></a>
-
-
+<a class="idinsta" href="https://instagram.com/{{page.instagram_username }}"><i class="fab fa-instagram"></i></a>
 {% endif %}
-	</center>
-		</td>
-	</tr>
+</center>
+</td>
+</tr>
 </table>
-
 <h2 class="propost">Posts</h2>
 <ul>
-  {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
-  {% for post in filtered_posts %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% assign filtered_posts = site.posts | where: 'author', page.short_name %}
+{% for post in filtered_posts %}
+<li><a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
