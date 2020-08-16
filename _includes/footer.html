@@ -1,6 +1,6 @@
 <center><p><b>NO ADS, NO DISTRACTIONS</b></p></center>
 <center><h4>Quick Links</h4></center>
-<center><a href="{{site.baseurl | perpend: site.url}}">Home,</a> <a href="{{site.baseurl | perpend: site.url}}/about/">About,</a> <a href="{{site.baseurl | perpend: site.url}}/contact/">Contact,</a> <a href="{{site.baseurl | perpend: site.url}}/sitemap/">Sitemap</a></center>
+<center><a href="{{site.url}}">Home,</a> <a href="{{site.url}}/about/">About,</a> <a href="{{site.url}}/contact/">Contact,</a> <a href="{{site.url}}/sitemap/">Sitemap</a></center>
 <center><p><b>©{{ 'now' | date: "%Y" }} {{ site.name }}</b></p> {% include links.html %}</center>
 <script defer type="application/ld+json">
 {
@@ -8,12 +8,12 @@
   "@type": "Organization",
   "name": "{{ site.name }}",
   "description": "{{ site.description }}",
-  "url": "{{ site.url }}{{site.baseurl}}/",
+  "url": "{{ site.url }}/",
   "logo": {
       "@type": "ImageObject",
-      "url": "{{ site.url }}{{site.baseurl}}/assets/img/icons/ms-icon-144x144.png",
+      "url": "{{ site.url }}/assets/img/icons/ms-icon-144x144.png",
       "width": "600",
       "height": "315"
   }
 </script>
-<script src="/assets/js/app.js"></script>
+<script src="{{ site.url }}/assets/js/app.js"></script>
