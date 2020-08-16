@@ -10,7 +10,7 @@ layout: default
 {% for author in site.authors %}
 <tr>
 <td rowspan="2">
-<a href="{{site.url}}/{{ author.url | prepend: site.baseurl }}"><img class="proimg proimgbb" src="{{site.baseurl | prepend : site.url}}{{ author.profile_image }}" alt="{{author.name}}'s profile picture"/></a>
+<a href="{{ author.url | prepend: site.url }}"><img class="proimg proimgbb" src="{{ author.profile_image | prepend: site.url }}" alt="{{author.name}}'s profile picture"/></a>
 </td>
 <td>
 <a href="{{site.url}}/{{ author.url | prepend: site.baseurl }}"><h1 class="proname">{{ author.name }}</h1></a>
