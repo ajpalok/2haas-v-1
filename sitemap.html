@@ -7,12 +7,12 @@ permalink: /sitemap/
 <center><h1>Author</h1></center>
     {% for author in site.authors %}
         <ul>
-            <li><a href="{{ author.url | prepend: site.baseurl | prepend: site.url }}">{{author.name}}</a></li>
+            <li><a href="{{ author.url | prepend: site.url }}">{{author.name}}</a></li>
         </ul>
     {% endfor %}
 <center><h1>Posts</h1></center>
     {% for post in site.posts %}
         <ul>
-            <li><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{post.title}}</a></li>
+            <li><a href="{{ post.url | prepend: site.url }}">{{post.title}}</a></li>
         </ul>
     {% endfor %}
