@@ -13,12 +13,12 @@ layout: default
 <a href="{{ author.url | prepend: site.url }}"><img class="proimg proimgbb" src="{{ author.profile_image | prepend: site.url }}" alt="{{author.name}}'s profile picture"/></a>
 </td>
 <td>
-<a href="{{site.url}}/{{ author.url | prepend: site.baseurl }}"><h1 class="proname">{{ author.name }}</h1></a>
+<a href="{{ author.url | prepend: site.url }}"><h1 class="proname">{{ author.name }}</h1></a>
 </td>
 </tr>
 <tr>
 <td>
-<a href="{{site.url}}/{{ author.url | prepend: site.baseurl }}"><h2 class="proposition">{{ author.position }}</h2></a>
+<a href="{{ author.url | prepend: site.url }}"><h2 class="proposition">{{ author.position }}</h2></a>
 </td>
 </tr>
 {% endfor %}
@@ -28,4 +28,4 @@ layout: default
 </div>
 
 <script defer>function init() {var imgDefer = document.getElementsByTagName('img'); for (var i=0; i<imgDefer.length; i++) {if(imgDefer[i].getAttribute('data-src')) {imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));}}}window.onload = init;</script>
-<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script><script> if (window.netlifyIdentity) {window.netlifyIdentity.on("init", user => {if (!user) {window.netlifyIdentity.on("login", () => {document.location.href = "/setup/";});}});}</script>
+<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script><script defer> if (window.netlifyIdentity) {window.netlifyIdentity.on("init", user => {if (!user) {window.netlifyIdentity.on("login", () => {document.location.href = "/setup/";});}});}</script>
