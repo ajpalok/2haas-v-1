@@ -47,7 +47,7 @@ input[type=submit] {
 
 </style>
 <center>
-<img src="/assets/img/contact.jpg">
+<img src="{{/assets/img/contact.jpg | prepend: site.url }}">
 <form action="/contact/message-sent/" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
 
 <fieldset>
