@@ -47,7 +47,7 @@
 <meta property="og:site_name" content="{{ site.name }}">
 <meta property="article:publisher" content="https://www.facebook.com/2haas" />
 <meta property="article:author" content="https://www.facebook.com/aj.palok5" />
-<meta property="article:published_time" content="{{ page.date }}" />
+<meta property="article:published_time" content="{% if page.date %}{{ page.date }}{% else %}{{ 'now' | date: "%B %d, %Y" }}{% endif %}" />
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
