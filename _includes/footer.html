@@ -11,9 +11,9 @@
   "url": "{{ site.url }}/",
   "logo": {
       "@type": "ImageObject",
-      "url": "{{ site.url }}/assets/img/icons/ms-icon-144x144.png",
+      "url": "{{ "/assets/img/icons/ms-icon-144x144.png"  | prepend: "site.url" }}",
       "width": "600",
       "height": "315"
   }
 </script>
-<script src="{{ site.url }}/assets/js/app.js"></script>
+<script src="{{ "/assets/js/app.js" | prepend: "site.url" }}"></script>
