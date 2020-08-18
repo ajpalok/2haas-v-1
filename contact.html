@@ -47,9 +47,9 @@ input[type=submit] {
 
 </style>
 <center>
-<img src="{{/assets/img/contact.jpg | prepend: site.url }}">
-<form action="/contact/message-sent/" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+<img src="{{ "/assets/img/contact.jpg" | prepend: site.url }}">
 
+<form action="https://docs.google.com/forms/d/e/1FAIpQLSfJjli7Pmx8XyoAYgVh4qfPsYGJyWy2wFdWz1LHIKnLoWcRBA/formResponse" method="POST">
 <fieldset>
     <legend>Contact</legend>
 	First Name <br>
@@ -69,4 +69,3 @@ input[type=submit] {
 </fieldset>
 </form>
 </center>
- <script src="https://www.google.com/recaptcha/api.js"></script>
