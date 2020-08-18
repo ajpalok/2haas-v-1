@@ -32,7 +32,7 @@ input[type=submit] {
 	background-color: #ff3333;
 	width: 50%;
 	height: 20px;
-	padding: 5px 20px;
+	padding: 5px 20px 5px 20px;
 	border: 1px solid #ff3333;
 	border-radius: 10px;
 }
@@ -48,11 +48,9 @@ input[type=submit] {
 </style>
 <center>
 <img src="{{ "/assets/img/contact.jpg" | prepend: site.url }}">
-<script type="text/javascript">var submitted=false;</script>
-     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='/contact/message-sent/';}"></iframe>
-<form action="https://docs.google.com/forms/d/e/1FAIpQLSfJjli7Pmx8XyoAYgVh4qfPsYGJyWy2wFdWz1LHIKnLoWcRBA/formResponse" method="POST">
+<form action="https://docs.google.com/forms/d/e/1FAIpQLSfJjli7Pmx8XyoAYgVh4qfPsYGJyWy2wFdWz1LHIKnLoWcRBA/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
 <fieldset>
-    <legend>Contact</legend>
+    <legend><h3>Contact</h3></legend>
 	First Name <br>
 	<input type="text" name="entry.1083442024" placeholder="Enter Your First Name" required><br>
 	Middle Name <br>
@@ -70,3 +68,5 @@ input[type=submit] {
 </fieldset>
 </form>
 </center>
+<script type="text/javascript">var submitted=false;</script>
+     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='/contact/message-sent/';}"></iframe>
