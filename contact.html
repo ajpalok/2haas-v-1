@@ -32,7 +32,7 @@ input[type=submit] {
 	background-color: #ff3333;
 	width: 50%;
 	height: 20px;
-	padding: 0 20px;
+	padding: 5px 20px;
 	border: 1px solid #ff3333;
 	border-radius: 10px;
 }
@@ -52,19 +52,25 @@ input[type=submit] {
 
 <fieldset>
     <legend>Contact</legend>
-	Full Name <br>
-	<input type="text" name="name" placeholder="Enter Your Full Name" required><br>
+	First Name <br>
+	<input type="text" name="entry.1083442024" placeholder="Enter Your First Name" required><br>
+	Middle Name <br>
+	<input type="text" name="entry.544019268" placeholder="Enter Your First Name" required><br>
+	Last Name <br>
+	<input type="text" name="entry.1663944256" placeholder="Enter Your First Name" required><br>
 	Email <br> 
-	<input type="email" name="email" placeholder="Enter Your Email Name" required> <br>
+	<input type="email" name="entry.1368774101" placeholder="Enter Your Email Name" required> <br>
+	Phone <br>
+	<input type="text" name="entry.1247187875" placeholder="Enter Your First Name" required><br>
 	Message<br>
-	<textarea type="text" class="msg" required name="message">Message: </textarea><br>
-<br>
+	<textarea type="text" class="msg" required name="entry.2041240039">Message: </textarea><br>
+	<button class="g-recaptcha" 
+        data-sitekey="reCAPTCHA_site_key" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
 
-  <div data-netlify-recaptcha="true"></div>
-
-<br><br>
-	<input type="submit" value="Sent">
+	<br><input type="submit" value="Sent">
 </fieldset>
 </form>
 </center>
-
+ <script src="https://www.google.com/recaptcha/api.js"></script>
