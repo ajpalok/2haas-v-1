@@ -31,7 +31,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="p:domain_verify" content="efb957ac656e8789272d083c0676a960"/>
 <meta name="google-site-verification" content="oRQDgIar-5Vfe2UeLaK_WN_tZYUNoZv6Q0PAQKABn88" />
-<link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend:"site.url" }}">
+<link rel="stylesheet" href="{{ site.url }}/assets/css/main.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"/>
 <title>{{ title }}</title>
 <meta name="description" content="{{ description }}">
@@ -41,7 +41,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
 <meta property="fb:app_id" content="272668597418368">
-<meta property="og:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:title" content="{{ title }}">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta property="og:image" content="{{ image }}"/>
 <meta property="og:site_name" content="{{ site.name }}">
@@ -53,24 +53,24 @@
 <meta name="twitter:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <meta name="twitter:site" content="@2haas_ml" /><meta name="twitter:creator" content="@aj_palok"><meta name="twitter:card" content="summary">
-<link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon" />
-<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/img/icons/apple-touch-icon.png" />
-<link rel="apple-touch-icon" sizes="57x57" href="/assets/img/icons/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/assets/img/icons/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/icons/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/assets/img/icons/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/icons/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/assets/img/icons/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/icons/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/assets/img/icons/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/assets/img/icons/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icons/favicon-16x16.png">
-<link rel="manifest" href={{ "/manifest.json" | prepend: "site.url" }}">
+<link rel="shortcut icon" href="{{ site.url }}/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="{{ site.url }}/assets/img/icons/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="{{ site.url }}/assets/img/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="{{ site.url }}/assets/img/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="{{ site.url }}/assets/img/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="{{ site.url }}/assets/img/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="{{ site.url }}/assets/img/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="{{ site.url }}/assets/img/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="{{ site.url }}/assets/img/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="{{ site.url }}/assets/img/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/assets/img/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="{{ site.url }}/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/assets/img/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="{{ site.url }}/assets/img/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}/assets/img/icons/favicon-16x16.png">
+<link rel="manifest" href={{ site.url }}/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="{{ "/assets/img/icons/ms-icon-144x144.png" | prepend: "site.url" }}">
+<meta name="msapplication-TileImage" content="{{ site.url }}/assets/img/icons/ms-icon-144x144.png">
 <meta name="theme-color" content="#000000">
 <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: "site.url" }}"/>
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml"/>
