@@ -4,7 +4,6 @@ html, body{
 	width: 100%;
 	height:100%;
         background-color: #fff;
-	font-family: 'Roboto', sans-serif;
 }
 .main{
 	width: 100%;
@@ -14,7 +13,6 @@ html, body{
 h1, h2, h3, h4, h5, h6{
 	font-weight: bold;
 	color: #000;
-	font-family: 'Galada', cursive;
 }
 h1{
 	font-size: 32px;
@@ -38,7 +36,6 @@ p{
 	font-size: 20px;
 	font-weight: 67;
 	color: #000;
-	font-family: 'Roboto', sans-serif;
 }
 
 a{
@@ -46,8 +43,6 @@ a{
         text-decoration:none;
         font-size: 20px;
 	font-weight: 900;
-	font-family: 'Roboto', sans-serif;
-
 }
 
 img{
@@ -61,4 +56,3 @@ iframe, blockquote, embed, object{
 	margin-top: 13px;
 	margin-bottom: 13px;
 }
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&family=Galada&family=Roboto:wght@500&display=swap');
