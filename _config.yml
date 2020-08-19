@@ -18,7 +18,7 @@ permalink: /:tags/:title/
 # pagination plugin
 plugins:
   - jekyll-paginate
-paginate: 4
+paginate: 7
 paginate_path: /page-:num
 source: .
 destination: ./_site
