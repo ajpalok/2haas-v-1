@@ -7,11 +7,18 @@ const assets = [
   '/search/',
   '/categories/',
   '/contact/',
+  '/contact/message-sent/',
   '/staff/',
   '/assets/css/main.css',
   '/assets/img/off.jpg',
   '/assets/img/404.gif',
-  'https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&family=Galada&family=Roboto:wght@500&display=swap',
+  '/assets/img/loading.gif',
+  '/assets/img/contact.jpg',
+  '/assets/img/blog-image.png',
+  '/assets/img/message.gif',
+  '/assets/js/app.js',
+  '/assets/js/search-script.js',
+  'https://identity.netlify.com/v1/netlify-identity-widget.js',
 ];
 self.addEventListener('install', evt => {
   evt.waitUntil(
@@ -40,3 +47,10 @@ self.addEventListener('fetch', evt => {
     })
   );
 });
+
+
+
+
+2 days ago
+blog-image.png
+
