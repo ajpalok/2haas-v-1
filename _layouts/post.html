@@ -13,9 +13,9 @@ layout: default
 <aside class="middle column2">
 <table>
 <tr><th><h2>Read Next:</h2></th></tr>
-{% assign next_posts = site.posts | where_exp:"post","post.path != page.path" %}{% assign shuffled_array = next_posts | shuffle %}{% for post in shuffled_array limit:3 %}
-<tr><th><a href="{{ post.url | prepend: site.url }}"><h1>{{ post.title }}</h1></a></th></tr>
-<tr><td><a class="post-image" href="{{ post.url | prepend: site.url }}">{% if post.image %}<img class="post-image" src="{{ post.image }}" alt="{{ post.title }}'s Featured Photo">{% else %}<img class="post-image" src="{{ "/assets/img/off.jpg" | prepend: site.url }}" alt="No Featured Photo">{% endif %}</a></td></tr>{% endfor %}
+{% assign next_posts = site.posts | where_exp:"post","post.path != page.path" %}{% assign shuffled_array = next_posts | shuffle %}{% for post in shuffled_array limit:4 %}
+<tr><th><a href="{{ site.url }}{{ post.url }}"><h1>{{ post.title }}</h1></a></th></tr>
+<tr><td><a class="post-image" href="{{ post.url | prepend: site.url }}">{% if post.image %}<img class="post-image" src="{{ post.image }}" alt="{{ post.title }}'s Featured Photo">{% else %}<img class="post-image" src="{{ site.url }}/assets/img/off.jpg" alt="No Featured Photo">{% endif %}</a></td></tr>{% endfor %}
 <tr><td>{% include footer.html %}</td></tr>
 </table>
 </aside>
