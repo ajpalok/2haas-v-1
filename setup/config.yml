@@ -10,7 +10,7 @@ media_library:
   output_filename_only: false
 publish_mode: editorial_workflow
 display_url: https://2haas.ml
-logo_url: https://2haas.ml/favicon.ico
+logo_url: https://2haas.ml/assets/img/icons/apple-icon-180x180.png
 show_preview_links: false
 collections:
   - label: "Authors"
