@@ -5,15 +5,15 @@ layout: home
 {% for post in paginator.posts %}
 <table>
 <tr>
-<th colspan="2"><a href='{{ site.baseurl }}{{ post.url }}'><h2>{{ post.title }}</h2></a></th>
+<th colspan="2"><a href='{{ site.url }}{{ post.url }}'><h2>{{ post.title }}</h2></a></th>
 </tr>
 <tr>
 <td colspan="2">
-<a href='{{ site.baseurl }}{{ post.url }}'>
+<a href='{{ site.url }}{{ post.url }}'>
 {% if post.image %}    
 <img class="post-image" src="{{ post.optimized_image }}" data-src="{{ post.image }}" alt="{{ post.title }}'s Featured Photo">
 {% else %}
-<img class="post-image" src="{{ "/assets/img/off.jpg" | prepend: site.baseurl }}" alt="No Featured Photo Available"> 
+<img class="post-image" src="{{ site.url }}/assets/img/off.jpg" alt="No Featured Photo Available"> 
 {% endif %}
 </a>
 </td>
@@ -22,7 +22,7 @@ layout: home
 <th> 
 {% assign category = site.categories | where: 'short_name', page.category | first %}
 {% if category %}
-<a href="{{ site.baseurl }}{{ category.url }}">{{ category.name }}</a>
+<a href="{{ site.url }}{{ category.url }}">{{ category.name }}</a>
 {% endif %}
 </th>
 <th> <p>{{ post.date | date: '%B %d, %Y' }}</p> </th>
@@ -32,9 +32,9 @@ layout: home
 <p>
 {% assign author = site.authors | where: 'short_name', page.author | first %}
 {% if author %}
-<a href="{{ site.baseurl }}{{ author.url }}">{{ author.name }}</a>
+<a href="{{ site.url }}{{ author.url }}">{{ author.name }}</a>
 {% endif %}<br>
-{{ post.excerpt | strip_html | truncate: 250 }} <a class="more" href="{{ site.baseurl }}{{ post.url }}">more</a>
+{{ post.excerpt | strip_html | truncate: 250 }} <a class="more" href="{{ site.url }}{{ post.url }}">more</a>
 </p>
 </td></tr>
 </table>
