@@ -1,4 +1,64 @@
 ---
 label: Post
 hide_body: false
-fields: []
+fields:
+- name: layout
+  type: text
+  config:
+    required: false
+  label: Layout
+  hidden: true
+  default: post
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: true
+    date_format: dd/mm/yyyy
+    time_format: 
+    display_utc: false
+  default: now
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Description
+- name: body
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Article
+- name: image
+  type: image_gallery
+  config: {}
+  label: Image
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+- name: category
+  type: select
+  default: ''
+  config:
+    required: true
+    options: []
+    source:
+      type: documents
+      section: categories
+      file: 
+      path: 
+  label: Category
