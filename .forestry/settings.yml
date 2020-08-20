@@ -15,7 +15,7 @@ sections:
   label: Categories
   create: documents
   match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
   templates:
   - category
 - type: directory
@@ -23,11 +23,11 @@ sections:
   label: Authors
   create: documents
   match: "**/*"
-  new_doc_ext: ".md"
-upload_dir: uploads
-public_path: "/uploads"
+  new_doc_ext: md
+upload_dir: uploads/images
+public_path: "/uploads/images"
 front_matter_path: ''
-use_front_matter_path: false
+use_front_matter_path: 
 file_template: ":filename:"
 build:
   preview_env:
