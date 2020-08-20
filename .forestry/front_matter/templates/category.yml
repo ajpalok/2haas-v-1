@@ -10,7 +10,7 @@ fields:
 - name: name
   type: text
   config:
-    required: false
+    required: true
   label: Name
 - name: description
   type: textarea
