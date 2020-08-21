@@ -16,6 +16,8 @@ const assets = [
   '/assets/img/contact.jpg',
   '/assets/img/blog-image.png',
   '/assets/img/message.gif',
+  '/assets/js/search-script.js',
+  'https://identity.netlify.com/v1/netlify-identity-widget.js',
 ];
 self.addEventListener('install', evt => {
   evt.waitUntil(
@@ -44,10 +46,3 @@ self.addEventListener('fetch', evt => {
     })
   );
 });
-
-
-
-
-2 days ago
-blog-image.png
-
