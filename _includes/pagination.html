@@ -4,11 +4,11 @@
 {% if paginator.previous_page %}
 <li><a href="{{ paginator.previous_page_path | relative_url }}">&laquo;</a></li>
 {% else %}
-<li><a>&laquo;</a></li>
+<li><b>&laquo;</b></li>
 {% endif %}
 {% for page in (1..paginator.total_pages) %}
 {% if page == paginator.page %}
-<li><a class="active">{{ page }}</a></li>
+<li><b class="active">{{ page }}</b></li>
 {% elsif page == 1 %}
 <li><a href="{{ paginator.previous_page_path | relative_url }}">{{ page }}</a></li>
 {% else %}
@@ -18,7 +18,7 @@
 {% if paginator.next_page %}
 <li><a href="{{ paginator.next_page_path | relative_url }}">&raquo;</a></li>
 {% else %}
-<li><a>&raquo;</a></li>
+<li><b>&raquo;</b></li>
 {% endif %}
 </ul>
 {% endif %}
