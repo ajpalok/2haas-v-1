@@ -1,10 +1,9 @@
 ---
 layout: home
-banner: /assets/img/blog-image.png
 ---
 
 {% for post in paginator.posts %}
-<table class="">
+<table>
 <tr>
 <th colspan="2"><a href='{{ site.url }}{{ post.url }}'><h2>{{ post.title }}</h2></a></th>
 </tr>
@@ -12,7 +11,7 @@ banner: /assets/img/blog-image.png
 <td colspan="2">
 <a href='{{ site.url }}{{ post.url }}'>
 {% if post.image %}    
-<img class="post-image" src="/assets/img/loading.gif" data-src="{{ post.image }}" alt="{{ post.title }}'s Featured Photo">
+<img class="post-image" src="{{ post.image }}" alt="{{ post.title }}'s Featured Photo">
 {% else %}
 <img class="post-image" src="{{ site.url }}/assets/img/off.jpg" alt="No Featured Photo Available"> 
 {% endif %}
