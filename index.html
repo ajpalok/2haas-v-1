@@ -19,13 +19,13 @@ layout: home
 </td>
 </tr>
 <tr>
-<th> 
+<td> 
 {% assign category = site.categories | where: 'short_name', page.category | first %}
 {% if category %}
 <a href="{{ site.url }}{{ category.url }}">{{ category.name }}</a>
 {% endif %}
-</th>
-<th> <p>{{ post.date | date: '%B %d, %Y' }}</p> </th>
+</td>
+<td> <p>{{ post.date | date: '%B %d, %Y' }}</p> </td>
 </tr>
 <tr>
 <td colspan="2">
