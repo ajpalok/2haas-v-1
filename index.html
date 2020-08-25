@@ -3,7 +3,7 @@ layout: home
 ---
 
 {% for post in paginator.posts %}
-<table class="postcontainer">
+<table>
 <tr>
 <th colspan="2"><a href='{{ site.url }}{{ post.url }}'><h2>{{ post.title }}</h2></a></th>
 </tr>
@@ -19,13 +19,13 @@ layout: home
 </td>
 </tr>
 <tr>
-<td class"byline50"> 
+<td> 
 {% assign category = site.categories | where: 'short_name', page.category | first %}
 {% if category %}
 <a href="{{ site.url }}{{ category.url }}">{{ category.name }}</a>
 {% endif %}
 </td>
-<td class"byline50"> <p>{{ post.date | date: '%B %d, %Y' }}</p> </td>
+<td> <p>{{ post.date | date: '%B %d, %Y' }}</p> </td>
 </tr>
 <tr>
 <td colspan="2">
