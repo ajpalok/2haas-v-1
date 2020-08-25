@@ -41,14 +41,14 @@ Many YouTubers or artists make many videos of detailed steps for drawing eyes. I
 
 Also available on:  
 
-Facebook: \[2haas](https://facebook.com/2haas)  
+Facebook: [2haas](https://facebook.com/2haas)  
 
-Twitter: \[2haas_ml](https://twitter.com/2haas_ml)  
+Twitter: [2haas_ml](https://twitter.com/2haas_ml)  
 
-Instagram: \[2haas.ml](https://instagram.com/2haas.ml)  
+Instagram: [2haas.ml](https://instagram.com/2haas.ml)  
 
-Pinterest: \[2haas_ml](https://pinterest.com/2haas_ml)   
+Pinterest: [2haas_ml](https://pinterest.com/2haas_ml)   
 
-YouTube: \[2HAAS](https://www.youtube.com/channel/UCg3hEFuZ7bWxSVwOcDaCkIg)
+YouTube: [2HAAS](https://www.youtube.com/channel/UCg3hEFuZ7bWxSVwOcDaCkIg)
 
 - - -
