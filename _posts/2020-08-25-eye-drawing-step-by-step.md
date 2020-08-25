@@ -7,6 +7,8 @@ description: "Many YouTubers or artists make many videos of detailed steps for
   eye, how to draw eyes easy, how to draw eyes for beginners, etc\".. that's why
   I tried to make something new. And here it is.. eye drawing step by step with
   quote.. Watch the video:"
+image: https://res.cloudinary.com/thaas/image/upload/v1598360792/Eye_Drawing_Step_By_Step_x1zizx.jpg
+optimized_image: https://res.cloudinary.com/thaas/image/upload/q_10/v1598360792/Eye_Drawing_Step_By_Step_x1zizx.jpg
 category: drawing
 tags:
   - 2haas
