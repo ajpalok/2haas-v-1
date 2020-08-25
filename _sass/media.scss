@@ -1,7 +1,5 @@
 .post-image{-webkit-transition:0.5s; transition: 0.5s;}
-.post-image:hover{-webkit-filter: grayscale(100%); filter: grayscale(100%);}
-.postcontainer tr,th,td{width:100%;} .byline50{width:50%;}
-@media only screen and (max-width:900px){
+.post-image:hover{-webkit-filter: grayscale(100%); filter: gra@media only screen and (max-width:900px){
 .main{
 	margin-bottom: 50px;
 }
