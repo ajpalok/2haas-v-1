@@ -2,9 +2,12 @@
 date: 2020-08-26
 layout: post
 title: Govt. Reduced COVID-19 Testing!
-description: "Due to Corona Virus, Govt is testing less the daily target everyday. That's why proper percentage of number of COVID-19 affected patient is very poor. People are not giving priority of home quarantine also like testing Corona virus. Analytics are showing some horrible news."
-image: https://res.cloudinary.com/thaas/image/upload/v1598360792/Eye_Drawing_Step_By_Step_x1zizx.jpg
-optimized_image: https://res.cloudinary.com/thaas/image/upload/q_10/v1598360792/Eye_Drawing_Step_By_Step_x1zizx.jpg
+description: Due to Corona Virus, Govt is testing less the daily target
+  everyday. That's why proper percentage of number of COVID-19 affected patient
+  is very poor. People are not giving priority of home quarantine also like
+  testing Corona virus. Analytics are showing some horrible news.
+image: https://res.cloudinary.com/thaas/image/upload/v1598446177/Reduced_COVID-19_Testing_ynht2c.jpg
+optimized_image: https://res.cloudinary.com/thaas/image/upload/v1598446177/Reduced_COVID-19_Testing_ynht2c.jpg
 category: drawing
 tags:
   - 2haas
