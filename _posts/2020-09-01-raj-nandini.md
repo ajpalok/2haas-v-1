@@ -37,4 +37,23 @@ tags:
   - sketch of a girl
 author: ajpalok
 ---
-2haas,draw,drawing,2haas drawing,beautiful girl drawing,bir kız nasıl çizilir,cute drawings,dibujo de niña,drawing sketch,drawing tutorial,drawing videos,easy drawing of pencil sketch,face drawing,farjana drawing academy,girl drawing,how to draw easy girl drawing for beginners,how to draw sketch,kalem kroki,pencil art,pencil drawing images,pencil sketch,pencil sketch drawing,رسم فتاة,كيفية رسم فتاة,लड़की ड्राइंग,mukta easy drawing,sketch of a girl
+Hello guys, Here comes our new drawing from 2HAAS. Name of todays drawing is Raj Nandini. Watch the video:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/CZRF4ivHeR8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+**Thanks For Watching**
+  
+- - -
+
+Also available on:  
+
+Facebook: [2haas](https://facebook.com/2haas)  
+
+Twitter: [2haas_ml](https://twitter.com/2haas_ml)  
+
+Instagram: [2haas.ml](https://instagram.com/2haas.ml)  
+
+Pinterest: [2haas_ml](https://pinterest.com/2haas_ml)   
+
+YouTube: [2HAAS](https://www.youtube.com/channel/UCg3hEFuZ7bWxSVwOcDaCkIg)
+
+- - -
