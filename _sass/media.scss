@@ -1,4 +1,4 @@
-.w50{width: 50%;} .w100{width: 100%;} .block{display: block;} .inlineblock{display: inline-block;}
+.w50{width: 50%;} .w100{width: 100%;} .block{display: block;} .inlineblock{display: inline-block; position: absolute;}
 .post-image{-webkit-transition:0.5s; transition: 0.5s;}
 .post-image:hover{-webkit-filter: grayscale(100%); filter: grayscale(100%);}
 @media only screen and (max-width:600px){
