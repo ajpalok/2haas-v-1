@@ -6,24 +6,24 @@ layout: default
 {{ content }}
 </article>
 <aside class="middle column2">
-<table>
-{% for author in site.authors %}
-<tr>
-<td rowspan="2">
-<a href="{{ author.url | prepend: site.url }}"><img class="proimg proimgbb" src="{{ author.profile_image | prepend: site.url }}" alt="{{author.name}}'s profile picture"/></a>
-</td>
-<td>
-<a href="{{ author.url | prepend: site.url }}"><h1 class="proname">{{ author.name }}</h1></a>
-</td>
-</tr>
-<tr>
-<td>
-<a href="{{ author.url | prepend: site.url }}"><h2 class="proposition">{{ author.position }}</h2></a>
-</td>
-</tr>
-{% endfor %}
-</table>
-{% include footer.html %}
+			{% for author in site.authors %}
+				<div class="w100 block">
+					<div class="w50 inlineblock">
+						<a href="{{ author.url | prepend: site.url }}"><img class="proimg proimgbb" src="{{ author.profile_image | prepend: site.url }}" alt="{{author.name}}'s profile picture"/></a>
+					</div>
+					<div class="w50 inlineblock">
+						<div class="w100 block">
+							<a href="{{ author.url | prepend: site.url }}"><h1 class="proname">{{ author.name }}</h1></a>
+						</div>
+						<div class="w100 block">
+							<a href="{{ author.url | prepend: site.url }}"><h2 class="proposition">{{ author.position }}</h2></a>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+				<div class="w100 block">
+					{% include footer.html %}
+				</div>
 </aside>
 </div>
 <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script><script defer> if (window.netlifyIdentity) {window.netlifyIdentity.on("init", user => {if (!user) {window.netlifyIdentity.on("login", () => {document.location.href = "/setup/";});}});}</script>
