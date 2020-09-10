@@ -3,41 +3,28 @@ layout: home
 ---
 
 {% for post in paginator.posts %}
-<table>
-<tr>
-<th colspan="2"><a href='{{ site.url }}{{ post.url }}'><h2>{{ post.title }}</h2></a></th>
-</tr>
-<tr>
-<td colspan="2">
-<a href='{{ site.url }}{{ post.url }}'>
-{% if post.image %}    
-<img class="post-image" src="{{ post.image }}" alt="{{ post.title }}'s Featured Photo">
-{% else %}
-<img class="post-image" src="{{ site.url }}/assets/img/off.jpg" alt="No Featured Photo Available"> 
-{% endif %}
-</a>
-</td>
-</tr>
-<tr>
-<td> 
-{% assign category = site.categories | where: 'short_name', page.category | first %}
-{% if category %}
-<a href="{{ site.url }}{{ category.url }}">{{ category.name }}</a>
-{% endif %}
-</td>
-<td> <p>{{ post.date | date: '%B %d, %Y' }}</p> </td>
-</tr>
-<tr>
-<td colspan="2">
-<p>
-{% assign author = site.authors | where: 'short_name', page.author | first %}
-{% if author %}
-<a href="{{ site.url }}{{ author.url }}">{{ author.name }}</a>
-{% endif %}<br>
-{{ post.excerpt | strip_html | truncate: 250 }} <a class="more" href="{{ site.url }}{{ post.url }}">Continue Reading...</a>
-</p>
-</td></tr>
-</table>
+				<div class="w100 block">
+					<div class="w100 block">
+						<a href='{{ site.url }}{{ post.url }}'><h1 class="center">{{ post.title }}</h1></a>
+					</div>
+					<div class="w100 block">
+						<a href='{{ site.url }}{{ post.url }}'>{% if post.image %}    <img class="post-image" src="{{ post.image }}" alt="{{ post.title }}'s Featured Photo">{% else %}<img class="post-image" src="{{ site.url }}/assets/img/off.jpg" alt="No Featured Photo Available"> {% endif %}</a>
+					</div>
+					<div class="w100 block">
+						<div class="w50 inlineblock center">
+							{% assign category = site.categories | where: 'short_name', post.category | first %}{% if category %}<a href="{{ category.url | prepend: site.url }}">{{ category.name }}</a>{% endif %}
+						</div>
+						<div class="w50 inlineblock center">
+							<p>{{ post.date | date: '%B %d, %Y' }}</p>
+						</div>
+					</div>
+					<div class="w100 block">
+						<div class="block" style="margin-left: 5%; margin-right: 5%; width: 90%;">
+							{% assign author = site.authors | where: 'short_name', post.author | first %}{% if author %}<a href="{{ author.url | prepend: site.url }}">{{ author.name }}</a>{% endif %}
+								<p>{{ post.excerpt | strip_html | truncate: 250 }} <a class="more" href="{{ site.url }}{{ post.url }}">Continue Reading...</a></p>
+						</div>
+					</div>
+				</div>
 {% endfor %}
 
 {% include pagination.html %}
