@@ -1,11 +1,15 @@
-.w50{width: 50%;} .w100{width: 100%;} .block{display: block;} .inlineblock{display: inline-block; position: absolute;}
+.w50{width: 50%;} .w100{width: 100%;} .block{display: block;} .inlineblock{display: inline-block;}
 .post-image{-webkit-transition:0.5s; transition: 0.5s;}
 .post-image:hover{-webkit-filter: grayscale(100%); filter: grayscale(100%);}
 @media only screen and (max-width:600px){
 .main{
 	margin-bottom: 50px;
 }
-.footer{bottom: 50px;}
+}
+@media only screen and (min-width:601px){
+.main{
+	margin-bottom: 10px;
+}
 }
 @media only screen and (min-width:601px) and (max-width:900px){
 
@@ -26,15 +30,16 @@
   content: "";
   display: table;
   clear: both;
-  margin-top: 20px;
 }
 .column1{
 	float: left;
 	width: 60%;
+	margin-top: 20px;
 }
 .column2{
 	float: left;
 	width: 30%;
 	margin-left: 10%;
+	margin-top: 20px;
 }
 }
