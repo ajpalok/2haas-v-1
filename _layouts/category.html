@@ -1,21 +1,13 @@
 ---
 layout: page
 ---
-
-<table>
-	<tr>
-		<td>
-			<h1 class="proname">{{ page.name }}</h1>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<h2 class="proposition">{{ page.description }}</h2>
-		</td>
-	</tr>
-</table>
-
-<h2 class="propost">Posts</h2>
+<div class="w100 block">
+<h1 class="proname">{{ page.name }}</h1>
+</div>
+<div class="w100 block">
+<h2 class="proposition">{{ page.description }}</h2>
+</div>
+<center><h2 class="propost">Posts</h2></centre>
 <ul>
   {% assign filtered_posts = site.posts | where: 'category', page.short_name %}
   {% for post in filtered_posts %}
