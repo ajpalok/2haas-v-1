@@ -1,27 +1,23 @@
 ---
 layout: page
 ---
-<table>
-<tr>
-<td rowspan="2">
-<img class="proimg proimgbb" src="{{ page.profile_image }}" alt="{{ page.name }}'s profile image"/>
-</td>
-<td>
+<div class="w100 block">
+<div class="w50 inlineblock">
+<img class="proimg proimgbb" src="{{ page.profile_image | prepend: site.url }}" alt="{{page.name}}'s profile picture"/>
+</div>
+<div class="w50 inlineblock">
+<div class="w100 block">
 <h1 class="proname">{{ page.name }}</h1>
-</td>
-</tr>
-<tr>
-<td>
+</div>
+<div class="w100 block">
 <h2 class="proposition">{{ page.position }}</h2>
-</td>
-</tr>
-<tr>
-<td colspan="2">
+</div>
+</div>
+</div>
+<div class="w100 block">
 <p>{{ content }}</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
+</div>
+<div class="w100 block">
 <center>		
 {% if page.facebook_username %}
 <a class="idfb" href="https://facebook.com/{{page.facebook_username }}"><i class="fab fa-facebook-f"></i></a>
@@ -33,9 +29,7 @@ layout: page
 <a class="idinsta" href="https://instagram.com/{{page.instagram_username }}"><i class="fab fa-instagram"></i></a>
 {% endif %}
 </center>
-</td>
-</tr>
-</table>
+</div>
 <h2 class="propost">Posts</h2>
 <ul>
 {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
