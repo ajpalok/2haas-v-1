@@ -21,22 +21,19 @@
 	margin-left: 10%;
 	margin-right: 10%;
 }
-.footer{bottom:0;}
-
 .row:after {
   content: "";
   display: table;
   clear: both;
+  margin-top: 20px;
 }
 .column1{
 	float: left;
 	width: 60%;
-	margin-top: 20px;
 }
 .column2{
 	float: left;
 	width: 30%;
-	margin-top: 20px;
 	margin-left: 10%;
 	overflow-y: auto;
 }
