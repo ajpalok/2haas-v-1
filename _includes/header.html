@@ -1,15 +1,23 @@
 <header>
-<a href="{{ site.url }}">
-<div class="center logo pc-logo2">{{ site.name }}</div>
-</a>
-<div class="headbar">
-<a href="{{site.url}}/search" class="navsearch center">
-<i class="fas fa-search"></i> Search
-</a>
-<a class="head-item" href="{{ site.url }}"> <i class="fas fa-home"></i> </a>
-<a class="head-item" href="{{ site.url }}/categories/"> <i class="fas fa-tags"></i> </a>
-<a class="head-item" href="{{ site.url }}/contact/"> <i class="fas fa-paper-plane"></i> </a>
-<a class="head-item" href="{{ site.url }}/staff/"> <i class="fas fa-user"></i> </a>		
-</div>
+  <div class="logo1 midcenter">
+    {%- include 2HAAS_LOGO.html -%}
+  </div>
+  <div class="logo2 midcenter">
+    <a href="{{site.baseurl | prepend: site.url}}">{{site.name}}</a>
+  </div>
+  <div class="headbar">
+  <div class="pcsearchbtn">
+    <a href="{{site.baseurl | prepend: site.url}}/search">
+      <button class="pcsbtn">
+        {%- include search-solid.html -%} <p>Search</p>
+      </button>
+    </a>
+  </div>
+  <div class="pcnav">
+    <a class="head-item" href="{{ site.baseurl | prepend: site.url }}"> {%- include home-solid.html -%} </a>
+    <a class="head-item" href="{{ site.baseurl | prepend: site.url }}/categories/"> {%- include tags-solid.html -%} </a>
+    <a class="head-item" href="{{ site.baseurl | prepend: site.url }}/contact/"> {%- include paper-plane-solid.html -%} </a>
+    <a class="head-item" href="{{ site.baseurl | prepend: site.url }}/staff/"> {%- include user-regular.html -%} </a>
+  </div>
+  </div>
 </header>
-

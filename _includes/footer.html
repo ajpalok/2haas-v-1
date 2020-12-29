@@ -1,4 +1,27 @@
-<center><p><b>NO ADS, NO DISTRACTIONS</b></p></center>
-<center><h4>Quick Links</h4></center>
-<center><a href="{{site.url}}">Home,</a> <a href="{{site.url}}/about/">About,</a> <a href="{{site.url}}/contact/">Contact,</a> <a href="{{site.url}}/sitemap/">Sitemap</a></center>
-<center><p><b>©{{ 'now' | date: "%Y" }} {{ site.name }}</b></p> {% include links.html %}</center>
+<footer>
+<h5 class="w100 block">NO ADS, NO DISTRACTIONS</h5>
+<h6 class="w100 block">Quick Links</h6>
+<nav class="w100">
+  <div class="footnav w50">
+    <a href="{{site.baseurl | prepend: site.url}}">Home</a>
+    <a href="{{site.baseurl | prepend: site.url}}/about/">About</a>
+    <a href="{{site.baseurl | prepend: site.url}}/contact/">Contact</a>
+    <a href="{{site.baseurl | prepend: site.url}}/sitemap/">Sitemap</a>
+  </div>
+  <div class="footnav w50">
+    <a href="{{ site.baseurl | prepend: site.url }}/policy/">Policy</a>
+    <a href="{{ site.baseurl | prepend: site.url }}/cookie-policy/">Cookie Policy</a>
+    <a href="{{ site.baseurl | prepend: site.url }}/privacy-policy/">Privacy Policy</a>
+    <a href="{{ site.baseurl | prepend: site.url }}/disclaimer/">Disclaimer</a>
+    <a href="{{ site.baseurl | prepend: site.url }}/terms-conditions/">Terms and Conditions</a>
+  </div>
+</nav>
+<div class="block w100 footcopy">
+  <p>
+    ©{{ 'now' | date: "%Y" }}
+    <a href="{{site.baseurl | prepend: site.url}}">
+      {{ site.name }}
+    </a>
+  </p>
+</div>
+</footer>

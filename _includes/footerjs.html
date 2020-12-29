@@ -4,14 +4,13 @@
   "@type": "Organization",
   "name": "{{ site.name }}",
   "description": "{{ site.description }}",
-  "url": "{{ site.url }}/",
+  "url": "{{ site.baseurl | prepend: site.url }}/",
   "logo": {
       "@type": "ImageObject",
-      "url": "{{ site.url }}/assets/img/icons/ms-icon-144x144.png",
+      "url": "{{ site.baseurl | prepend: site.url }}/assets/img/icons/ms-icon-144x144.png",
       "width": "600",
       "height": "315"
   }
 }
 </script>
-<script src="{{ "/assets/js/app.js" | prepend: site.url }}"></script>
-<script data-ad-client="ca-pub-7426762298315186" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script src="{{ "/assets/js/app.js" | prepend: site.baseurl | prepend: site.url }}"></script>

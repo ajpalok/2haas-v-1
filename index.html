@@ -2,29 +2,48 @@
 layout: home
 ---
 
-{% for post in paginator.posts %}
-				<div class="w100 block">
-					<div class="w100 block">
-						<a href='{{ site.url }}{{ post.url }}'><h1 class="center">{{ post.title }}</h1></a>
-					</div>
-					<div class="w100 block">
-						<a href='{{ site.url }}{{ post.url }}'>{% if post.image %}    <img class="post-image" src="{{ post.image }}" alt="{{ post.title }}'s Featured Photo">{% else %}<img class="post-image" src="{{ site.url }}/assets/img/off.jpg" alt="No Featured Photo Available"> {% endif %}</a>
-					</div>
-					<div class="w100 block">
-						<div class="w50 inlineblock center">
-							{% assign category = site.categories | where: 'short_name', post.category | first %}{% if category %}<a href="{{ category.url | prepend: site.url }}">{{ category.name }}</a>{% endif %}
-						</div>
-						<div class="w50 inlineblock center">
-							<p>{{ post.date | date: '%B %d, %Y' }}</p>
-						</div>
-					</div>
-					<div class="w100 block">
-						<div class="block" style="margin-left: 5%; margin-right: 5%; width: 90%;">
-							{% assign author = site.authors | where: 'short_name', post.author | first %}{% if author %}<a href="{{ author.url | prepend: site.url }}">{{ author.name }}</a>{% endif %}
-								<p>{{ post.excerpt | strip_html | truncate: 250 }} <a class="more" href="{{ site.url }}{{ post.url }}">Continue Reading...</a></p>
-						</div>
-					</div>
-				</div>
-{% endfor %}
+{%- if site.paginate -%}
+{%- assign posts = paginator.posts -%}
+{%- else -%}
+{%- assign posts = site.posts -%}
+{%- endif -%}
 
-{% include pagination.html %}
+{%- if posts.size > 0 -%}
+
+		{%- for post in posts -%}
+				<section>
+					<div class="block w100">
+						<div class="midcenter">
+							<a href='{{ post.url | prepend: site.baseurl | prepend: site.url }}'>
+								<h2 class="wordwrap">{{ post.title }}</h2>
+							</a>
+						</div>
+					</div>
+					<div class="post-img">
+						<a href='{{ post.url | prepend: site.baseurl | prepend: site.url }}'>
+						{%- if post.image -%}
+						<img class="post-image" src="{{ post.image }}" alt="{{ post.title }}'s Featured Photo">
+						{%- else -%}
+						<img class="post-image" src="{{ site.baseurl | prepend: site.baseurl | prepend: site.url }}/assets/img/off.jpg" alt="No Featured Photo Available">
+						{%- endif -%}
+						</a>
+					</div>
+					<div class="block w100">
+						<div class="byline">
+							<div class="midcenter w50 wordwrap">
+								{%- assign category = site.categories | where: short_name , post.category | first -%}{%- if category -%}<a href="{{ category.url | prepend: site.baseurl | prepend: site.url }}">{{ category.name }}</a>{%- endif -%}
+							</div>
+							<div class="midcenter w50">
+								<p>{{ post.date | date: '%B %d, %Y' }}</p>
+							</div>
+						</div>
+					</div>
+					<div class="post-body">
+						{%- assign author = site.authors | where: short_name , post.author | first -%}{%- if author -%}<a href="{{ author.url | prepend: site.baseurl | prepend: site.url }}">{{ author.name }}</a>{%- endif -%} <br>
+						<p>{{ post.excerpt | strip_html | truncatewords: 20 | markdownify}}
+						<a class="more" href="{{ site.baseurl | prepend: site.url }}{{ post.url }}">Continue Reading...</a></p>
+					</div>
+				</section>
+	{%- endfor -%}
+  {%- include pagination.html -%}
+  {%- endif -%}

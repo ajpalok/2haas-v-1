@@ -1,34 +1,46 @@
 ---
-layout: default
+layout: page
 title: Search
 description: Search contents from here.. It's easy and safe..
 ---
 <style>
-
-input[type=text]{
-	width: 50%;
-	height: 20px;
-	padding: 0 20px;
-	border: 1px solid #333;
-	border-radius: 10px;
-	text-align: center;
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  padding: 12px 20px 12px 20px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+  width: 100%;
+}
+#results-container{
+  width:100%;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+}
+#results-container .container{
+  margin:10px;
 }
 </style>
-<br>
-<center>
-<input type="text" id="search-input" placeholder="Search...">
-<ul type="none" id="results-container"></ul>
+<center><h1>{{page.title}}</h1>
+<div class="w50">
+	<input type="text" id="search-input" name="search" placeholder="Search...">
+</div>
+  <section id="results-container"></section>
 </center>
-<!-- Script pointing to search-script.js -->
-<script src="{{ site.url }}/assets/js/search-script.js" type="text/javascript"></script>
-
+<script src="{{ site.baseurl | prepend: site.url }}/assets/js/search-script.js" type="text/javascript"></script>
 <script>
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
-  json: '{{ "/search.json" | prepend: site.url }}',
-  searchResultTemplate: '<li><dl><dt><a href="{url}"><h1>{title}</h1></a></dt><dd><span>{date}</span><br> </dd></dl></li>',
-  noResultsText: "<li>No result found!</li>"
+  json: '{{ "/search.json" | prepend: site.baseurl | prepend: site.url }}',
+  searchResultTemplate: '<div class="container"><div class="block w100"><div class="midcenter"><a href="{url}"><h2 class="wordwrap">{title}</h2></a></div></div><div style=" display:flex; justify-content: space-around; align-items:center;"><p>{category}</p><p>{date}</p></div></div>',
+  noResultsText: '<div class="block w100"><div class="midcenter"><h2 class="wordwrap">No results found.. :(</h2></div></div>'
 })
 </script>
-

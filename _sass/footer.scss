@@ -1,0 +1,35 @@
+footer{
+  h5, h6{ padding: 5px 0;}
+  nav{
+    display: flex;
+    flex-direction: row;
+    .footnav{
+      display: flex;
+      flex-direction: column;
+      a{
+        padding:5px;
+        word-wrap: break-word;
+        font:{
+          size:15px;
+          family: $text-font;
+          weight:600;
+        }
+      }
+    }
+  }
+  .footcopy{
+    word-spacing: 5px;
+    p{
+      size: 20px;
+      weight: 200;
+      family: $text-font;
+      a{
+        font:{
+          size: 20px;
+          weight: bold;
+          family: $logo-font;
+        }
+      }
+    }
+  }
+}

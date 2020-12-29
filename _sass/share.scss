@@ -2,7 +2,6 @@
 	display: inline-block;
 	width: 90px;
 	height: 90px;
-	color: #5f67a3;
 	background-color: #fff;
 	margin: 10px;
 	border-radius: 30%;
@@ -15,7 +14,6 @@
 	display: inline-block;
 	width: 90px;
 	height: 90px;
-	color: #56ccf0;
 	background-color: #fff;
 	margin: 10px;
 	border-radius: 30%;
@@ -24,24 +22,28 @@
 	position: relative;
 }
 
-.srbtnfb i{
+.srbtnfb svg{
 	line-height: 90px;
-	font-size: 30px;
+	color: #5f67a3;
+	width: 30px;
+	height:30px;
 	transition: 0.2s linear;
 }
-.srbtntwitter i{
+.srbtntwitter svg{
 	line-height: 90px;
-	font-size: 30px;
+	color: #56ccf0;
+	width: 30px;
+	height:30px;
 	transition: 0.2s linear;
 }
 
-.srbtnfb:hover i{
+.srbtnfb:hover svg{
 	transform: scale(1.3);
-	color: #fff;
+	fill: #ffffff;
 }
-.srbtntwitter:hover i{
+.srbtntwitter:hover svg{
 	transform: scale(1.3);
-	color: #fff;
+	fill: #ffffff;
 }
 
 
