@@ -1,7 +1,7 @@
 <div class="navbar">
-<a class="nav-item center" href="{{ site.url }}"> <i class="fas fa-home"></i></a>
-<a class="nav-item center" href="{{ site.url }}/search/"><i class="fas fa-search"></i></a>
-<a class="nav-item center" href="{{ site.url }}/categories/"><i class="fas fa-tags"></i></a>
-<a class="nav-item center" href="{{ site.url }}/contact/"><i class="fas fa-paper-plane"></i></a>
-<a class="nav-item center" href="{{ site.url }}/staff/"><i class="fas fa-user"></i></a>		
+<a href="{{ site.baseurl | prepend: site.url }}"> {%- include home-solid.html -%} </a>
+<a href="{{ site.baseurl | prepend: site.url }}/search/"> {%- include search-solid.html -%} </a>
+<a href="{{ site.baseurl | prepend: site.url }}/categories/"> {%- include tags-solid.html -%} </a>
+<a href="{{ site.baseurl | prepend: site.url }}/contact/"> {%- include paper-plane-solid.html -%} </a>
+<a href="{{ site.baseurl | prepend: site.url }}/staff/"> {%- include user-regular.html -%} </a>
 </div>

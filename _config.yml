@@ -3,27 +3,36 @@ name: 2HAAS
 title: 2HAAS | Draw Your Imagination
 description: "ART is related with HEART.. It's the imagination which is framed in a canvas. Arts have no boundaries. And it's an opportunity to show your imagination to the world with 2HAAS.. Publish your Arts With 2HAAS. And that's why we say 'Draw Your Imagination'.."
 language: "en"
-tags: [2haas, 2HAAS, drawings, drawing, sketching, sketch, pencil sketch, oil pastel drawing, oil pastel drawings, graphics design, logo art]
+tags:
+  - 2haas
+  - 2HAAS
+  - drawings
+  - drawing
+  - sketching
+  - sketch
+  - pencil sketch
+  - oil pastel drawing
+  - oil pastel drawings
+  - graphics design
+  - logo art
 
 # advance settings
+baseurl: ""
 url: "https://2haas.ml"
 markdown: kramdown
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 highlighter: rouge
 sass:
     style: compressed
 
-permalink: /:tags/:title/
-
 # pagination plugin
 plugins:
   - jekyll-paginate
-paginate: 7
-paginate_path: /page-:num
-source: .
-destination: ./_site
-permalink: /:title/
+paginate: 10
+paginate_path: "/page-:num"
+permalink: "/:title/"
 
+# Author setup
 collections:
   authors:
     output: true
@@ -31,29 +40,34 @@ collections:
     output: true
 
 defaults:
-  - scope:
+  -
+    scope:
       path: ""
       type: "authors"
     values:
       layout: "author"
-  - scope:
+  -
+    scope:
       path: ""
       type: "categories"
     values:
-       layout: "category"
-  - scope:
+      layout: "category"
+  -
+    scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
 
-fbappid: "272668597418368"
-googleanalytics: "UA-159593309-1"
+compress_html:
+  clippings: []
+  comments: []
+  endings: []
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: []
 
-exclude: [
-  'src',
-  'node_modules',
-  'initpost.sh',
-  'Gemfile',
-]
-
+include: 
+  - .htaccess
