@@ -2,28 +2,31 @@
 layout: default
 ---
 <div class="row">
-<article class="middle column1">
-{{ content }}
+<article class="middle column1" id="blogContainer" data-page="{{ currentPage }}" data-totalPages="{{ paginator.total_pages }}">
+{{content}}
 </article>
 <aside class="middle column2">
-			{% for author in site.authors %}
-				<div class="w100 block">
-					<div class="w50 inlineblock">
-						<a href="{{ author.url | prepend: site.url }}"><img class="proimg proimgbb" src="{{ author.profile_image | prepend: site.url }}" alt="{{author.name}}'s profile picture"/></a>
-					</div>
-					<div class="w50 inlineblock">
-						<div class="w100 block">
-							<a href="{{ author.url | prepend: site.url }}"><h1 class="proname">{{ author.name }}</h1></a>
-						</div>
-						<div class="w100 block">
-							<a href="{{ author.url | prepend: site.url }}"><h2 class="proposition">{{ author.position }}</h2></a>
-						</div>
-					</div>
+	<div class="footauthors">
+		{% for author in site.authors %}
+			<div class="container">
+				<div class="sideauthimg">
+					<a href="{{ author.url | prepend: site.baseurl | prepend: site.url }}">
+						<img class="proimg proimgbb" src="{{ author.profile_image | prepend: site.baseurl | prepend: site.url }}" alt="{{author.name}}'s profile picture"/>
+					</a>
 				</div>
-			{% endfor %}
-				<div class="w100 block">
-					{% include footer.html %}
+				<div class="w100 midcenter">
+					<a href="{{ author.url | prepend: site.baseurl | prepend: site.url }}">
+						<h6 class="proname wordwrap">
+							{{ author.name }}
+						</h6>
+					</a>
 				</div>
+			</div>
+		{% endfor %}
+	</div>
+	<div class="w100 block">
+		{% include footer.html %}
+	</div>
 </aside>
 </div>
-<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script><script defer> if (window.netlifyIdentity) {window.netlifyIdentity.on("init", user => {if (!user) {window.netlifyIdentity.on("login", () => {document.location.href = "/setup/";});}});}</script>
+<!-- <script src="/assets/js/pagination.min.js"></script> -->

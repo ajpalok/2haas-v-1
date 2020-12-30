@@ -1,39 +1,48 @@
 ---
-layout: page
+layout: default
 ---
-<div class="w100 block">
-<div class="w50 inlineblock">
-<img class="proimg proimgbb" src="{{ page.profile_image | prepend: site.url }}" alt="{{page.name}}'s profile picture"/>
+<div class="row">
+  <article class="middle column1">
+    <div class="idcontainer w100">
+      <div class="proimg">
+        <center>
+          <img src="{{ page.profile_image }}" alt="{{page.name}}'s profile picture"/>
+        </center>
+      </div>
+      <div class="proid midcenter">
+        <div class="w100 block">
+          <h1 class="proname">{{ page.name }}</h1>
+        </div>
+        <div class="w100 block">
+          <h2 class="proposition">{{ page.position }}</h2>
+        </div>
+      </div>
+    </div>
+  </article>
+
+<aside class="middle column2">
+  <center>
+    <div class="btnscontainer">
+      {%- if page.facebook_username -%}
+      <a class="idfb" href="https://facebook.com/{{page.facebook_username }}">{%- include facebook.html -%}</a>
+      {%- endif -%}
+      {%- if page.twitter_username -%}
+      <a class="idtwitter" href="https://twitter.com/{{page.twitter_username }}">{%- include twitter.html -%}</a>
+      {%- endif -%}
+      {%- if page.instagram_username -%}
+      <a class="idinsta" href="https://instagram.com/{{page.instagram_username }}">{%- include instagram.html -%}</a>
+      {%- endif -%}
+    </div>
+  </center>
+</aside>
 </div>
-<div class="w50 inlineblock">
-<div class="w100 block">
-<h1 class="proname">{{ page.name }}</h1>
-</div>
-<div class="w100 block">
-<h2 class="proposition">{{ page.position }}</h2>
-</div>
-</div>
-</div>
-<div class="w100 block">
-<p>{{ content }}</p>
-</div>
-<div class="w100 block">
-<center>		
-{% if page.facebook_username %}
-<a class="idfb" href="https://facebook.com/{{page.facebook_username }}"><i class="fab fa-facebook-f"></i></a>
-{% endif %}
-{% if page.twitter_username %}
-<a class="idtwitter" href="https://twitter.com/{{page.twitter_username }}"><i class="fab fa-twitter"></i></a>
-{% endif %}
-{% if page.instagram_username %}
-<a class="idinsta" href="https://instagram.com/{{page.instagram_username }}"><i class="fab fa-instagram"></i></a>
-{% endif %}
-</center>
-</div>
+
 <h2 class="propost">Posts</h2>
 <ul>
-{% assign filtered_posts = site.posts | where: 'author', page.short_name %}
-{% for post in filtered_posts %}
+{%- assign filtered_posts = site.posts | where: 'author', page.short_name -%}
+{%- for post in filtered_posts -%}
 <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
+{%- endfor -%}
 </ul>
+
+{%- include footer.html -%}
