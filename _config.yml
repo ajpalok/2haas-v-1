@@ -18,7 +18,7 @@ tags:
 
 # advance settings
 baseurl: ""
-url: "https://2haas.ml"
+url: "https://2haas.live"
 markdown: kramdown
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 highlighter: rouge
