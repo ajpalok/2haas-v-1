@@ -7,7 +7,7 @@ section{
     img{
       object-fit:scale-down;
     }
-    img:hover{
+    &:hover{
       -webkit-transition:0.5s;
       transition: 0.5s;
       -webkit-filter: grayscale(100%);
@@ -18,7 +18,7 @@ section{
     display: block;
     width: 100%;
     img{
-      width: 100%;
+      object-fit:scale-down;
     }
   }
   .byline{
