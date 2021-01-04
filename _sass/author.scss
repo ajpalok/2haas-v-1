@@ -23,10 +23,8 @@ aside{
 			.proimg{
 				width: 50px;
 				height: 50px;
-				img{
-					object-fit: scale-down;
-					border: 3px solid #9999ff;
-				}
+				border: 1px solid transparent;
+				border-radius: 50%;
 			}
 			.proname{
 				color: #0e0e0e;
@@ -49,8 +47,8 @@ article{
 		width: 30%;
 		height:auto;
 		img{
-			width:50px;
-			height:50px;
+			width: 50px;
+			height: 50px;
 			object-fit: scale-down;
 			border: 3px solid #9999ff;
 			border-radius: 50%;
