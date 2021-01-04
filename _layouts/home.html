@@ -10,8 +10,8 @@ layout: default
 		{% for author in site.authors %}
 			<div class="container">
 				<div class="sideauthimg">
-					<a class="proimg" href="{{ author.url | prepend: site.baseurl | prepend: site.url }}">
-						<img src="{{ author.profile_image | prepend: site.baseurl | prepend: site.url }}" alt="{{author.name}}'s profile picture"/>
+					<a href="{{ author.url | prepend: site.baseurl | prepend: site.url }}">
+						<img class="proimg" src="{{ author.profile_image | prepend: site.baseurl | prepend: site.url }}" alt="{{author.name}}'s profile picture"/>
 					</a>
 				</div>
 				<div class="w100 midcenter">
