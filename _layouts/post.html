@@ -11,9 +11,9 @@ layout: default
 					</div>
 					<div class="blogimg">
 						{% if page.image %}
-						<img src="{{ page.image }}" alt="{{ page.title }}'s Featured Photo">
+						<img src="{{ page.image }}" alt="{{ page.title }}'s Featured Photo" width="100%" height="220px">
 						{% else %}
-						<img src="{{ "/assets/img/off.jpg" | prepend: site.baseurl | prepend: site.url }}" alt="No Featured Photo Available">
+						<img src="{{ "/assets/img/off.jpg" | prepend: site.baseurl | prepend: site.url }}" alt="No Featured Photo Available" width="100%" height="220px">
 						{% endif %}
 					</div>
 					<div class="block w100">
@@ -52,9 +52,9 @@ layout: default
 					<div class="post-img">
 						<a href='{{ post.url | prepend: site.baseurl | prepend: site.url }}'>
 						{% if post.image %}
-						<img class="post-image" src="{{ post.image }}" alt="{{ post.title }}'s Featured Photo">
+						<img class="post-image" src="{{ post.image }}" alt="{{ post.title }}'s Featured Photo" width="100%" height="220px">
 						{% else %}
-						<img class="post-image" src="{{ site.baseurl | prepend: site.baseurl | prepend: site.url }}/assets/img/off.jpg" alt="No Featured Photo Available">
+						<img class="post-image" src="{{ site.baseurl | prepend: site.baseurl | prepend: site.url }}/assets/img/off.jpg" alt="No Featured Photo Available" width="100%" height="220px">
 						{% endif %}
 						</a>
 					</div>
