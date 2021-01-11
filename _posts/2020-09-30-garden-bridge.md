@@ -20,11 +20,11 @@ author: ajpalok
 
 Facebook: [2haas](https://facebook.com/2haas)  
 
-Twitter: [2haas_ml](https://twitter.com/2haas_ml)  
+Twitter: [2haas_tw](https://twitter.com/2haas_tw)  
 
-Instagram: [2haas.ml](https://instagram.com/2haas.ml)  
+Instagram: [2haas_insta](https://instagram.com/2haas_insta)  
 
-Pinterest: [2haas_ml](https://pinterest.com/2haas_ml)   
+Pinterest: [2haas_pin](https://pinterest.com/2haas_pin)   
 
 YouTube: [2HAAS](https://www.youtube.com/channel/UCg3hEFuZ7bWxSVwOcDaCkIg)
 
