@@ -43,19 +43,20 @@ Watch the video:
   
 Bangladesh is a name of love. A place of kind hearted people. Full of picturesque beauty. The mind of the Bengali nation is satisfied with a small meal but full of love. As we find in our motherland. As she nurture us from her natural resources, we all also learn from her to love all others from whatever we have. This is why our motherland is loved by all.
  
+  
 - - -
 
 Also available on:  
 
-Website: [2HAAS](https://2haas.ml/)  
-
 Facebook: [2haas](https://facebook.com/2haas)  
 
-Twitter: [2haas_ml](https://twitter.com/2haas_ml)  
+Twitter: [2haas_tw](https://twitter.com/2haas_tw)  
 
-Instagram: [2haas.ml](https://instagram.com/2haas.ml)  
+Instagram: [2haas_insta](https://instagram.com/2haas_insta)  
 
-Pinterest: [2haas_ml](https://pinterest.com/2haas_ml)  
+Pinterest: [2haas_pin](https://pinterest.com/2haas_pin)   
+
+YouTube: [2HAAS](https://www.youtube.com/channel/UCg3hEFuZ7bWxSVwOcDaCkIg)
 
 - - -
 
