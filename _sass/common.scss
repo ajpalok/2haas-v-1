@@ -6,7 +6,7 @@
 .w50{width: 50%;}
 .w100{width: 100%;}
 .block{display: block;}
-.wordwrap{word-wrap: break-word;}
+.wordwrap{word-wrap: break-word; padding: 0 5px;}
 
 @mixin midcenter{
     display:flex;
