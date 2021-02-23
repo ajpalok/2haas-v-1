@@ -14,19 +14,3 @@ author: ajpalok
   
 ড্রইংটির সম্পর্কে কোন কিছু জানার হলে নিচে **কমেন্ট** করুন..  
   
-- - -
-
-আমরা আরো যেখানে আছি:  
-
-Facebook: [2haas](https://facebook.com/2haas)  
-
-Twitter: [2haas_tw](https://twitter.com/2haas_tw)  
-
-Instagram: [2haas_insta](https://instagram.com/2haas_insta)  
-
-Pinterest: [2haas_pin](https://pinterest.com/2haas_pin)   
-
-YouTube: [2HAAS](https://www.youtube.com/channel/UCg3hEFuZ7bWxSVwOcDaCkIg)
-
-- - -
-  

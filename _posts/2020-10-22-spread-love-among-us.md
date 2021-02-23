@@ -15,18 +15,3 @@ Among Us is Recently going viral game on smartphones! And that time many YouTube
   
 Note: Background is taken from game scene! 
  
-- - -
-
-Also available on:  
-
-Facebook: [2haas](https://facebook.com/2haas)  
-
-Twitter: [2haas_tw](https://twitter.com/2haas_tw)  
-
-Instagram: [2haas_insta](https://instagram.com/2haas_insta)  
-
-Pinterest: [2haas_pin](https://pinterest.com/2haas_pin)   
-
-YouTube: [2HAAS](https://www.youtube.com/channel/UCg3hEFuZ7bWxSVwOcDaCkIg)  
-
-- - -

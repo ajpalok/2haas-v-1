@@ -31,18 +31,3 @@ But to be honest I like the first one! What do you think? Comment through Email.
 Thanks for watching.. **Stay Tuned**
 
   
-- - -
-
-Also available on:  
-
-Facebook: [2haas](https://facebook.com/2haas)  
-
-Twitter: [2haas_tw](https://twitter.com/2haas_tw)  
-
-Instagram: [2haas_insta](https://instagram.com/2haas_insta)  
-
-Pinterest: [2haas_pin](https://pinterest.com/2haas_pin)   
-
-YouTube: [2HAAS](https://www.youtube.com/channel/UCg3hEFuZ7bWxSVwOcDaCkIg)
-
-- - -

@@ -17,19 +17,3 @@ I started my drawing again after 4 years. Now my old color lost the softness.. B
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aPH-It6tL0I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   
 At last we say **Stay Home** and Draw **With Me**
-
-- - -
-
-Also available on:  
-
-Website: [2HAAS](https://2haas.ml/)  
-
-Facebook: [2haas](https://facebook.com/2haas)  
-
-Twitter: [2haas_ml](https://twitter.com/2haas_ml)  
-
-Instagram: [2haas.ml](https://instagram.com/2haas.ml)  
-
-Pinterest: [2haas_ml](https://pinterest.com/2haas_ml)  
-
-- - -

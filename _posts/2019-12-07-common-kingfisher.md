@@ -15,8 +15,5 @@ This Sparrow-sized bird has the typical short-tailed, large-headed kingfisher 
 
 Source: _[Wikipedia](https://en.m.wikipedia.org/wiki/Common_kingfisher)_   
 Drawing by: [Abrar Jahin](https://www.facebook.com/aj.palok5)  
-Available on:  
-Facebook: [2 Heavens Art and Sketch](https://facebook.com/2haas)  
-Instagram: [@_2haas](https://instagram.com/_2haas)
-  
+
 *Thanks for watching.. Stay connected*

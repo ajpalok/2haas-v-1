@@ -36,13 +36,4 @@ In an interview with Kirito's Japanese voice actor Yoshitsugu Matsuoka on the si
 *Source*: _[Wikipedia](https://en.m.wikipedia.org/wiki/Kirito_(Sword_Art_Online))_  
 
 
-
-Available on:  
-
-Facebook: [2 Heavens Art and Sketch](https://facebook.com/2haas)  
-
-Instagram: [https://instagram.com/_2haas/](https://instagram.com/_2haas)
-
-  
-
 *Thanks for watching.. Stay connected*

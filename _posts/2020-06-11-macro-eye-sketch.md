@@ -24,16 +24,4 @@ Here I used **Artline** pencils (HB, 4B, 10B). Graphites are so soft to draw, si
 
 #2haas #sketch #eye  
   
-______________________________________________
-  
-Also available on:
-  
-Website: [2HAAS](https://2haas.ml/)  
-Facebook: [2HAAS](https://facebook.com/2haas)  
-Twitter: [2HAAS](https://twitter.com/2haas_ml)  
-Instagram: [2HAAS](https://instagram.com/2haas.ml)  
-Pinterest: [2HAAS](https://pinterest.com/2haas_ml)  
-  
-______________________________________________
-  
 Thanks

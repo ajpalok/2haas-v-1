@@ -25,15 +25,5 @@ I find this photo as "How to grow Daffodils" in someone's post. Started to draw 
 That image:
 <img src="https://res.cloudinary.com/thaas/image/upload/v1590520066/garden-5105513_ogrp7k.jpg">
 
-______________________________________________
-Also available on:
-
-Website: https://2haas.ml/  
-Facebook: https://facebook.com/2haas  
-Twitter: https://twitter.com/2haas_ml  
-Instagram: https://instagram.com/2haas.ml  
-Pinterest: https://pinterest.com/2haas_ml  
-
-______________________________________________
-
+- - -
 Music: Linkin Park - In The End (8D)

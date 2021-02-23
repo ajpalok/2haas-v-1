@@ -1,4 +1,4 @@
----
+	---
 
 date: 2019-12-02 12:00:15
 
@@ -29,14 +29,6 @@ One of the Five Pillars of Islam requires every Muslim who is able to do so to p
 
 Specially thanks to [Aru](https://www.facebook.com/aru2.O?fref=nf) for making such beautiful work.. May Allah bless you and your family..
 
-Artwork by: [Aru](https://www.facebook.com/aru2.O?fref=nf)  
-
-Available on:  
-
-Facebook: [2 Heavens Art and Sketch](https://facebook.com/2haas)  
-
-Instagram: [https://instagram.com/_2haas/](https://instagram.com/_2haas)
-
-  
+Artwork by: [Aru](https://www.facebook.com/aru2.O)  
 
 *Thanks for watching.. Stay connected*

@@ -43,14 +43,8 @@ This is a Drawing of a Lotus.. Drawing medium: Oil pastel. Watch the video:
 
 Dew to quarantine days, we are passing a bored time.. So try anything new from your self and develop that by practicing..
 Do anything new what ever you can or your ambition. This pandemic panic moment can also be use full for your..! You can do something new. Try and share with us on <a href="https://www.facebook.com/2haas">Facebook</a>
-  
-Also available on:
-  
-Facebook: [2HAAS](https://facebook.com/2haas)  
-Instagram: [2HAAS](https://instagram.com/2haas.ml)  
-Pinterest: [2HAAS](https://pinterest.com/2haas_ml)  
 
--------------------------------------------------------------------
+- - -
 
 Watch also:
 
@@ -58,5 +52,5 @@ Watch also:
 
 [আমার আছে জল](https://youtu.be/aPH-It6tL0I)  
 
-------------------------------------------------------------------
+- - -
 Thanks

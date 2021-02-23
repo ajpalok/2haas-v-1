@@ -10,16 +10,8 @@ tags: [2haas, drawing, color_drawing, royal, bengal, tiger, old_drawing, pastel_
 author: ajpalok
 ---
 
-Drawing by: [Abrar Jahin](https://aj.palok.ga)  
-  
 This drawing was created from a frame. Our very first post in our [Facebook page](https://www.facebook.com/2haas) this drawing was..
 At that time when I was making the drawing, I was finding a topic to draw.. Suddenly!  I found the frame of Sir Tamzeed Alam Token and loved that.. So I decided to draw that!.. And this I have made..
-  
-This is also available on:  
-  
-Website: [2HAAS](https://2haas.ml)  
-Facebook: [2HAAS](https://www.facebook.com/2haas)  
-Instagram: [2HAAS](https://www.instagram.com/2haas.ml)  
-Pinterest: [2HAAS](https://pin.it/1EO6NW0)  
+   
   
 Thanks for your time.. Check out our other Posts!

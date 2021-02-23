@@ -31,13 +31,6 @@ it's also about the charming beauty which can be seen after a heavy rainfall..
 *_The Charm After Rain_*
 
 Can you feel the portrait?
-
-Available on:
-
-Facebook: [2 Heavens Art and Sketch](https://facebook.com/2haas)
-
-Instagram: [https://instagram.com/_2haas/](https://instagram.com/_2haas)
-
   
 
 *Thanks for watching.. Stay connected*
