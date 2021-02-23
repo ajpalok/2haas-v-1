@@ -29,23 +29,21 @@ layout: default
 					<div class="post-body">
 						{% assign author = site.authors | where: short_name , page.author | first %}{% if author %}<a href="{{ author.url }}">{{ author.name }}</a>{% endif %} <br>
 						{{ content | markdownify}}
-						{{"
-						- - -
+						<hr/><br>
 
-						Also available on:  
+						Also available on:
 
-						Facebook: [2haas](https://facebook.com/2haas)  
+						Facebook: <a href="https://facebook.com/2haas">@2haas</a><br>
 
-						Twitter: [2haas_tw](https://twitter.com/2haas_tw)  
+						Twitter: <a href="https://twitter.com/2haas_tw">@2haas_tw</a><br>
 
-						Instagram: [2haas_insta](https://instagram.com/2haas_insta)  
+						Instagram: <a href="https://instagram.com/2haas_insta">@2haas_insta</a><br>
 
-						Pinterest: [2haas_pin](https://pinterest.com/2haas_pin)   
+						Pinterest: <a href="https://pinterest.com/2haas_pin">@2haas_pin</a><br>
 
-						YouTube: [2HAAS](https://www.youtube.com/2HAAS)  
+						YouTube: <a href="https://www.youtube.com/2HAAS">2HAAS</a>
   
-						- - -
-					"}}
+						<br><hr/>
 					</div>
 					<div class="w100 block">{% include share.html %}</div>
 					<div class="w100 block">{% include comments.html %}</div>
