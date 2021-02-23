@@ -29,7 +29,7 @@ layout: default
 					<div class="post-body">
 						{% assign author = site.authors | where: short_name , page.author | first %}{% if author %}<a href="{{ author.url }}">{{ author.name }}</a>{% endif %} <br>
 						{{ content | markdownify}}
-						
+						{{"
 						- - -
 
 						Also available on:  
@@ -45,7 +45,7 @@ layout: default
 						YouTube: [2HAAS](https://www.youtube.com/2HAAS)  
   
 						- - -
-
+					"}}
 					</div>
 					<div class="w100 block">{% include share.html %}</div>
 					<div class="w100 block">{% include comments.html %}</div>
