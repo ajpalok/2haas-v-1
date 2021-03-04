@@ -29,6 +29,7 @@ sass:
 # pagination plugin
 plugins:
   - jekyll-paginate
+  - jekyll-admin
 paginate: 10
 paginate_path: "/page-:num"
 permalink: "/:title/"
