@@ -19,6 +19,7 @@ tags:
 # advance settings
 baseurl: ""
 url: "https://2haas.com"
+# url: "https://127.0.0.1
 markdown: kramdown
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 highlighter: rouge
@@ -32,12 +33,24 @@ paginate: 10
 paginate_path: "/page-:num"
 permalink: "/:title/"
 
-# Author setup
+# Author & Category setup
 collections:
   authors:
     output: true
+    sidebar_label: Authors
   categories:
     output: true
+    sidebar_label: Categories
+
+# CMS setup
+jekyll_admin:
+  hidden_links:
+    - posts
+    - pages
+    - staticfiles
+    - datafiles
+    - configuration
+  homepage: "pages"
 
 defaults:
   -
