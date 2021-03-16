@@ -22,9 +22,9 @@ layout: home
 					<div class="post-img">
 						<a href='{{ post.url | prepend: site.baseurl | prepend: site.url }}'>
 						{%- if post.image -%}
-						<img class="post-image" src="{{ post.image }}" alt="{{ post.title }}'s Featured Photo">
+						<img class="post-image" loading="lazy" src="{{ post.image }}" alt="{{ post.title }}'s Featured Photo">
 						{%- else -%}
-						<img class="post-image" src="{{ site.baseurl | prepend: site.baseurl | prepend: site.url }}/assets/img/off.jpg" alt="No Featured Photo Available">
+						<img class="post-image" loading="lazy" src="{{ site.baseurl | prepend: site.baseurl | prepend: site.url }}/assets/img/off.jpg" alt="No Featured Photo Available">
 						{%- endif -%}
 						</a>
 					</div>
