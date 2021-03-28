@@ -18,8 +18,8 @@ tags:
 
 # advance settings
 baseurl: ""
-url: "https://2haas.com"
-# url: "https://127.0.0.1
+# url: "https://2haas.com"
+url: "http://127.0.0.1:4000"
 markdown: kramdown
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 highlighter: rouge
@@ -29,7 +29,6 @@ sass:
 # pagination plugin
 plugins:
   - jekyll-paginate
-  - jekyll-admin
 paginate: 10
 paginate_path: "/page-:num"
 permalink: "/:title/"

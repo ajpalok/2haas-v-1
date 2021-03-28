@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "jekyll"
-gem 'jekyll-admin', group: :jekyll_plugins
+gem "webrick"
 gem "jekyll-paginate"
 gem "rouge"
 gem "json"

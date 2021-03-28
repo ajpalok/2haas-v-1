@@ -1,6 +1,6 @@
 .main{
 	width: 100%;
-	margin-top: 60px;
+	margin-top: 70px;
 }
 @media only screen and (max-width:600px){
 	.main{
@@ -13,11 +13,14 @@
 	}
 }
 @media only screen and (min-width:601px) and (max-width:900px){
-	.middle{
+  .row{
+    width: 100%;
 		display:inline-block;
-		width: 70%;
-		margin: 0 15%;
-	}
+  	.middle{
+  		width: 70%;
+  		margin: 0 auto;
+  	}
+  }
 }
 @media only screen and (min-width:901px){
 	.main-container{
@@ -29,15 +32,14 @@
 	  display: table;
 	  clear: both;
 	}
-	.column1{
+	.middle{
 		float: left;
+		margin: 0 auto;
+	}
+	.column1{
 		width: 60%;
-		margin-top: 20px;
 	}
 	.column2{
-		float: left;
 		width: 30%;
-		margin-left: 10%;
-		margin-top: 20px;
 	}
 }
