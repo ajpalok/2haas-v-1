@@ -1,6 +1,6 @@
 .main{
 	width: 100%;
-	margin-top: 70px;
+	margin-top: 60px;
 }
 @media only screen and (max-width:600px){
 	.main{
@@ -15,7 +15,7 @@
 @media only screen and (min-width:601px) and (max-width:900px){
   .row{
     width: 100%;
-		display:inline-block;
+		display: inline-block;
   	.middle{
   		width: 70%;
   		margin: 0 auto;
@@ -32,14 +32,13 @@
 	  display: table;
 	  clear: both;
 	}
-	.middle{
-		float: left;
-		margin: 0 auto;
-	}
 	.column1{
+	  float: left;
 		width: 60%;
 	}
 	.column2{
+	  float: left;
 		width: 30%;
+		margin-left: 10%;
 	}
 }

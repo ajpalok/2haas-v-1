@@ -1,23 +1,13 @@
-	---
-
+---
 date: 2019-12-02 12:00:15
-
 layout: post
-
 title: Our Holy Ka'bah
-
 description: The graphical work is made by Aru.
-
 image: https://res.cloudinary.com/thaas/image/upload/v1587393161/FB_IMG_15752210757539410_blaqfy.jpg
-
 optimized_image: https://res.cloudinary.com/thaas/image/upload/q_10/v1587393161/FB_IMG_15752210757539410_blaqfy.jpg
-
 category: 'graphics-design'
-
 tags: [ka'bah, blender, 3D, graphics_design, center_of_islam'smost_important_mosque, Aru]
-
 author: ajpalok
-
 ---
 
 ## Description  

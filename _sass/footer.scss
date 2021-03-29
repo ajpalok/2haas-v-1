@@ -1,4 +1,10 @@
 footer{
+  width: 100%;
+  .footercontainer{
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+  }
   h5, h6{ padding: 5px 0;}
   nav{
     display: flex;
@@ -6,8 +12,9 @@ footer{
     .footnav{
       display: flex;
       flex-direction: column;
-      a{
-        padding:5px;
+      p{
+        padding: 5px;
+        margin: 2px 0;
         word-wrap: break-word;
         font:{
           size:15px;
@@ -19,13 +26,14 @@ footer{
   }
   .footcopy{
     word-spacing: 5px;
+    padding: 10p;
     p{
-      size: 20px;
+      size: 1rem;
       weight: 200;
       family: $text-font;
       a{
         font:{
-          size: 20px;
+          size: 1rem;
           weight: bold;
           family: $logo-font;
         }
