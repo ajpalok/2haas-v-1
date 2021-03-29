@@ -10,114 +10,114 @@ header{
 	border-bottom:1px solid #bfbfbf;
 	div{
     svg{
-      width:20px;
-      height:20px;
+      width: 20px;
+      height: 20px;
     }
   }
 
-@media only screen and (max-width:600px) {
-.logo1{width:25%;}
-.logo2{
-  width:50%;
-  a{
-    font:{
-      family:$logo-font;
-      weight: bold;
-    }
-  }
-}
-.headbar{
-  display:none;
-  width:25%;
-}
-}
-
-@media screen and (min-width:601px){
-
-.logo1{
-	width:10%;
-}
-.logo2{
-	width: 30%;
-  a{
-    font:{
-      family:$logo-font;
-      weight: bold;
-    }
-  }
-}
-.headbar{
-	width: 60%;
-  	height: 50px;
-	display: flex;
- 	flex-direction: row;
-  	justify-content: center;
-  	align-items: center;
-  	.pcsearchbtn{
-    		width: 40%;
-    		.pcsbtn{
-      			width: 100%;
-			display:flex;
-			flex-direction:row;
-			justify-content:center;
-			align-items: center;
-      background-color: #ffffff;
-      border: 2px solid black;
-      border-radius: 16px;
-      padding: 5px 15px;
-      cursor:pointer;
-      svg {
-				fill:black;
-        width:10px;
-        height:10px;
-				margin-right: 5px;
-      }
-      p{
-        color: black;
+  @media only screen and (max-width:600px) {
+    .logo1{width: 25%;}
+    .logo2{
+      width: 50%;
+      a{
         font:{
-          family:$text-font;
-          size:13px;
+          family:$logo-font;
           weight: bold;
         }
       }
-	    &:hover{
-				width: 100%;
-				background-color: #0e0e0e;
-				border: 2px solid black;
-				border-radius: 16px;
-				padding: 5px 15px;
-	      cursor: pointer;
-				svg{
-					fill: #ffffff;
-	        width:10px;
-	        height:10px;
-					margin-right: 5px;
-				}
-        p{
-          color: white;
-		font:{
-	          family:$text-font;
-	          size:13px;
-	          weight: bold;
-	        }
-        }
-			}
+    }
+    .headbar{
+      display:none;
+      width: 25%;
     }
   }
-  .pcnav{
-    width: 60%;
-    display:flex;
-    flex-direction:row;
-    justify-content: space-around;
-    align-items: center;
-      .head-item{
-        cursor: pointer;
-        svg{
-          width:20px;
-          height:20px;
+
+  @media screen and (min-width:601px){
+  
+    .logo1{
+    	width: 10%;
+    }
+    .logo2{
+    	width: 30%;
+      a{
+        font:{
+          family:$logo-font;
+          weight: bold;
         }
       }
+    }
+    .headbar{
+    	width: 60%;
+      	height: 50px;
+    	display: flex;
+     	flex-direction: row;
+      	justify-content: center;
+      	align-items: center;
+      	.pcsearchbtn{
+        		width: 40%;
+        		.pcsbtn{
+          			width: 100%;
+    			display:flex;
+    			flex-direction:row;
+    			justify-content:center;
+    			align-items: center;
+          background-color: #ffffff;
+          border: 2px solid black;
+          border-radius: 16px;
+          padding: 5px 15px;
+          cursor:pointer;
+          svg {
+    				fill:black;
+            width:10px;
+            height:10px;
+    				margin-right: 5px;
+          }
+          p{
+            color: black;
+            font:{
+              family:$text-font;
+              size:13px;
+              weight: bold;
+            }
+          }
+    	    &:hover{
+    				width: 100%;
+    				background-color: #0e0e0e;
+    				border: 2px solid black;
+    				border-radius: 16px;
+    				padding: 5px 15px;
+    	      cursor: pointer;
+    				svg{
+    					fill: #ffffff;
+    	        width:10px;
+    	        height:10px;
+    					margin-right: 5px;
+    				}
+            p{
+              color: white;
+    		font:{
+    	          family:$text-font;
+    	          size:13px;
+    	          weight: bold;
+    	        }
+            }
+    			}
+        }
+      }
+      .pcnav{
+        width: 60%;
+        display:flex;
+        flex-direction:row;
+        justify-content: space-around;
+        align-items: center;
+          .head-item{
+            cursor: pointer;
+            svg{
+              width:20px;
+              height:20px;
+            }
+          }
+      }
+    }
   }
-}
-}
 }

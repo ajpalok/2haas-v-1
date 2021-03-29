@@ -4,11 +4,12 @@ layout: default
 		<div class="row">
 			<article class="middle column1">
 				<section>
-					<div class="w100 block">
-						<div class="midcenter">
-							<h2 style="padding:0 5px;" class="wordwrap">{{ page.title }}</h2>
+					<div class="headline-container">
+						<div class="headline">
+							<h2 class="wordwrap">{{ page.title }}</h2>
 						</div>
 					</div>
+					
 					<div class="blogimg">
 						{% if page.image %}
 						<img src="{{ page.image }}" alt="{{ page.title }}'s Featured Photo">
@@ -16,16 +17,20 @@ layout: default
 						<img src="{{ "/assets/img/off.jpg" | prepend: site.baseurl | prepend: site.url }}" alt="No Featured Photo Available">
 						{% endif %}
 					</div>
-					<div class="block w100">
-						<div class="byline">
-							<div class="midcenter w50 wordwrap">
-								{% assign category = site.categories | where: short_name , page.category | first %}{% if category %}<a href="{{ category.url }}">{{ category.name }}</a>{% endif %}
-							</div>
-							<div class="midcenter w50">
-								<p>{{ page.date | date: '%B %d, %Y' }}</p>
+				
+					<div class="byline">
+						<div class="category wordwrap">
+						  <div class="text-container">
+							{% assign category = site.categories | where: short_name , page.category | first %}{% if category %}<a href="{{ category.url }}">{{ category.name }}</a>{% endif %}
 							</div>
 						</div>
+						<div class="time">
+						  <div class="text-container">
+							  <p>{{ page.date | date: '%B %d, %Y' }}</p>
+							 </div>
+						</div>
 					</div>
+					
 					<div class="post-body">
 						{% assign author = site.authors | where: short_name , page.author | first %}{% if author %}<a href="{{ author.url }}">{{ author.name }}</a>{% endif %} <br>
 						{{ content | markdownify}}
@@ -45,49 +50,57 @@ layout: default
   
 						<br><hr/>
 					</div>
-					<div class="w100 block">{% include share.html %}</div>
+					
+					<div class="w100 block">{% include share.html %}</div> <br/>
 					<div class="w100 block">{% include comments.html %}</div>
 				</section>
 			</article>
+			
+			
 			<aside class="middle column2">
 			<section>
-					<div class="w100 block">
-						<div class="midcenter">
-							<h3>Read Next:</h3>
-						</div>
-					</div>
+				<div class="readnext">
+					<h3>Read Next:</h3>
+				</div>
 				{% assign next_posts = site.posts | where_exp:"post","post.path != page.path" %}{% assign shuffled_array = next_posts | shuffle %}{% for post in shuffled_array limit:3 %}
-					<div class="block w100">
-						<div class="midcenter">
+				
+					<div class="headline-container">
+						<div class="headline">
 							<a href='{{ post.url | prepend: site.baseurl | prepend: site.url }}'>
-								<h2 style="padding:0 5px;" class="wordwrap">{{ post.title }}</h2>
+								<h3 class="wordwrap">{{ post.title }}</h3>
 							</a>
 						</div>
 					</div>
-					<div class="post-img">
+					
+					<div class="sidepost-img">
 						<a href='{{ post.url | prepend: site.baseurl | prepend: site.url }}'>
 						{% if post.image %}
 						<img class="post-image" src="{{ post.image }}" alt="{{ post.title }}'s Featured Photo">
 						{% else %}
-						<img class="post-image" src="{{ site.baseurl | prepend: site.baseurl | prepend: site.url }}/assets/img/off.jpg" alt="No Featured Photo Available">
+						<img class="sidepost-image" src="{{ site.baseurl | prepend: site.baseurl | prepend: site.url }}/assets/img/off.jpg" alt="No Featured Photo Available">
 						{% endif %}
 						</a>
 					</div>
-					<div class="block w100">
-						<div class="byline">
-							<div class="midcenter w50 wordwrap">
-								{% assign category = site.categories | where: short_name , post.category | first %}{% if category %}<a href="{{ category.url | prepend: site.baseurl | prepend: site.url }}">{{ category.name }}</a>{% endif %}
-							</div>
-							<div class="midcenter w50">
-								<p>{{ post.date | date: '%B %d, %Y' }}</p>
-							</div>
+					
+					<div class="byline">
+						<div class="category wordwrap">
+						  <div class="text-container">
+    						{% assign category = site.categories | where: short_name , post.category | first %}{% if category %}<a href="{{ category.url | prepend: site.baseurl | prepend: site.url }}">{{ category.name }}</a>{% endif %}
+						  </div>
+						</div>
+						<div class="time">
+						  <div class="text-container">
+							  <p>{{ post.date | date: '%B %d, %Y' }}</p>
+					    </div>
 						</div>
 					</div>
+					
 					<div class="post-body">
 						{% assign author = site.authors | where: short_name , post.author | first %}{% if author %}<a href="{{ author.url | prepend: site.baseurl | prepend: site.url }}">{{ author.name }}</a>{% endif %} <br>
 						<p>{{ post.excerpt | strip_html | truncate: 250 | markdownify}}
-						<a class="more" href="{{ site.baseurl | prepend: site.url }}{{ post.url }}">Continue Reading...</a></p>
+						<a class="more" href="{{ site.baseurl | prepend: site.url }}{{ post.url }}">Complete Reading...</a></p>
 					</div>
+					
 					{% endfor %}
 				</section>
 					<div class="w100 block">

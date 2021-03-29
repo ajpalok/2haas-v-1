@@ -1,28 +1,32 @@
 <footer>
-<h5 class="w100 block">NO ADS, NO DISTRACTIONS</h5>
-<!-- <center><a href="https://www.buymeacoffee.com/2haas"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a Color&emoji=🖍️&slug=2haas&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff"></a></center> -->
-<h6 class="w100 block">Quick Links</h6>
-<nav class="w100">
-  <div class="footnav w50">
-    <a href="{{site.baseurl | prepend: site.url}}">Home</a>
-    <a href="{{site.baseurl | prepend: site.url}}/about/">About</a>
-    <a href="{{site.baseurl | prepend: site.url}}/contact/">Contact</a>
-    <a href="{{site.baseurl | prepend: site.url}}/sitemap/">Sitemap</a>
+  <div class="footercontainer">
+  
+    <h5 class="w100 block">NO ADS, NO DISTRACTIONS</h5>
+    <!-- <center><a href="https://www.buymeacoffee.com/2haas"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a Color&emoji=🖍️&slug=2haas&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff"></a></center> -->
+    <h6 class="w100 block">Quick Links</h6>
+    <nav class="w100">
+      <div class="footnav w50">
+        <p><a href="{{site.baseurl | prepend: site.url}}">Home</a></p>
+        <p><a href="{{site.baseurl | prepend: site.url}}/about/">About</a></p>
+        <p><a href="{{site.baseurl | prepend: site.url}}/contact/">Contact</a></p>
+        <p><a href="{{site.baseurl | prepend: site.url}}/sitemap/">Sitemap</a></p>
+      </div>
+      <div class="footnav w50">
+        <p><a href="{{ site.baseurl | prepend: site.url }}/policy/">Policy</a></p>
+        <p><a href="{{ site.baseurl | prepend: site.url }}/cookie-policy/">Cookie Policy</a></p>
+        <p><a href="{{ site.baseurl | prepend: site.url }}/privacy-policy/">Privacy Policy</a></p>
+        <p><a href="{{ site.baseurl | prepend: site.url }}/disclaimer/">Disclaimer</a></p>
+        <p><a href="{{ site.baseurl | prepend: site.url }}/terms-conditions/">Terms and Conditions</a></p>
+      </div>
+    </nav>
+    <div class="block w100 footcopy">
+      <p>
+        ©{{ 'now' | date: "%Y" }}
+        <a href="{{site.baseurl | prepend: site.url}}">
+          {{ site.name }}
+        </a>
+      </p>
+    </div>
+
   </div>
-  <div class="footnav w50">
-    <a href="{{ site.baseurl | prepend: site.url }}/policy/">Policy</a>
-    <a href="{{ site.baseurl | prepend: site.url }}/cookie-policy/">Cookie Policy</a>
-    <a href="{{ site.baseurl | prepend: site.url }}/privacy-policy/">Privacy Policy</a>
-    <a href="{{ site.baseurl | prepend: site.url }}/disclaimer/">Disclaimer</a>
-    <a href="{{ site.baseurl | prepend: site.url }}/terms-conditions/">Terms and Conditions</a>
-  </div>
-</nav>
-<div class="block w100 footcopy">
-  <p>
-    ©{{ 'now' | date: "%Y" }}
-    <a href="{{site.baseurl | prepend: site.url}}">
-      {{ site.name }}
-    </a>
-  </p>
-</div>
 </footer>

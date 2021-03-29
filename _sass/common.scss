@@ -9,9 +9,9 @@
 .wordwrap{word-wrap: break-word;}
 
 @mixin midcenter{
-    display:flex;
+    display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 @mixin social-svg{
   width: 30px;
