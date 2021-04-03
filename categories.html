@@ -3,4 +3,21 @@ layout: page
 title: Categories
 description: Here comes our list of Categories of 2HAAS's posts..
 ---
-<center><h1>Categories</h1></center><ul>{% for category in site.categories%}<li><a href="{{ category.url }}"><h2>{{ category.name }}</h2></a></li>{% endfor %}</ul>
+<div class="pagedetails">
+  <center>
+  <h1>Categories</h1>
+  <p>Categories of 2HAAS..</p>
+  </center>
+</div>
+
+<table>
+  {% for category in site.categories %}
+  <tr>
+    <td>
+      <a href="{{ category.url }}">
+        <p>{{ category.name }}</p>
+      </a>
+    </td>
+  </tr>
+  {% endfor %}
+</table>

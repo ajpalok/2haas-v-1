@@ -4,32 +4,35 @@ title: Members
 description: Meet our respective Members and content creators of 2HAAS Family..
 ---
 <center> <h1>Members</h1> </center>
+<table>
 {%- for author in site.authors -%}
-<article>
-	<div class="idcontainer w100">
-		<div class="proimg">
-			<center>
-				<a href="{{ author.url | prepend: site.baseurl | prepend: site.url }}">
-					<img src="{{ author.profile_image }}" alt="{{author.name}}'s profile picture"/>
-				</a>
-			</center>
-		</div>
-		<div class="proid midcenter">
-			<div class="w100 block">
-				<h1 class="proname">
-					<a href="{{ author.url | prepend: site.baseurl | prepend: site.url }}">
-						{{ author.name }}
-					</a>
-				</h1>
-			</div>
-			<div class="w100 block">
-				<h2 class="proposition">
-					<a href="{{ author.url | prepend: site.baseurl | prepend: site.url }}">
-						{{ author.position }}
-					</a>
-				</h2>
-			</div>
-		</div>
-	</div>
-</article>
+  <tr>
+    <td>
+          
+    	<div class="idcontainer w100">
+    		<div class="proimg">
+    			<center>
+    				<a href="{{ author.url | prepend: site.baseurl | prepend: site.url }}">
+    					<img src="{{ author.profile_image }}" alt="{{author.name}}'s profile picture"/>
+    				</a>
+    			</center>
+    		</div>
+    		<div class="proid midcenter">
+    			<div class="w100 block">
+    				<h1 class="proname">
+    					<a href="{{ author.url | prepend: site.baseurl | prepend: site.url }}">
+    						{{ author.name }}
+    					</a>
+    				</h1>
+    			</div>
+    			<div class="w100 block">
+    				<h2 class="proposition">
+  						{{ author.position }}
+    				</h2>
+    			</div>
+    		</div>
+    	</div>
+    </td>
+	 </tr>
 {%- endfor -%}
+</table>

@@ -67,6 +67,7 @@ DEPENDENCIES
   jekyll
   jekyll-paginate
   json
+  kramdown
   kramdown-parser-gfm
   rouge
   webrick

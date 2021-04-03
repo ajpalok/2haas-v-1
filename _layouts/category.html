@@ -1,34 +1,72 @@
 ---
 layout: default
 ---
-<style>
-  .propost{
-    color:#000000;
-    font-size: 25px;
-    font-family:'Roboto', 'Galada', sans-serif;
-    font-weight:800;
-    }
-  }
-  .prodescription{
-    color: #636363;
-    font-size: 10px;
-    font-family:'Roboto', 'Galada', sans-serif;
-    font-weight:200;
-    }
-  }
-</style>
 <div class="row">
+  
   <article class="middle column1">
-    <center><h1 class="propost">Posts of {{ page.name | capitalized }}</h1>
-    <p class="prodescription">{{ page.description }}</p></center>
-    <ul>
-      {% assign filtered_posts = site.posts | where: 'category', page.short_name %}
-      {% for post in filtered_posts %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-    </ul>
+    <center>
+      <h1 class="propost">Posts of {{ page.name | capitalized }}</h1>
+      <p class="prodescription">{{ page.description }}</p>
+    </center>
+    
+    
+      
+  {%- assign filtered_posts = site.posts | where: 'category', page.short_name -%}
+  <div class="tableflow">
+  {%- if filtered_posts.size > 0 -%}
+
+    <table class="cattable">
+      
+      
+      {% tablerow post in filtered_posts cols:3 %}
+        <a href="{{ post.url }}"><img loading="lazy" class="catlist" src="{{ post.image }}" alt="{{ post.title }}"></a>
+      {% endtablerow %}
+      
+      
+    </table>
+
+      {%- else -%}
+
+    <section>
+    	<div class="headline-container">
+    		<div class="headline">
+          <h2>There Is No Post Available For Now in This Category..</h2>
+    		</div>
+    	</div>
+  	</section>
+
+  {%- endif -%}
+  </div>
+    
+    
+    
 </article>
+
 <aside class="middle column2">
-  {% include footer.html %}
+  <section class="sideheader">
+			 <h3>Members:</h3>
+  </section>
+	<div class="footauthors">
+		{% for author in site.authors %}
+			<div class="container">
+				<div class="sideauthimg">
+					<a href="{{ author.url | prepend: site.baseurl | prepend: site.url }}">
+						<img loading="lazy" class="proimg" src="{{ author.profile_image | prepend: site.baseurl | prepend: site.url }}" alt="{{author.name}}'s profile picture"/>
+					</a>
+				</div>
+				<div class="w100 midcenter">
+					<a href="{{ author.url | prepend: site.baseurl | prepend: site.url }}">
+						<h6 class="proname wordwrap">
+							{{ author.name }}
+						</h6>
+					</a>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+	<div class="w100 block">
+		{% include footer.html %}
+	</div>
 </aside>
 </div>
+

@@ -95,7 +95,7 @@ header{
     				}
             p{
               color: white;
-    		font:{
+    		      font:{
     	          family:$text-font;
     	          size:13px;
     	          weight: bold;
@@ -110,13 +110,13 @@ header{
         flex-direction:row;
         justify-content: space-around;
         align-items: center;
-          .head-item{
-            cursor: pointer;
-            svg{
-              width:20px;
-              height:20px;
-            }
+        .head-item{
+          cursor: pointer;
+          svg{
+            width:20px;
+            height:20px;
           }
+        }
       }
     }
   }

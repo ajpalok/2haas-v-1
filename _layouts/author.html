@@ -38,11 +38,37 @@ layout: default
 </div>
 
 <h2 class="propost">Posts</h2>
-<ul>
+
+
+
 {%- assign filtered_posts = site.posts | where: 'author', page.short_name -%}
-{%- for post in filtered_posts -%}
-<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-{%- endfor -%}
-</ul>
+
+  <div class="tableflow">
+  {%- if filtered_posts.size > 0 -%}
+
+    <table class="cattable">
+      
+      
+      {% tablerow post in filtered_posts cols:3 %}
+        <a href="{{ post.url }}"><img loading="lazy" class="catlist" src="{{ post.image }}" alt="{{ post.title }}"></a>
+      {% endtablerow %}
+      
+      
+    </table>
+
+      {%- else -%}
+
+    <section>
+    	<div class="headline-container">
+    		<div class="headline">
+          <h2>There Is No Post Available For Now in This Category..</h2>
+    		</div>
+    	</div>
+  	</section>
+
+  {%- endif -%}
+  </div>
+    
+
 
 {%- include footer.html -%}
