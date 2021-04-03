@@ -6,6 +6,14 @@
 	.main{
 		padding-bottom: 70px;
 	}
+	.row{
+    width: 100%;
+		display: inline-block;
+  	.middle{
+  		width: 100%;
+  		margin: 10px 0;
+  	}
+  }
 }
 @media only screen and (min-width:601px){
 	.main{
@@ -18,7 +26,7 @@
 		display: inline-block;
   	.middle{
   		width: 70%;
-  		margin: 0 auto;
+  		margin: 10px auto;
   	}
   }
 }

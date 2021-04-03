@@ -47,9 +47,19 @@ layout: home
 					</div>
 					
 					<div class="post-body">
-						{%- assign author = site.authors | where: short_name , post.author | first -%}{%- if author -%}<a href="{{ author.url | prepend: site.baseurl | prepend: site.url }}">{{ author.name }}</a>{%- endif -%} <br>
-						<p>{{ post.excerpt | strip_html | truncatewords: 20 | markdownify}}
-						<a class="more" href="{{ site.baseurl | prepend: site.url }}{{ post.url }}">Complete Reading...</a></p>
+						{%- assign author = site.authors | where: short_name , post.author | first -%}
+						{%- if author -%}
+						  <a href="{{ author.url | prepend: site.baseurl | prepend: site.url }}">{{ author.name }}</a>
+						{%- endif -%} <br>
+						{% if post.excerpt %}
+						<p>{{ post.excerpt | strip_html | truncatewords: 20}}
+						  <a class="more" href="{{ site.baseurl | prepend: site.url }}{{ post.url }}">Complete Reading...</a>
+						</p>
+						{% else %}
+						<p>
+						  <a class="more" href="{{ site.baseurl | prepend: site.url }}{{ post.url }}">Comment & Share...</a>
+						</p>
+						{%endif %}
 					</div>
 				
 				</section>

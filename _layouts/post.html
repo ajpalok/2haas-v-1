@@ -2,8 +2,11 @@
 layout: default
 ---
 		<div class="row">
+		  
 			<article class="middle column1">
+			  
 				<section>
+				  
 					<div class="headline-container">
 						<div class="headline">
 							<h2 class="wordwrap">{{ page.title }}</h2>
@@ -19,16 +22,19 @@ layout: default
 					</div>
 				
 					<div class="byline">
+					  
 						<div class="category wordwrap">
 						  <div class="text-container">
 							{% assign category = site.categories | where: short_name , page.category | first %}{% if category %}<a href="{{ category.url }}">{{ category.name }}</a>{% endif %}
 							</div>
 						</div>
+						
 						<div class="time">
 						  <div class="text-container">
 							  <p>{{ page.date | date: '%B %d, %Y' }}</p>
 							 </div>
 						</div>
+						
 					</div>
 					
 					<div class="post-body">
@@ -51,17 +57,26 @@ layout: default
 						<br><hr/>
 					</div>
 					
-					<div class="w100 block">{% include share.html %}</div> <br/>
-					<div class="w100 block">{% include comments.html %}</div>
+					<div class="w100 block">
+					  {% include share.html %}
+					 </div> <br/>
+					<div class="w100 block">
+					  {% include comments.html %}
+					</div>
+					
 				</section>
+				
 			</article>
 			
 			
 			<aside class="middle column2">
+			  
 			<section>
+			  
 				<div class="readnext">
 					<h3>Read Next:</h3>
 				</div>
+				
 				{% assign next_posts = site.posts | where_exp:"post","post.path != page.path" %}{% assign shuffled_array = next_posts | shuffle %}{% for post in shuffled_array limit:3 %}
 				
 					<div class="headline-container">
@@ -103,9 +118,11 @@ layout: default
 					
 					{% endfor %}
 				</section>
-					<div class="w100 block">
-							{% include footer.html %}
-					</div>
+				
+				<div class="w100 block">
+					{% include footer.html %}
 				</div>
+				
 			</aside>
+			
 		</div>
