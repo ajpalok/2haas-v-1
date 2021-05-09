@@ -4,6 +4,16 @@ footer{
     width: 95%;
     display: block;
     margin: 0 auto;
+    .sponsor{
+      width: 50%;
+      text-decoration: none;
+      display: block;
+      img{
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+      }
+    }
   }
   h5, h6{ padding: 5px 0;}
   nav{

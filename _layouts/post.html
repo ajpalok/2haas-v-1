@@ -5,7 +5,7 @@ layout: default
 		  
 			<article class="middle column1">
 			  
-				<section>
+				<section class="postsblock">
 				  
 					<div class="headline-container">
 						<div class="headline">
@@ -65,58 +65,56 @@ layout: default
 					</div>
 					
 				</section>
-				
 			</article>
 			
 			
 			<aside class="middle column2">
+			  <section class="postsblock">
 			  
-			<section>
-			  
-				<div class="readnext">
-					<h3>Read Next:</h3>
-				</div>
-				
-				{% assign next_posts = site.posts | where_exp:"post","post.path != page.path" %}{% assign shuffled_array = next_posts | shuffle %}{% for post in shuffled_array limit:3 %}
-				
-					<div class="headline-container">
-						<div class="headline">
-							<a href='{{ post.url | prepend: site.baseurl | prepend: site.url }}'>
-								<h3 class="wordwrap">{{ post.title }}</h3>
-							</a>
-						</div>
-					</div>
-					
-					<div class="sidepost-img">
-						<a href='{{ post.url | prepend: site.baseurl | prepend: site.url }}'>
-						{% if post.image %}
-						<img class="post-image" src="{{ post.image }}" alt="{{ post.title }}'s Featured Photo">
-						{% else %}
-						<img class="sidepost-image" src="{{ site.baseurl | prepend: site.baseurl | prepend: site.url }}/assets/img/off.jpg" alt="No Featured Photo Available">
-						{% endif %}
-						</a>
-					</div>
-					
-					<div class="byline">
-						<div class="category wordwrap">
-						  <div class="text-container">
-    						{% assign category = site.categories | where: short_name , post.category | first %}{% if category %}<a href="{{ category.url | prepend: site.baseurl | prepend: site.url }}">{{ category.name }}</a>{% endif %}
-						  </div>
-						</div>
-						<div class="time">
-						  <div class="text-container">
-							  <p>{{ post.date | date: '%B %d, %Y' }}</p>
-					    </div>
-						</div>
-					</div>
-					
-					<div class="post-body">
-						{% assign author = site.authors | where: short_name , post.author | first %}{% if author %}<a href="{{ author.url | prepend: site.baseurl | prepend: site.url }}">{{ author.name }}</a>{% endif %} <br>
-						<p>{{ post.excerpt | strip_html | truncate: 250 | markdownify}}
-						<a class="more" href="{{ site.baseurl | prepend: site.url }}{{ post.url }}">Complete Reading...</a></p>
-					</div>
-					
-					{% endfor %}
+  				<div class="readnext">
+  					<h3>Read Next:</h3>
+  				</div>
+  				
+  				{% assign next_posts = site.posts | where_exp:"post","post.path != page.path" %}{% assign shuffled_array = next_posts | shuffle %}{% for post in shuffled_array limit:3 %}
+  				
+  					<div class="headline-container">
+  						<div class="headline">
+  							<a href='{{ post.url | prepend: site.baseurl | prepend: site.url }}'>
+  								<h3 class="wordwrap">{{ post.title }}</h3>
+  							</a>
+  						</div>
+  					</div>
+  					
+  					<div class="sidepost-img">
+  						<a href='{{ post.url | prepend: site.baseurl | prepend: site.url }}'>
+  						{% if post.image %}
+  						<img class="post-image" src="{{ post.image }}" alt="{{ post.title }}'s Featured Photo">
+  						{% else %}
+  						<img class="sidepost-image" src="{{ site.baseurl | prepend: site.baseurl | prepend: site.url }}/assets/img/off.jpg" alt="No Featured Photo Available">
+  						{% endif %}
+  						</a>
+  					</div>
+  					
+  					<div class="byline">
+  						<div class="category wordwrap">
+  						  <div class="text-container">
+      						{% assign category = site.categories | where: short_name , post.category | first %}{% if category %}<a href="{{ category.url | prepend: site.baseurl | prepend: site.url }}">{{ category.name }}</a>{% endif %}
+  						  </div>
+  						</div>
+  						<div class="time">
+  						  <div class="text-container">
+  							  <p>{{ post.date | date: '%B %d, %Y' }}</p>
+  					    </div>
+  						</div>
+  					</div>
+  					
+  					<div class="post-body">
+  						{% assign author = site.authors | where: short_name , post.author | first %}{% if author %}<a href="{{ author.url | prepend: site.baseurl | prepend: site.url }}">{{ author.name }}</a>{% endif %} <br>
+  						<p>{{ post.excerpt | strip_html | truncatewords: 20}}
+  						<a class="more" href="{{ site.baseurl | prepend: site.url }}{{ post.url }}">Complete Reading...</a></p>
+  					</div>
+  					
+  					{% endfor %}
 				</section>
 				
 				<div class="w100 block">

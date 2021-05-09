@@ -11,8 +11,7 @@ layout: home
 {%- if posts.size > 0 -%}
 
 		{%- for post in posts -%}
-				<section>
-				  
+				<section class="postsblock">
 					<div class="headline-container">
 						<div class="headline">
 							<a href='{{ post.url | prepend: site.baseurl | prepend: site.url }}'>
@@ -61,12 +60,11 @@ layout: home
 						</p>
 						{%endif %}
 					</div>
-				
 				</section>
 	{%- endfor -%}
   {%- include pagination.html -%}
   {%- else -%}
-  <section>
+  <section class="postsblock">
   	<div class="headline-container">
   		<div class="headline">
         <h2>There Is No Post Available For Now</h2>

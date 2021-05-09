@@ -37,38 +37,34 @@ layout: default
 </aside>
 </div>
 
-<h2 class="propost">Posts</h2>
 
-
-
-{%- assign filtered_posts = site.posts | where: 'author', page.short_name -%}
-
-  <div class="tableflow">
-  {%- if filtered_posts.size > 0 -%}
-
-    <table class="cattable">
-      
-      
-      {% tablerow post in filtered_posts cols:3 %}
-        <a href="{{ post.url }}"><img loading="lazy" class="catlist" src="{{ post.image }}" alt="{{ post.title }}"></a>
-      {% endtablerow %}
-      
-      
-    </table>
-
-      {%- else -%}
-
-    <section>
-    	<div class="headline-container">
-    		<div class="headline">
-          <h2>There Is No Post Available For Now in This Category..</h2>
-    		</div>
-    	</div>
-  	</section>
-
-  {%- endif -%}
-  </div>
+<div class="row">
+  <article class="middle column1">
+    <h2 class="propost">Posts</h2>
     
-
-
-{%- include footer.html -%}
+    {%- assign filtered_posts = site.posts | where: 'author', page.short_name -%}
+      <div class="tableflow">
+      {%- if filtered_posts.size > 0 -%}
+        <table class="cattable">
+          {% tablerow post in filtered_posts cols:3 %}
+            <a href="{{ post.url }}"><img loading="lazy" class="catlist" src="{{ post.image }}" alt="{{ post.title }}"></a>
+          {% endtablerow %}
+        </table>
+    
+        {%- else -%}
+    
+        <section>
+        	<div class="headline-container">
+        		<div class="headline">
+              <h2>There Is No Post Available For Now in This Category..</h2>
+        		</div>
+        	</div>
+      	</section>
+    
+      {%- endif -%}
+      </div>
+    </article>
+    <aside class="middle column2">
+      {%- include footer.html -%}
+    </aside>
+</div>

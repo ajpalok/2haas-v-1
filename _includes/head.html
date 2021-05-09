@@ -28,11 +28,12 @@
         {%- assign url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url -%}
     {%- endif -%}
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, 
+     user-scalable=0">
 <link rel="stylesheet" href="{{ '/assets/css/2haas.css' | prepend: site.baseurl | prepend: site.url }}">
 <noscript>
    <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link href="https://fonts.googleapis.com/css2?family=Galada&family=Lobster+Two&family=Roboto&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Galada&family=Roboto&display=swap" rel="stylesheet">
 </noscript>
 <title>{{ title }}</title>
 <meta name="description" content="{{ description }}">
