@@ -45,7 +45,7 @@ layout: home
 						</div>
 					</div>
 					
-					<div class="post-body">
+					<div class="post-body wordwrap">
 						{%- assign author = site.authors | where: short_name , post.author | first -%}
 						{%- if author -%}
 						  <a href="{{ author.url | prepend: site.baseurl | prepend: site.url }}">{{ author.name }}</a>
