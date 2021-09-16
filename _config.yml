@@ -18,8 +18,8 @@ tags:
 
 # advance settings
 baseurl: ""
-url: "https://2haas.com"
-# url: "http://10.18.0.100:3000"
+# url: "https://2haas.com"
+url: "http://10.18.0.100:3000"
 markdown: kramdown
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 highlighter: rouge
