@@ -26,6 +26,10 @@ highlighter: rouge
 sass:
     style: compressed
 
+# google adsense setup
+ads_id: "ca-pub-7426762298315186"
+
+
 # pagination plugin
 plugins:
   - jekyll-paginate
