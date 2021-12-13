@@ -17,7 +17,7 @@ tags:
   - logo art
 
 # advance settings
-baseurl: "old"
+baseurl: "m-ws-old"
 url: "https://2haas.github.io"
 # url: "http://10.18.0.100:3000"
 markdown: kramdown
