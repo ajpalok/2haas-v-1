@@ -5,7 +5,7 @@ title: Pran Up Bottle Art
 description: "This drawing is done for a online event hosted on Facebook named Castaway On The Moon powered by Pran Up"
 image: https://2haas.github.io/img/art/drawing/Crop%20Pran%20up.png
 optimized_image: https://2haas.github.io/img/art/drawing/Crop%20Pran%20up.png
-category: drawing
+category: digital-drawing
 tags: [2haas, drawing, digital art, pranup, soft drinks, beverage]
 author: ajpalok
 ---
