@@ -1,3 +1,23 @@
+
+{% assign social_urls = '' %}
+{% if site.github_username %}
+    {% assign social_urls = social_urls | append: '"https://github.com/' | append: site.github_username | append: '",' %}
+{% endif %}
+{% if site.facebook_username %}
+    {% assign social_urls = social_urls | append: '"https://www.facebook.com/' | append: site.facebook_username | append: '",' %}
+{% endif %}
+{% if site.twitter_username %}
+    {% assign social_urls = social_urls | append: '"https://twitter.com/' | append: site.twitter_username | append: '",' %}
+{% endif %}
+{% if site.youtube_username %}
+    {% assign social_urls = social_urls | append: '"https://youtube.com/' | append: site.youtube_username | append: '",' %}
+{% endif %}
+{% if site.instagram_username %}
+    {% assign social_urls = social_urls | append: '"https://www.instagram.com/' | append: site.instagram_username | append: '",' %}
+{% endif %}
+{% if site.linkedin_username %}
+    {% assign social_urls = social_urls | append: '"https://www.linkedin.com/in/' | append: site.linkedin_username | append: '",' %}
+{% endif %}
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
@@ -34,6 +54,16 @@
     document.getElementsByTagName('head')[0].appendChild(cssMain);
 })();
 </script>
+
+<script src="/assets/js/2haas.js" type="text/javascript"></script>
+
+{%- unless site.paginate -%}
+{%- if page.url == site.url or page.url == "/" or page.url == "/index.html" -%}
+	<script src="/assets/js/all_posts.js"></script>
+{%- endif -%}
+{%- endunless -%}
+
+<script src="/assets/js/app.js"></script>
 
 {% if site.ads_id %}
 <script data-ad-client="{{ site.ads_id }}" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>

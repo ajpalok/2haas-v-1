@@ -4,8 +4,6 @@ layout: home
 
 {%- if site.paginate -%}
 {%- assign posts = paginator.posts -%}
-{%- else -%}
-{%- assign posts = site.posts -%}
 {%- endif -%}
 
 {%- if posts.size > 0 -%}
@@ -64,6 +62,7 @@ layout: home
 	{%- endfor -%}
   {%- include pagination.html -%}
   {%- else -%}
+  {%- if site.posts.size == 0 -%}
   <section class="postsblock">
   	<div class="headline-container">
   		<div class="headline">
@@ -72,4 +71,8 @@ layout: home
   	</div>
   </section>
   {%- endif -%}
+  {%- endif -%}
 
+    {% unless site.paginate %}
+      <div class="post-div loading-posts"></div> 
+    {%- endunless -%}

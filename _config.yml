@@ -27,15 +27,24 @@ sass:
     style: compressed
 
 # google adsense setup
-ads_id: "ca-pub-7426762298315186"
+# ads_id: "ca-pub-7426762298315186"
+
+# Social Media Settings
+
+github_username: 2HAAS
+facebook_username: 2haas
+twitter_username: 2haas_tw
+instagram_username: 2haas_insta
+linkedin_username: 2haas
+youtube_username: 2HAAS
 
 
 # pagination plugin
-plugins:
-  - jekyll-paginate
-# posts pagination
-paginate: 10
-paginate_path: "/page-:num"
+# plugins:
+#   - jekyll-paginate
+# # posts pagination
+# paginate: 10
+# paginate_path: "/page-:num"
 
 # posts permalink
 permalink: "/:title/"

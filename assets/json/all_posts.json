@@ -1,0 +1,19 @@
+---
+layout: compress
+---
+{
+  "signatories": 
+  [
+    {% for post in site.posts %}
+    { 
+      "name": "{{ post.title | strip_html | escape }}",
+      "url": "{{ site.baseurl | prepend: site.url }}{{ post.url }}", 
+      "image_url": "{%- if post.image -%}{{ post.image }}{%- else -%}{{ site.baseurl | prepend: site.url }}/assets/img/off.jpg{%- endif -%}",
+      "date": "{{ post.date | date: '%B %d, %Y' }}",
+      "category_name": "{%- assign category = site.categories | where: short_name , post.category | first -%}{%- if category -%}{{ category.name }}{%- endif -%}",
+      "category_url": "{%- assign category = site.categories | where: short_name , post.category | first -%}{%- if category -%}{{ category.url | prepend: site.baseurl | prepend: site.url }}{%- endif -%}",
+      "author_name": "{%- assign author = site.authors | where: short_name , post.author | first -%}{%- if author -%}{{ author.name }}{%- endif -%}",
+      "author_url": "{%- assign author = site.authors | where: short_name , post.author | first -%}{%- if author -%}{{ author.url | prepend: site.baseurl | prepend: site.url }}{%- endif -%}"
+    }{% unless forloop.last %},{% endunless %}{% endfor %}
+  ]
+}
