@@ -17,9 +17,8 @@ tags:
   - logo art
 
 # advance settings
-baseurl: ""
-url: "https://old.2haas.com"
-# url: "http://10.18.0.100:3000"
+baseurl: "/2haas-v-1"
+url: ""
 markdown: kramdown
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 highlighter: rouge
@@ -88,6 +87,3 @@ compress_html:
   blanklines: false
   profile: false
   startings: []
-
-include: 
-  - .htaccess
