@@ -18,7 +18,7 @@ tags:
 
 # advance settings
 baseurl: "/2haas-v-1"
-url: ""
+url: "https://ajpalok.github.io"
 markdown: kramdown
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 highlighter: rouge

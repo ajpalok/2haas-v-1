@@ -55,15 +55,15 @@
 })();
 </script>
 
-<script src="/assets/js/2haas.js" type="text/javascript"></script>
+<script src="{{site.baseurl | prepend: site.url}}/assets/js/2haas.js" type="text/javascript"></script>
 
 {%- unless site.paginate -%}
 {%- if page.url == site.url or page.url == "/" or page.url == "/index.html" -%}
-	<script src="/assets/js/all_posts.js"></script>
+	<script src="{{site.baseurl | prepend: site.url}}/assets/js/all_posts.js"></script>
 {%- endif -%}
 {%- endunless -%}
 
-<script src="/assets/js/app.js"></script>
+<script src="{{site.baseurl | prepend: site.url}}/assets/js/app.js"></script>
 
 {% if site.ads_id %}
 <script data-ad-client="{{ site.ads_id }}" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>

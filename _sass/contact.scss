@@ -1,7 +1,9 @@
+---
+---
 div.formcontainer{
   width: 100%;
   display: block;
-  background-image: url('/assets/img/contact.jpg');
+  background-image: url('{{site.baseurl | prepend: site.url}}/assets/img/contact.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 0.825rem;
