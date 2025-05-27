@@ -17,7 +17,7 @@ tags:
   - logo art
 
 # advance settings
-baseurl: "/2haas-v-1"
+baseurl: "/2haas-v.1"
 url: "https://ajpalok.github.io"
 markdown: kramdown
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
