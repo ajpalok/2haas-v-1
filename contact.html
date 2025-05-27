@@ -75,7 +75,6 @@ input[type=submit]:hover {
 
 </style>
 <center>
-<!-- <img src="{{site.baseurl | prepend: site.url}}/assets/img/contact.jpg" alt="Contact Image"> -->
 <section>
 	<div class="headline-container">
 		<div class="headline">
@@ -83,7 +82,7 @@ input[type=submit]:hover {
 		</div>
 	</div>
 </section>
-
+</center>
 
 <div class="formcontainer">
   <form class="contactform" action="https://docs.google.com/forms/d/e/1FAIpQLSe_T6ry2weYNQv_cWUqQR7YNHEyo2YQfIQT9SBYmcRH0zCTfA/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
@@ -144,4 +143,4 @@ input[type=submit]:hover {
 
 
 <script type="text/javascript">var submitted=false;</script>
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='/contact/message-sent/';}"></iframe>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='{{site.baseurl | prepend: site.url}}/contact/message-sent/';}"></iframe>
