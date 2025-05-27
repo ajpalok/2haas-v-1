@@ -15,7 +15,7 @@
     {%- endif -%}
 
     {%- assign description = '' -%}
-    {%- if page.description -%}-
+    {%- if page.description -%}
         {%- assign description = page.description | strip_html | strip_newlines | truncate: 160 -%}
     {%- else -%}
         {%- assign description = site.description -%}

@@ -1,8 +1,6 @@
 ---
 ---
 
-:root {
-    --url: "{{site.baseurl | prepend: site.url}}"
-}
+$url: "{{site.baseurl | prepend: site.url}}";
 
 @import "main.scss";

@@ -1,7 +1,7 @@
 div.formcontainer{
   width: 100%;
   display: block;
-  background-image: url('var(--url)/assets/img/contact.jpg');
+  background-image: url($url+'/assets/img/contact.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 0.825rem;
